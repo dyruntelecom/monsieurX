@@ -37,6 +37,8 @@ export function readerPage(c: Catalog, s: Series, e: Episode, preview: boolean):
     path, image: og, type: "book", noindex: e.status !== "published",
     alternates: versions.map((v) => ({ lang: v.lang, path: `/${v.lang}/${s.slug}/${v.episode}` })),
     shareDescription: e.shareDescription,
+    fonts: `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">`,
   }, `<link rel="stylesheet" href="/reader.css?v=${config.version}">
 ${pages[1] ? `<link rel="preload" as="image" href="${esc(pages[Math.min(1, pages.length - 1)].src!)}">` : ""}`)}</head><body>
 

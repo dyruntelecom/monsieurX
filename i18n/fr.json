@@ -2,7 +2,11 @@
   "lang": "fr",
   "langName": "Français",
   "locale": "fr-FR",
-  "routes": { "about": "a-propos", "legal": "mentions-legales", "credits": "credits" },
+  "routes": {
+    "about": "a-propos",
+    "legal": "mentions-legales",
+    "credits": "credits"
+  },
   "site": {
     "tagline": "Des histoires en bande dessinée, à lire case par case.",
     "series": "Séries",
@@ -17,7 +21,11 @@
   "catalog": {
     "title": "Toutes les séries",
     "by": "par",
-    "episodes": { "zero": "Bientôt", "one": "{n} épisode", "other": "{n} épisodes" },
+    "episodes": {
+      "zero": "Bientôt",
+      "one": "{n} épisode",
+      "other": "{n} épisodes"
+    },
     "languages": "Langues",
     "empty": "Aucune série pour l'instant."
   },
@@ -65,5 +73,44 @@
     "title": "Épisode réservé aux abonnés",
     "text": "Cet épisode sera bientôt accessible aux abonnés. Les abonnements ne sont pas encore ouverts."
   },
-  "notFound": { "title": "Page introuvable", "text": "Cette page n'existe pas ou a été déplacée.", "back": "Retour à l'accueil" }
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Cette page n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  },
+  "home": {
+    "title": "Des histoires dessinées pour l'écran",
+    "lead": "Storink publie des bandes dessinées qui se lisent case par case, sur un téléphone comme sur un grand écran. Chaque série est écrite par un auteur et dessinée avec l'aide de l'intelligence artificielle. La lecture est libre : pas de compte, pas de cookie.",
+    "readFeatured": "Lire {series}, épisode {n}",
+    "seeSeries": "Voir les séries",
+    "demoCaption": "{series}, {episode}. La lecture suit les cases, une à une.",
+    "demoAlt": "Une planche de {series}, lue case par case",
+    "howTitle": "Comment ça se lit",
+    "how": [
+      {
+        "title": "Une case à la fois",
+        "text": "Touchez la droite de l'écran pour passer à la case suivante, la gauche pour revenir. Un bouton affiche la planche entière, un pincement zoome sur un détail."
+      },
+      {
+        "title": "Un auteur, aidé par l'IA",
+        "text": "L'auteur écrit le scénario, le découpage et les dialogues, et vérifie les faits. Les images sont générées planche par planche puis corrigées. C'est indiqué sur chaque série."
+      },
+      {
+        "title": "Libre d'accès",
+        "text": "Sans inscription, sans cookie, sans adresse IP enregistrée. Une histoire existe en français, en anglais ou dans les deux, selon ce que l'auteur a traduit."
+      }
+    ],
+    "seriesTitle": "Les séries",
+    "nextTitle": "En préparation",
+    "next": [
+      {
+        "title": "L'actualité en BD",
+        "text": "Les nouvelles de la semaine racontées en quelques planches, publiées à date fixe."
+      },
+      {
+        "title": "D'autres auteurs",
+        "text": "Storink ouvrira ses pages à d'autres créateurs de bandes dessinées. L'espace auteurs est en cours de conception."
+      }
+    ]
+  }
 }

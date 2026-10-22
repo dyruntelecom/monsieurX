@@ -26,6 +26,12 @@ export function t(lang: string, key: string, vars: Record<string, string | numbe
   return String(v).replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ""));
 }
 
+/** Raw value (array or object) from the dictionary, with the default language as fallback. */
+export function tr(lang: string, key: string): any {
+  const get = (d: Dict | undefined) => key.split(".").reduce<any>((o, k) => (o == null ? o : o[k]), d);
+  return get(DICTS.get(uiLang(lang))) ?? get(DICTS.get(DEFAULT_LANG)) ?? [];
+}
+
 /** Name of a language in its own language when we have a dictionary for it, else the code. */
 export const langName = (code: string) => DICTS.get(code)?.langName ?? (new Intl.DisplayNames([code], { type: "language" }).of(code) || code);
 

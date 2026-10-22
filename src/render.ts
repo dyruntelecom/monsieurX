@@ -2,7 +2,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { CONTENT, type Catalog, type Series, type Episode, pick, episodeList, seriesLangs, bestVersion, seriesCover, mediaUrl } from "./content";
-import { t, uiLang, langName, fmtDate, routeOf, UI_LANGS } from "./i18n";
+import { t, tr, uiLang, langName, fmtDate, routeOf, UI_LANGS } from "./i18n";
 import { esc, markdown } from "./md";
 
 export const config = {
@@ -16,10 +16,11 @@ export interface Head {
   image?: string | null; type?: string; noindex?: boolean;
   alternates?: { lang: string; path: string }[];
   shareDescription?: string;
+  fonts?: string; // stylesheet link(s) for fonts; defaults to the site fonts
 }
 
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">`;
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">`;
 
 export function head(h: Head, extra = ""): string {
   const abs = (p: string) => (p.startsWith("http") ? p : config.siteUrl + p);
@@ -35,7 +36,7 @@ ${h.shareDescription || h.description ? `<meta property="og:description" content
 ${h.image ? `<meta property="og:image" content="${esc(abs(h.image))}"><meta name="twitter:card" content="summary_large_image">` : ""}
 ${h.noindex ? `<meta name="robots" content="noindex">` : ""}
 <meta name="theme-color" content="#0c0e12"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
-${FONTS}${extra}`;
+${h.fonts ?? FONTS}${extra}`;
 }
 
 /** Disabled advertising slot: renders nothing until ADS_ENABLED=1 (the integration itself is not built yet). */
@@ -73,25 +74,67 @@ function langTags(langs: string[], current?: string): string {
 }
 
 // ——— home ———
+// Featured episode for the hero demo: content/site.json → { featured: { series, episode, lang, page } }.
+function featured(c: Catalog) {
+  let f: any = {};
+  try { f = JSON.parse(readFileSync(join(CONTENT, "site.json"), "utf8")).featured || {}; } catch {}
+  const s = c.series.get(f.series);
+  const versions = s?.episodes.get(String(f.episode));
+  const e = versions && (versions.get(f.lang) ?? [...versions.values()][0]);
+  if (!s || !e || e.status !== "published" || !e.pages.length) return null;
+  const idx = Math.min(Math.max(0, Number(f.page) || 0), e.pages.length - 1);
+  const pg = e.pages[idx];
+  const src = mediaUrl(e, pg.src, s.dir);
+  if (!src) return null;
+  return { s, e, pg, src, zones: pg.zones.filter((z) => !(z[0] === 0 && z[1] === 0 && z[2] === 1 && z[3] === 1)) };
+}
+
 export function homePage(c: Catalog, lang: string): string {
   const L = uiLang(lang);
   const list = [...c.series.values()].filter((s) => s.status === "published")
     .sort((a, b) => (a.order ?? 99) - (b.order ?? 99) || a.slug.localeCompare(b.slug));
-  const cards = list.map((s) => {
+  const f = featured(c);
+  const epHref = f ? `/${f.e.lang}/${f.s.slug}/${f.e.episode}` : "#series";
+  const epName = f ? `${pick(f.s.title, L)}, ${f.e.title}` : "";
+
+  const demo = f ? `<figure class="demo">
+<a class="demo-page" href="${esc(epHref)}" style="aspect-ratio:${f.pg.w}/${f.pg.h}" aria-label="${esc(t(L, "home.readFeatured", { series: f ? pick(f.s.title, L) : "", n: f ? (f.e.number ?? f.e.episode) : "" }))}">
+<img src="${esc(f.src)}" alt="${esc(t(L, "home.demoAlt", { series: pick(f.s.title, L) }))}" width="${f.pg.w}" height="${f.pg.h}" fetchpriority="high">
+<span class="demo-spot" aria-hidden="true"></span></a>
+<figcaption>${esc(t(L, "home.demoCaption", { series: pick(f.s.title, L), episode: f.e.title }))}</figcaption>
+<script type="application/json" id="demo-zones">${JSON.stringify(f.zones)}</script>
+</figure>` : "";
+
+  const how = (tr(L, "home.how") as { title: string; text: string }[]).map((h) =>
+    `<div class="how-item"><h3>${esc(h.title)}</h3><p>${esc(h.text)}</p></div>`).join("");
+
+  const rows = list.map((s) => {
     const n = episodeList(s).length; const langs = seriesLangs(s);
     const cover = seriesCover(s, L);
-    return `<li><a class="card" href="/${esc(L)}/${esc(s.slug)}">
+    return `<li><a class="series-row" href="/${esc(L)}/${esc(s.slug)}">
 <span class="cover">${cover ? `<img src="${esc(cover)}" alt="" loading="lazy">` : ""}</span>
 <span class="meta"><span class="title">${esc(pick(s.title, L))}</span>
-<span class="by">${esc(t(L, "catalog.by"))} ${esc(authorNames(c, s.authors))}</span>
 ${s.tagline ? `<span class="tagline">${esc(pick(s.tagline, L))}</span>` : ""}
-<span class="facts"><span>${esc(t(L, "catalog.episodes", { n }))}</span>${langs.length ? langTags(langs, L) : ""}</span></span></a></li>`;
+<span class="by">${esc(t(L, "catalog.by"))} ${esc(authorNames(c, s.authors))}</span>
+<span class="facts"><span class="count${n ? "" : " soon"}">${esc(t(L, "catalog.episodes", { n }))}</span>${langs.length ? langTags(langs, L) : ""}</span></span></a></li>`;
   }).join("");
-  const body = `<section class="hero"><h1 class="wordmark">Storink</h1><p>${esc(t(L, "site.tagline"))}</p></section>
-<section class="catalog" aria-labelledby="cat-h"><h2 id="cat-h" class="eyebrow">${esc(t(L, "catalog.title"))}</h2>
-${list.length ? `<ul class="cards">${cards}</ul>` : `<p class="muted">${esc(t(L, "catalog.empty"))}</p>`}</section>
-${adSlot("home")}`;
-  return page({ lang: L, title: "Storink", description: t(L, "site.tagline"), path: `/${L}`, alternates: UI_LANGS.map((l) => ({ lang: l, path: `/${l}` })) }, body, allLangPaths((l) => `/${l}`));
+
+  const next = (tr(L, "home.next") as { title: string; text: string }[]).map((x) =>
+    `<li><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></li>`).join("");
+
+  const body = `<section class="intro${f ? "" : " no-demo"}">
+<div class="intro-copy"><h1>${esc(t(L, "home.title"))}</h1>
+<p class="lead">${esc(t(L, "home.lead"))}</p>
+<p class="cta">${f ? `<a class="btn primary" href="${esc(epHref)}">${esc(t(L, "home.readFeatured", { series: f ? pick(f.s.title, L) : "", n: f ? (f.e.number ?? f.e.episode) : "" }))}</a>` : ""}<a class="btn" href="#series">${esc(t(L, "home.seeSeries"))}</a></p></div>
+${demo}</section>
+<section class="how" aria-labelledby="how-h"><h2 id="how-h">${esc(t(L, "home.howTitle"))}</h2><div class="how-grid">${how}</div></section>
+<section class="series" id="series" aria-labelledby="ser-h"><h2 id="ser-h">${esc(t(L, "home.seriesTitle"))}</h2>
+${list.length ? `<ul class="series-list">${rows}</ul>` : `<p class="muted">${esc(t(L, "catalog.empty"))}</p>`}</section>
+<section class="next" aria-labelledby="next-h"><h2 id="next-h">${esc(t(L, "home.nextTitle"))}</h2><ul class="next-list">${next}</ul></section>
+${adSlot("home")}
+<script src="/home.js?v=${config.version}" defer></script>`;
+  return page({ lang: L, title: `Storink · ${t(L, "home.title")}`, description: t(L, "home.lead"), path: `/${L}`, image: f ? mediaUrl(f.e, f.e.ogImage || f.e.cover, f.s.dir) : null,
+    alternates: UI_LANGS.map((l) => ({ lang: l, path: `/${l}` })) }, body, allLangPaths((l) => `/${l}`));
 }
 
 // ——— series ———

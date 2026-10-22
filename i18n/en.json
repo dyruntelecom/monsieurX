@@ -2,7 +2,11 @@
   "lang": "en",
   "langName": "English",
   "locale": "en-GB",
-  "routes": { "about": "about", "legal": "legal", "credits": "credits" },
+  "routes": {
+    "about": "about",
+    "legal": "legal",
+    "credits": "credits"
+  },
   "site": {
     "tagline": "Comic stories, to read panel by panel.",
     "series": "Series",
@@ -17,7 +21,11 @@
   "catalog": {
     "title": "All series",
     "by": "by",
-    "episodes": { "zero": "Coming soon", "one": "{n} episode", "other": "{n} episodes" },
+    "episodes": {
+      "zero": "Coming soon",
+      "one": "{n} episode",
+      "other": "{n} episodes"
+    },
     "languages": "Languages",
     "empty": "No series yet."
   },
@@ -65,5 +73,44 @@
     "title": "Subscribers-only episode",
     "text": "This episode will soon be available to subscribers. Subscriptions are not open yet."
   },
-  "notFound": { "title": "Page not found", "text": "This page does not exist or has moved.", "back": "Back to the home page" }
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist or has moved.",
+    "back": "Back to the home page"
+  },
+  "home": {
+    "title": "Comic stories made for the screen",
+    "lead": "Storink publishes comics you read panel by panel, on a phone or a large screen. Each series is written by an author and drawn with the help of artificial intelligence. Reading is free: no account, no cookies.",
+    "readFeatured": "Read {series}, episode {n}",
+    "seeSeries": "See the series",
+    "demoCaption": "{series}, {episode}. Reading follows the panels, one by one.",
+    "demoAlt": "A page of {series}, read panel by panel",
+    "howTitle": "How it reads",
+    "how": [
+      {
+        "title": "One panel at a time",
+        "text": "Tap the right side of the screen for the next panel, the left side to go back. One button shows the whole page; pinch to zoom in on a detail."
+      },
+      {
+        "title": "An author, helped by AI",
+        "text": "The author writes the story, the breakdown and the dialogue, and checks the facts. Images are generated page by page, then corrected. Every series says so."
+      },
+      {
+        "title": "Free to read",
+        "text": "No sign-up, no cookies, no IP address stored. A story comes in French, English or both, depending on what the author has translated."
+      }
+    ],
+    "seriesTitle": "The series",
+    "nextTitle": "In the works",
+    "next": [
+      {
+        "title": "News in comics",
+        "text": "The week's news told in a few pages, published on a fixed schedule."
+      },
+      {
+        "title": "More authors",
+        "text": "Storink will open its pages to other comic creators. The authors' space is being designed."
+      }
+    ]
+  }
 }
