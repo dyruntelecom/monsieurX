@@ -1,0 +1,92 @@
+/* Reader — carried over unchanged from the original Monsieur X reader, then Storink additions at the end. */
+[hidden]{display:none!important}img{max-width:100%}body{margin:0;font:14px system-ui,sans-serif}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+/* Layout: one-screen noir reading room — the page floats on a rainy-night stage, a spotlight frames each panel, a thin typewritten control strip at the bottom. Single dark look by choice. */
+:root{
+  --night:#0c0e12;      /* stage */
+  --ink:#16191f;        /* bars, sheets */
+  --rain:#8d96a3;       /* secondary text */
+  --paper:#efe4cf;      /* primary text, like the archive paper */
+  --stamp:#c8352b;      /* the ARCHIVES stamp red, used sparingly */
+  --line:#2a2f38;
+  --display:"Bebas Neue","Oswald","Arial Narrow",Impact,sans-serif;
+  --type:"Special Elite","Courier New",Courier,monospace;
+  --ui:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{background:var(--night);color:var(--paper);font-family:var(--ui);overflow:hidden;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--stamp);outline-offset:2px}
+
+/* ——— title card ——— */
+#intro{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,auto) minmax(0,26rem);gap:clamp(20px,4vw,56px);align-items:center;justify-content:center;
+  padding-block:max(24px,env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background:radial-gradient(ellipse at 30% 40%,#1b2029 0%,var(--night) 70%);z-index:20;overflow:auto}
+#intro img{height:min(82vh,760px);width:auto;max-width:100%;box-shadow:0 30px 80px #000c;justify-self:end}
+.intro-text{display:flex;flex-direction:column;gap:18px;min-width:0}
+.eyebrow{font-family:var(--type);color:var(--rain);font-size:.9rem;letter-spacing:.04em}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(3.4rem,8vw,6rem);line-height:.85;margin:0;letter-spacing:.01em}
+.sub{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);line-height:1;color:var(--paper);margin:0;text-wrap:balance}
+.blurb{font-family:var(--type);font-size:.95rem;line-height:1.6;color:var(--rain);margin:0;max-width:34ch}
+.stamp{align-self:flex-start;font-family:var(--type);color:var(--stamp);border:2px solid var(--stamp);padding:2px 10px;transform:rotate(-3deg);font-size:.8rem;letter-spacing:.12em}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:12px 20px;border:1px solid var(--line);font-family:var(--ui);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem}
+.btn.primary{background:var(--paper);color:var(--night);border-color:var(--paper)}
+.btn:hover{border-color:var(--rain)}
+.hint{font-size:.8rem;color:var(--rain);line-height:1.5;margin:0}
+@media (max-width:720px){
+  #intro{grid-template-columns:1fr;justify-items:center;align-content:start;text-align:left}
+  #intro img{height:auto;width:min(78vw,420px);justify-self:center}
+}
+
+/* ——— stage ——— */
+#stage{position:fixed;inset:0;bottom:calc(52px + env(safe-area-inset-bottom,0px));overflow:hidden;touch-action:none;cursor:pointer}
+#rig{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+#rig.anim{transition:transform .55s cubic-bezier(.45,.05,.2,1)}
+#pg{-webkit-user-drag:none;display:block;width:100%;height:100%;max-width:none}
+#spot{position:absolute;box-shadow:0 0 0 400vmax rgba(8,9,12,.94);pointer-events:none;transition:all .55s cubic-bezier(.45,.05,.2,1)}
+#spot.off{box-shadow:0 0 0 400vmax rgba(8,9,12,0)}
+#rig:not(.anim) #spot{transition:none}
+#fade{position:absolute;inset:0;background:var(--night);opacity:0;pointer-events:none;transition:opacity .22s}
+#fade.on{opacity:1}
+
+/* ——— control strip ——— */
+#bar{position:fixed;left:0;right:0;bottom:0;height:calc(52px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px);
+  padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));
+  background:var(--ink);border-top:1px solid var(--line);display:flex;align-items:center;gap:6px;z-index:5}
+#bar button{height:40px;min-width:40px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--rain)}
+#bar button:hover{color:var(--paper)}
+#bar svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7}
+#where{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:5px}
+#where .lbl{font-family:var(--type);font-size:.85rem;color:var(--paper);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;font-variant-numeric:tabular-nums}
+#prog{width:min(320px,100%);height:2px;background:var(--line);position:relative}
+#prog i{position:absolute;left:0;top:0;bottom:0;background:var(--stamp);width:0;transition:width .3s}
+#mode[aria-pressed="true"],#zoom[aria-pressed="true"]{color:var(--paper)}
+#zoom .tag{font-size:.7rem;font-variant-numeric:tabular-nums;min-width:2.2em;text-align:left}
+#mode .tag{border:1px solid currentColor;padding:2px 6px;font-size:.7rem}
+@media (max-width:480px){ #bar .wide{display:none} #bar button{min-width:34px;padding:0 5px} #zoom .tag{display:none} }
+
+/* ——— page index ——— */
+#index{position:fixed;inset:0;background:rgba(8,9,12,.97);z-index:30;overflow:auto;
+  padding-block:max(20px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ix-head{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto 18px}
+.ix-head h2{font-family:var(--display);font-weight:400;font-size:2rem;margin:0;letter-spacing:.02em}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:16px;max-width:1100px;margin:0 auto}
+#grid button{display:flex;flex-direction:column;gap:6px;text-align:left}
+#grid img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top;background:var(--ink);border:1px solid var(--line)}
+#grid button.cur img{border-color:var(--stamp)}
+#grid span{font-family:var(--type);font-size:.78rem;color:var(--rain)}
+#grid button:hover span{color:var(--paper)}
+
+#tip{position:fixed;left:50%;bottom:calc(68px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);border:1px solid var(--line);color:var(--rain);font-size:.8rem;padding:8px 14px;z-index:6;transition:opacity .6s;white-space:nowrap}
+#tip.gone{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){#rig.anim,#spot,#fade,#prog i{transition:none!important}}
+
+/* ——— Storink additions ——— */
+.crumbs{display:flex;gap:8px;align-items:center;font-family:var(--type);font-size:.8rem;color:var(--rain)}
+.crumbs a{color:var(--rain);text-decoration:none}.crumbs a:hover{color:var(--paper);text-decoration:underline}
+.versions a{color:var(--paper)}
+.hint.fine{font-size:.72rem;opacity:.85;max-width:44ch}
+.stamp.draft{color:var(--rain);border-color:var(--rain)}

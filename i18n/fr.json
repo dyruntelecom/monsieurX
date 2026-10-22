@@ -1,0 +1,69 @@
+{
+  "lang": "fr",
+  "langName": "Français",
+  "locale": "fr-FR",
+  "routes": { "about": "a-propos", "legal": "mentions-legales", "credits": "credits" },
+  "site": {
+    "tagline": "Des histoires en bande dessinée, à lire case par case.",
+    "series": "Séries",
+    "about": "À propos",
+    "legal": "Mentions légales",
+    "credits": "Crédits",
+    "ai": "Les bandes dessinées de Storink sont créées avec l'aide de l'intelligence artificielle.",
+    "aiShort": "Créé avec l'aide de l'IA",
+    "language": "Langue",
+    "skip": "Aller au contenu"
+  },
+  "catalog": {
+    "title": "Toutes les séries",
+    "by": "par",
+    "episodes": { "zero": "Bientôt", "one": "{n} épisode", "other": "{n} épisodes" },
+    "languages": "Langues",
+    "empty": "Aucune série pour l'instant."
+  },
+  "series": {
+    "episodes": "Épisodes",
+    "episode": "Épisode {n}",
+    "read": "Lire",
+    "comingSoon": "Les premiers épisodes arrivent bientôt.",
+    "alsoIn": "Aussi en",
+    "onlyIn": "Disponible en {lang}",
+    "broadcast": "Émission du {date}",
+    "published": "Publié le {date}",
+    "subscribers": "Abonnés",
+    "back": "Toutes les séries"
+  },
+  "reader": {
+    "readPanels": "Lire case par case",
+    "readPages": "Lire page par page",
+    "hint": "Touchez à droite ou glissez pour avancer, à gauche pour revenir. Pincez ou touchez deux fois pour zoomer, faites glisser pour vous déplacer. Au clavier : ← →, + et −.",
+    "tip": "Touchez à droite pour avancer · deux fois pour zoomer",
+    "resume": "Vous étiez à la {where}.",
+    "resumeBtn": "Reprendre",
+    "plate": "Planche",
+    "plateShort": "Pl.",
+    "plateLower": "planche",
+    "cover": "Couverture",
+    "allPages": "Toutes les pages",
+    "close": "Fermer",
+    "home": "Retour à la couverture",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "zoom": "Zoom (ou pincer, ou toucher deux fois)",
+    "mode": "Changer de mode",
+    "modePanel": "Case",
+    "modePage": "Page",
+    "fullscreen": "Plein écran",
+    "controls": "Contrôles de lecture",
+    "reading": "Lecture",
+    "noPages": "Les planches de cet épisode ne sont pas encore en ligne.",
+    "draft": "Brouillon · non publié",
+    "versions": "Lire en",
+    "series": "La série"
+  },
+  "locked": {
+    "title": "Épisode réservé aux abonnés",
+    "text": "Cet épisode sera bientôt accessible aux abonnés. Les abonnements ne sont pas encore ouverts."
+  },
+  "notFound": { "title": "Page introuvable", "text": "Cette page n'existe pas ou a été déplacée.", "back": "Retour à l'accueil" }
+}

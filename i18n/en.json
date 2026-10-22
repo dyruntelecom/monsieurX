@@ -1,0 +1,69 @@
+{
+  "lang": "en",
+  "langName": "English",
+  "locale": "en-GB",
+  "routes": { "about": "about", "legal": "legal", "credits": "credits" },
+  "site": {
+    "tagline": "Comic stories, to read panel by panel.",
+    "series": "Series",
+    "about": "About",
+    "legal": "Legal notice",
+    "credits": "Credits",
+    "ai": "Storink comics are created with the help of artificial intelligence.",
+    "aiShort": "Made with the help of AI",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "catalog": {
+    "title": "All series",
+    "by": "by",
+    "episodes": { "zero": "Coming soon", "one": "{n} episode", "other": "{n} episodes" },
+    "languages": "Languages",
+    "empty": "No series yet."
+  },
+  "series": {
+    "episodes": "Episodes",
+    "episode": "Episode {n}",
+    "read": "Read",
+    "comingSoon": "The first episodes are coming soon.",
+    "alsoIn": "Also in",
+    "onlyIn": "Available in {lang}",
+    "broadcast": "Broadcast on {date}",
+    "published": "Published on {date}",
+    "subscribers": "Subscribers",
+    "back": "All series"
+  },
+  "reader": {
+    "readPanels": "Read panel by panel",
+    "readPages": "Read page by page",
+    "hint": "Tap the right side or swipe to move on, the left side to go back. Pinch or double-tap to zoom, drag to move around. Keyboard: ← →, + and −.",
+    "tip": "Tap the right side to move on · double-tap to zoom",
+    "resume": "You were at {where}.",
+    "resumeBtn": "Resume",
+    "plate": "Page",
+    "plateShort": "P.",
+    "plateLower": "page",
+    "cover": "Cover",
+    "allPages": "All pages",
+    "close": "Close",
+    "home": "Back to the cover",
+    "prev": "Previous",
+    "next": "Next",
+    "zoom": "Zoom (or pinch, or double-tap)",
+    "mode": "Switch mode",
+    "modePanel": "Panel",
+    "modePage": "Page",
+    "fullscreen": "Full screen",
+    "controls": "Reading controls",
+    "reading": "Reading",
+    "noPages": "The pages of this episode are not online yet.",
+    "draft": "Draft · not published",
+    "versions": "Read in",
+    "series": "The series"
+  },
+  "locked": {
+    "title": "Subscribers-only episode",
+    "text": "This episode will soon be available to subscribers. Subscriptions are not open yet."
+  },
+  "notFound": { "title": "Page not found", "text": "This page does not exist or has moved.", "back": "Back to the home page" }
+}

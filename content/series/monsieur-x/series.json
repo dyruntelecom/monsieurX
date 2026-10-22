@@ -1,0 +1,22 @@
+{
+  "slug": "monsieur-x",
+  "type": "comic",
+  "status": "published",
+  "authors": ["loic-texier"],
+  "aiAssisted": true,
+  "cover": "episodes/1/fr/pages/p00.webp",
+  "order": 1,
+  "title": { "fr": "Monsieur X", "en": "Monsieur X" },
+  "tagline": {
+    "fr": "Un homme sans visage raconte les grandes affaires d'espionnage.",
+    "en": "A faceless man tells the great spy stories of the 20th century."
+  },
+  "description": {
+    "fr": "Chaque épisode adapte une émission réelle. Dans un bureau d'import-export qui n'existe pas, un journaliste et une ingé son enregistrent Monsieur X. Il raconte, on bascule dans le passé, le journaliste fait la part entre ce qui est établi et ce qui ne l'est pas.",
+    "en": "Each episode adapts a real radio broadcast. In the office of an import-export firm that does not exist, a journalist and a sound engineer record Monsieur X. He tells the story, we slip into the past, and the journalist sorts out what is established from what is not."
+  },
+  "notice": {
+    "fr": "Hommage à l'émission « Rendez-vous avec X » de Patrick Pesnot, sans lien avec France Inter ni Radio France.",
+    "en": "A tribute to the radio show “Rendez-vous avec X” by Patrick Pesnot, with no connection to France Inter or Radio France."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "napkin-ideas",
+  "type": "comic",
+  "status": "published",
+  "authors": ["loic-texier"],
+  "aiAssisted": true,
+  "cover": "cover.svg",
+  "order": 2,
+  "title": { "en": "Napkin Ideas" },
+  "tagline": { "en": "Business ideas sketched over lunch.", "fr": "Des idées de business griffonnées au déjeuner." },
+  "description": {
+    "en": "Short business stories, drawn the way they start: on a napkin, between two friends.",
+    "fr": "De courtes histoires de business, dessinées comme elles commencent : sur une serviette en papier, entre deux amis."
+  }
+}

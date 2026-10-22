@@ -1,0 +1,15 @@
+{
+  "series": "napkin-ideas",
+  "episode": "1",
+  "number": 1,
+  "lang": "en",
+  "title": "Demo episode",
+  "eyebrow": "Episode 1",
+  "blurb": "An empty episode that shows the expected format. Add pages to pages/ and list them below.",
+  "authors": ["loic-texier"],
+  "published": "2026-10-22",
+  "status": "draft",
+  "access": "free",
+  "cover": "../../../cover.svg",
+  "pages": []
+}
