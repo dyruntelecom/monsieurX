@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 6,
+  "importVersion": 7,
   "stories": [
     {
       "id": "hormuz",
@@ -295,6 +295,87 @@
           "image": "helium/4.webp",
           "w": 489,
           "h": 747
+        }
+      ]
+    },
+    {
+      "id": "starlink",
+      "status": "published",
+      "style": {
+        "id": "risograph",
+        "name": {
+          "en": "Risograph",
+          "fr": "Risographie"
+        }
+      },
+      "headline": {
+        "en": "Starlink slowdown hampered Ukraine's drones, WSJ says",
+        "fr": "Un ralentissement de Starlink a gêné les drones ukrainiens, selon le WSJ"
+      },
+      "sources": [
+        {
+          "name": "Korea Times / Reuters",
+          "url": "https://www.koreatimes.co.kr/world/20261021/musk-ordered-slowdown-of-starlink-service-used-by-ukraines-military-wsj-reports"
+        },
+        {
+          "name": "Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "cast": [
+        {
+          "role": "the SpaceX chief executive",
+          "look": "man in his fifties with short dark hair, black jacket over a black t-shirt"
+        },
+        {
+          "role": "the US president",
+          "look": "elderly man with swept-back blond hair, dark suit, long red tie"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A swarm of small satellites forming a chain across the night sky above the curve of the Earth, city lights glowing below.",
+          "text": {
+            "en": "Elon Musk ordered a slowdown of a military-grade Starlink service used by Ukraine, the Wall Street Journal reported on 20 October.",
+            "fr": "Elon Musk a ordonné le ralentissement d'un service Starlink de qualité militaire utilisé par l'Ukraine, a rapporté le Wall Street Journal le 20 octobre."
+          },
+          "kind": "caption",
+          "image": "starlink/1.webp",
+          "w": 492,
+          "h": 750
+        },
+        {
+          "scene": "Two Ukrainian soldiers in a muddy autumn field crouching next to a flat satellite dish on the ground, one holding a tablet, a small quadcopter drone lifting off.",
+          "text": {
+            "en": "Ukraine relies on it for battlefield communications. The restrictions hampered its attack and air-defence drone missions, the paper says.",
+            "fr": "L'Ukraine s'en sert pour ses communications sur le front. Ces restrictions ont gêné ses missions de drones d'attaque et de défense aérienne, selon le journal."
+          },
+          "kind": "caption",
+          "image": "starlink/2.webp",
+          "w": 491,
+          "h": 750
+        },
+        {
+          "scene": "The SpaceX chief executive standing in a huge rocket hangar, phone to his ear, a gleaming rocket behind him, workers small in the background.",
+          "text": {
+            "en": "Musk said such decisions rest with the US military or the president. Donald Trump said he did not think he or Musk was responsible.",
+            "fr": "Elon Musk assure que ces décisions relèvent de l'armée américaine ou du président. Donald Trump dit ne pas penser que lui ou Musk en soient responsables."
+          },
+          "kind": "caption",
+          "image": "starlink/3.webp",
+          "w": 490,
+          "h": 749
+        },
+        {
+          "scene": "The US president sitting at a large wooden desk in an oval room, speaking on the phone, flags standing behind him without any lettering.",
+          "text": {
+            "en": "Trump reportedly called Musk on Wednesday to lift the restrictions. US officials said the service then worked more normally.",
+            "fr": "Donald Trump aurait appelé Elon Musk mercredi pour lever ces restrictions. Selon des responsables américains, le service fonctionnait ensuite plus normalement."
+          },
+          "kind": "caption",
+          "image": "starlink/4.webp",
+          "w": 490,
+          "h": 748
         }
       ]
     },
