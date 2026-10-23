@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 9,
+  "importVersion": 10,
   "stories": [
     {
       "id": "hormuz",
@@ -376,6 +376,74 @@
           "image": "helium/4.webp",
           "w": 489,
           "h": 747
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "status": "published",
+      "style": {
+        "id": "constructivist",
+        "name": {
+          "en": "Constructivist poster",
+          "fr": "Affiche constructiviste"
+        }
+      },
+      "headline": {
+        "en": "Italy braces for cost-of-living protests",
+        "fr": "L'Italie se prépare à des manifestations contre la vie chère"
+      },
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/10/23/italy-preparing-with-elite-troops-and-drone-surveillance-for-24-october-protests"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "A large crowd marching down a narrow Italian street lined with old ochre buildings, people holding up blank banners and flags without lettering, shop shutters half closed.",
+          "text": {
+            "en": "Protests against the rising cost of living are planned today in Italy and France, after violent unrest in Italian cities on 17 and 18 October.",
+            "fr": "Des manifestations contre la vie chère sont prévues aujourd'hui en Italie et en France, après des violences dans des villes italiennes les 17 et 18 octobre."
+          },
+          "kind": "caption",
+          "image": "italy/1.webp",
+          "w": 495,
+          "h": 749
+        },
+        {
+          "scene": "Six symbolic Italian city landmarks arranged together in one composition (a cathedral spire, an ancient arena, a mountain-backed square, a port with cranes, a red-brick tower, a dome), small crowds gathering at each.",
+          "text": {
+            "en": "Marches are planned in Milan, Rome, Turin, Bologna, Genoa and Florence: more than 30 actions in all, according to an online protest map.",
+            "fr": "Des cortèges sont prévus à Milan, Rome, Turin, Bologne, Gênes et Florence : plus de 30 actions au total, selon une carte militante en ligne."
+          },
+          "kind": "caption",
+          "image": "italy/2.webp",
+          "w": 494,
+          "h": 750
+        },
+        {
+          "scene": "Rows of police officers and soldiers in a wide city square, a surveillance drone hovering above, armoured vans parked at the edge, seen from a low angle.",
+          "text": {
+            "en": "In Milan, 500 soldiers join about 1,000 police under a new security decree, and drones will watch the marches. Rome deploys about 1,500 officers.",
+            "fr": "À Milan, 500 militaires renforcent environ 1 000 policiers au titre d'un nouveau décret sécurité, et des drones surveilleront les cortèges. Rome mobilise environ 1 500 agents."
+          },
+          "kind": "caption",
+          "image": "italy/3.webp",
+          "w": 495,
+          "h": 752
+        },
+        {
+          "scene": "A grand gothic cathedral square fenced off with metal barriers, almost empty, pigeons flying, a few officers standing guard, long shadows.",
+          "text": {
+            "en": "In Milan, authorised marches will be kept away from the cathedral square, and protests are banned in two central districts.",
+            "fr": "À Milan, les cortèges autorisés seront tenus à l'écart de la place du Duomo, et les manifestations sont interdites dans deux quartiers du centre."
+          },
+          "kind": "caption",
+          "image": "italy/4.webp",
+          "w": 495,
+          "h": 752
         }
       ]
     },
