@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 7,
+  "importVersion": 8,
   "stories": [
     {
       "id": "hormuz",
@@ -295,6 +295,87 @@
           "image": "helium/4.webp",
           "w": 489,
           "h": 747
+        }
+      ]
+    },
+    {
+      "id": "diesel",
+      "status": "published",
+      "style": {
+        "id": "noir-brush",
+        "name": {
+          "en": "Black-and-white graphic novel",
+          "fr": "Roman graphique noir et blanc"
+        }
+      },
+      "headline": {
+        "en": "First Russian diesel cargo heads for the US",
+        "fr": "Une première cargaison de diesel russe en route vers les États-Unis"
+      },
+      "sources": [
+        {
+          "name": "Baird Maritime",
+          "url": "https://www.bairdmaritime.com/shipping/tankers/russia-sends-first-us-bound-diesel-cargo-following-deal-with-trump"
+        },
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "cast": [
+        {
+          "role": "the US president",
+          "look": "elderly man with swept-back blond hair, dark suit, white shirt, long red tie"
+        },
+        {
+          "role": "the Russian president",
+          "look": "man in his seventies with thinning light hair, dark suit, calm expression"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A large tanker ploughing through a grey stormy Atlantic, seen from a low angle on the waves, heavy clouds, spray on the bow.",
+          "text": {
+            "en": "A tanker carrying 40,000 tonnes of Russian diesel is heading for New York, according to ship-tracking data cited by Reuters.",
+            "fr": "Un tanker chargé de 40 000 tonnes de diesel russe fait route vers New York, selon des données de suivi maritime citées par Reuters."
+          },
+          "kind": "caption",
+          "image": "diesel/1.webp",
+          "w": 490,
+          "h": 745
+        },
+        {
+          "scene": "Split composition: on the left the US president speaking on a phone in a classic Washington office, on the right the Russian president on a phone in an ornate Moscow office, the two halves facing each other.",
+          "text": {
+            "en": "It is the first shipment since Donald Trump announced a deal with Moscow. Russia lifted its own ban on diesel exports on 9 October.",
+            "fr": "C'est la première livraison depuis l'accord annoncé par Donald Trump avec Moscou. La Russie a levé le 9 octobre sa propre interdiction d'exporter du diesel."
+          },
+          "kind": "caption",
+          "image": "diesel/2.webp",
+          "w": 491,
+          "h": 747
+        },
+        {
+          "scene": "Close-up of a truck driver's hand holding a diesel pump nozzle at a night-time highway fuel station, trucks lined up behind under harsh light.",
+          "text": {
+            "en": "Trump said 300,000 tonnes would follow quickly, then 500,000 in November. Vladimir Putin said world diesel prices fell 5 to 6% after the deal.",
+            "fr": "Selon Donald Trump, 300 000 tonnes suivront rapidement, puis 500 000 en novembre. Vladimir Poutine affirme que les prix mondiaux du diesel ont baissé de 5 à 6 % après l'accord."
+          },
+          "kind": "caption",
+          "image": "diesel/3.webp",
+          "w": 489,
+          "h": 747
+        },
+        {
+          "scene": "A Russian oil refinery in winter, snow on the ground, tall columns and pipes, a distant plume of smoke on the horizon, a lone guard tower.",
+          "text": {
+            "en": "Russia had banned diesel exports after Ukrainian drone strikes on its refineries. The deal has strained relations between Washington and Kyiv.",
+            "fr": "La Russie avait interdit ses exportations après des frappes de drones ukrainiens sur ses raffineries. L'accord a tendu les relations entre Washington et Kyiv."
+          },
+          "kind": "caption",
+          "image": "diesel/4.webp",
+          "w": 491,
+          "h": 749
         }
       ]
     },
