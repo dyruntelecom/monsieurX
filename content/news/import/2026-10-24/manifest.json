@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 4,
+  "importVersion": 5,
   "stories": [
     {
       "id": "hormuz",
@@ -295,6 +295,68 @@
           "image": "helium/4.webp",
           "w": 489,
           "h": 747
+        }
+      ]
+    },
+    {
+      "id": "putin",
+      "status": "published",
+      "style": {
+        "id": "ligne-claire",
+        "name": {
+          "en": "Franco-Belgian clear line",
+          "fr": "Ligne claire franco-belge"
+        }
+      },
+      "headline": {
+        "en": "Putin wants a final peace, not a truce",
+        "fr": "Poutine veut une paix définitive, pas une trêve"
+      },
+      "sources": [
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "cast": [
+        {
+          "role": "the Russian president",
+          "look": "man in his seventies with thinning light hair, dark suit, calm expression"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "The Russian president speaking at a long table in an ornate hall with white columns and chandeliers, a few officials listening.",
+          "text": {
+            "en": "Vladimir Putin said future talks on Ukraine should focus on security guarantees for both countries, Reuters reports.",
+            "fr": "Vladimir Poutine a déclaré que de futures négociations sur l'Ukraine devraient porter sur des garanties de sécurité pour les deux pays, rapporte Reuters."
+          },
+          "kind": "caption",
+          "image": "putin/1.webp",
+          "w": 492,
+          "h": 744
+        },
+        {
+          "scene": "A large table map of Europe without any lettering, small chess pieces placed on several countries, hands of unseen negotiators hovering above.",
+          "text": {
+            "en": "He also wants a broader European security framework to be part of the discussions.",
+            "fr": "Il souhaite aussi que les discussions incluent un cadre de sécurité plus large pour l'Europe."
+          },
+          "kind": "caption",
+          "image": "putin/2.webp",
+          "w": 493,
+          "h": 744
+        },
+        {
+          "scene": "Two empty chairs facing each other across a long negotiation table in a grand hall, two glasses of water, winter light through tall windows.",
+          "text": {
+            "en": "Any peace, he said, should come 'in its final form', not as the result of a temporary ceasefire.",
+            "fr": "Toute paix, a-t-il dit, devrait venir « sous sa forme définitive » et non d'un cessez-le-feu temporaire."
+          },
+          "kind": "caption",
+          "image": "putin/3.webp",
+          "w": 492,
+          "h": 752
         }
       ]
     }
