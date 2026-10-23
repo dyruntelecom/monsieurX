@@ -1,0 +1,88 @@
+/* Storink Daily reader: a portrait frame, one drawing and one bubble per screen. */
+:root{
+  --night:#12161f; --paper:#f0e8d8; --rain:#98a1b0; --ink:#5b7cff; --line:#2a3142;
+  --bubble:#fbf6ea; --bubble-ink:#16181d;
+  --display:"Bricolage Grotesque","Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;
+  --letter:"Patrick Hand SC","Comic Neue","Comic Sans MS",system-ui,sans-serif;
+  --ui:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--night);color:var(--paper);font-family:var(--ui);overflow:hidden;-webkit-tap-highlight-color:transparent;overscroll-behavior:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+#bg{position:fixed;inset:-40px;background-size:cover;background-position:center;filter:blur(36px) brightness(.35) saturate(.8);transform:scale(1.1)}
+
+#frame{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  height:100dvh;width:min(100vw,calc(100dvh * 2 / 3));overflow:hidden;background:#000;touch-action:pan-x pan-y pinch-zoom}
+@media (min-width:700px){#frame{height:min(100dvh - 32px,1100px);width:min(100vw - 32px,calc((100dvh - 32px) * 2 / 3),733px);border-radius:14px;box-shadow:0 30px 90px #000a}}
+#img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+#shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#000a 0,#0000 22%,#0000 62%,#0008 100%)}
+#frame.ended #img,#frame.ended #shade{filter:blur(14px) brightness(.4)}
+
+/* top: progress, meta, headline */
+#top{position:absolute;left:0;right:0;top:0;padding:max(10px,env(safe-area-inset-top)) 12px 0;z-index:3;pointer-events:none}
+#bars{display:flex;gap:4px;height:3px}
+#bars i{flex:1;background:#fff5;border-radius:2px}
+#bars i.done,#bars i.on{background:#fff}
+#meta{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:.85rem;pointer-events:auto}
+#brand{font-family:var(--display);font-weight:800;font-size:1rem;text-decoration:none;letter-spacing:-.01em}
+#count{flex:1;color:#ffffffb8}
+#meta button,#meta a#close{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:50%;background:#0006}
+#meta svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+#headline{font-family:var(--display);font-weight:800;font-size:clamp(1.35rem,5.4vw,1.9rem);line-height:1.05;letter-spacing:-.02em;margin:14px 4px 0;
+  text-shadow:0 2px 14px #000c;opacity:0;transform:translateY(-6px);transition:opacity .35s,transform .35s;text-wrap:balance}
+#headline.show{opacity:1;transform:none}
+
+/* the bubble: one per screen */
+#bubble{position:absolute;left:14px;right:14px;bottom:max(18px,env(safe-area-inset-bottom));z-index:3;pointer-events:none;
+  background:var(--bubble);color:var(--bubble-ink);border:2.5px solid var(--bubble-ink);border-radius:4px;padding:12px 16px 14px;
+  box-shadow:5px 5px 0 #0009}
+#bubble.speech{border-radius:22px}
+#frame.has-foot #bubble{bottom:calc(max(18px,env(safe-area-inset-bottom)) + 52px)}
+#who{margin:0 0 4px;font-family:var(--ui);font-weight:600;font-size:.78rem;letter-spacing:.02em;color:#555}
+#text{margin:0;font-family:var(--letter);font-size:clamp(1.15rem,4.6vw,1.45rem);line-height:1.22}
+#frame.ended #bubble{display:none}
+
+/* sources line on the last screen of a story */
+#foot{position:absolute;left:14px;right:14px;bottom:max(12px,env(safe-area-inset-bottom));z-index:3;display:flex;flex-direction:column;gap:2px;
+  font-size:.72rem;line-height:1.35;color:#ffffffd0;text-shadow:0 1px 6px #000}
+#foot a{color:#fff;text-decoration-color:#fff8}
+#frame.ended #foot{display:none}
+
+/* tap areas */
+#prevArea,#nextArea{position:absolute;top:110px;bottom:0;z-index:2}
+#prevArea{left:0;width:33%}#nextArea{right:0;width:67%}
+#frame.ended #nextArea{display:none}
+#frame.ended #prevArea{width:20%}
+
+/* end card */
+#end{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:28px 28px max(28px,env(safe-area-inset-bottom))}
+#end h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,8vw,2.8rem);line-height:1;letter-spacing:-.02em;margin:0}
+#end p{margin:0;color:#ddd5c4}
+#end .end-date{color:var(--rain)}
+.end-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px!important}
+.end-langs a{color:var(--paper)}
+#end .end-ai{font-size:.8rem;color:var(--rain);margin-top:12px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:1px solid #ffffff55;border-radius:999px;color:var(--paper);text-decoration:none;font-weight:600}
+.btn.primary{background:var(--paper);color:var(--night);border-color:var(--paper)}
+#empty{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--rain)}
+
+/* stories index */
+#index{position:fixed;inset:0;z-index:10;background:#0b0e14;overflow:auto;padding:max(18px,env(safe-area-inset-top)) 16px 24px}
+.ix-head{display:flex;justify-content:space-between;align-items:center;max-width:720px;margin:0 auto 16px}
+.ix-head h2{font-family:var(--display);font-weight:800;margin:0;font-size:1.5rem}
+#ixList{list-style:none;padding:0;margin:0 auto;max-width:720px;display:grid;gap:10px;counter-reset:s}
+#ixList button{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;width:100%;text-align:left;padding:8px;border:1px solid var(--line);border-radius:10px}
+#ixList button:hover{border-color:var(--rain)}
+#ixList img{width:56px;aspect-ratio:2/3;object-fit:cover;border-radius:4px}
+#ixList span{font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.15}
+.ix-langs{max-width:720px;margin:18px auto 0;color:var(--rain)}
+
+#tip{position:fixed;left:50%;bottom:calc(140px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:5;background:#000c;color:#fff;font-size:.82rem;padding:8px 14px;border-radius:999px;white-space:nowrap;transition:opacity .6s;pointer-events:none}
+#tip.gone{opacity:0}
+@media (prefers-reduced-motion:reduce){#headline,#tip{transition:none}}

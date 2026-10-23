@@ -3,14 +3,16 @@
 import { join, normalize, sep } from "node:path";
 import { existsSync, mkdtempSync, rmSync, statSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { loadCatalog, SERIES_DIR, type Catalog, episodeList, bestVersion, isVisible } from "./src/content";
+import { loadCatalog, SERIES_DIR, GEN_DIR, DATA_DIR, type Catalog, episodeList, bestVersion, isVisible } from "./src/content";
 import { negotiate, uiLang, UI_LANGS, pageFromRoute, routeOf } from "./src/i18n";
 import { homePage, seriesPage, staticPage, notFoundPage, lockedPage, config } from "./src/render";
 import { readerPage } from "./src/reader";
 import { openStats, track, statsPage } from "./src/stats";
+import { newsReaderPage } from "./src/news/view";
+import { adminHome, adminEdition, adminPost } from "./src/news/admin";
+import { startScheduler, setOnChange } from "./src/news/pipeline";
 
 const PORT = Number(Bun.env.PORT || 8080);
-const DATA_DIR = Bun.env.DATA_DIR || (existsSync("/data") ? "/data" : "./data");
 const STATS_PASSWORD = Bun.env.STATS_PASSWORD || "";
 const SALT = Bun.env.STATS_SALT || "monsieur-x";
 // Set once storink.com answers in HTTPS: every other host (www, the old *.up.railway.app address) then redirects to it.
@@ -24,6 +26,10 @@ report(catalog);
 const getCatalog = () => { if (DEV) { catalog = loadCatalog(); } return catalog; };
 
 const stats = openStats(DATA_DIR);
+
+// Storink Daily: reload the catalog whenever the pipeline or the review page writes an edition.
+setOnChange(() => { catalog = loadCatalog(); });
+startScheduler();
 
 // ——— responses ———
 const html = (body: string, status = 200, extra: Record<string, string> = {}) =>
@@ -100,6 +106,21 @@ Bun.serve({
     const hr = hostRedirect(req, url); if (hr) return hr;
     if (path === "/e" && req.method === "POST") return track(req, stats, getCatalog(), SALT);
     if (path === "/health") return new Response("ok");
+    if (path === "/admin" || path.startsWith("/admin/")) {
+      if (!authorized(req)) return askAuth();
+      const noStore = { "cache-control": "no-store" };
+      if (req.method === "POST") {
+        const origin = req.headers.get("origin");
+        const host = req.headers.get("x-forwarded-host") || req.headers.get("host") || url.host;
+        if (origin && new URL(origin).host !== host) return new Response("Origine refusée", { status: 403 });
+        try { const form = await req.formData().catch(() => new FormData()); return redirect(await adminPost(path, form), 303); }
+        catch (e) { return html(`<p>Erreur : ${String((e as Error).message).replace(/[<&]/g, "")}</p><p><a href="/admin">Retour</a></p>`, 500, noStore); }
+      }
+      if (path === "/admin" || path === "/admin/") return html(adminHome(), 200, noStore);
+      const m = /^\/admin\/[a-z0-9-]+\/(\d{4}-\d{2}-\d{2})$/.exec(path);
+      const out = m && adminEdition(m[1], url.searchParams.get("ok") ? "Modifications enregistrées et en ligne." : "");
+      return out ? html(out, 200, noStore) : html("Édition introuvable", 404, noStore);
+    }
     if (req.method !== "GET" && req.method !== "HEAD") return new Response(null, { status: 405 });
 
     if (path === "/stats" || path === "/stats/") {
@@ -118,10 +139,13 @@ Bun.serve({
 
     const lr = legacyRedirect(url); if (lr) return lr;
 
+    if (path.startsWith("/gen/")) {
+      return serveFile(GEN_DIR, path.slice(5), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
+    }
     if (path.startsWith("/media/")) {
       return serveFile(SERIES_DIR, path.slice(7), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
     }
-    if (path === "/robots.txt") return new Response(`User-agent: *\nDisallow: /stats\nSitemap: ${config.siteUrl}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
+    if (path === "/robots.txt") return new Response(`User-agent: *\nDisallow: /stats\nDisallow: /admin\nSitemap: ${config.siteUrl}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
     if (path === "/sitemap.xml") return new Response(sitemap(getCatalog()), { headers: { "content-type": "application/xml" } });
 
     if (path === "/") return redirect("/" + negotiate(req.headers.get("accept-language")), 302);
@@ -146,6 +170,7 @@ Bun.serve({
           const e = versions.get(lang);
           if (e && isVisible(e, preview)) {
             if (e.access === "subscribers") return html(lockedPage(s, e, lang)); // accounts and subscriptions: not built yet
+            if (e.format === "stories") return html(newsReaderPage(c, s, e, preview));
             return html(readerPage(c, s, e, preview));
           }
           // Episode not available in this language: send to the version that exists.

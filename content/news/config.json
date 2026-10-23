@@ -1,0 +1,27 @@
+{
+  "series": "daily",
+  "baseLang": "en",
+  "langs": ["en", "fr"],
+  "storiesPerDay": 10,
+  "slidesPerStory": 4,
+  "publishHourUTC": 5,
+  "maxImagesPerDay": 60,
+  "styleMode": "match",
+  "imageSize": "1024x1536",
+  "imageQuality": "medium",
+  "feeds": [
+    { "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/rss.xml" },
+    { "name": "The Guardian", "url": "https://www.theguardian.com/world/rss" },
+    { "name": "NPR", "url": "https://feeds.npr.org/1004/rss.xml" },
+    { "name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml" },
+    { "name": "France 24", "url": "https://www.france24.com/en/rss" },
+    { "name": "DW", "url": "https://rss.dw.com/rdf/rss-en-all" }
+  ],
+  "exclude": [
+    "stories centred on the death, injury or suffering of identifiable private individuals",
+    "terror attacks, mass shootings and their perpetrators",
+    "crimes involving minors, or any story where a minor is identifiable",
+    "ongoing criminal trials or accusations against named private individuals",
+    "suicide and self-harm"
+  ]
+}

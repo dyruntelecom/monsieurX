@@ -104,13 +104,25 @@
     "nextTitle": "En préparation",
     "next": [
       {
-        "title": "L'actualité en BD",
-        "text": "Les nouvelles de la semaine racontées en quelques planches, publiées à date fixe."
-      },
-      {
         "title": "D'autres auteurs",
         "text": "Storink ouvrira ses pages à d'autres créateurs de bandes dessinées. L'espace auteurs est en cours de conception."
       }
     ]
+  },
+  "news": {
+    "stories": "Les sujets",
+    "story": "Sujet {n} sur {total}",
+    "sources": "Sources",
+    "style": "Style",
+    "ai": "Texte et dessin générés par IA à partir des sources citées.",
+    "start": "Lire l'édition",
+    "end": "C'est tout pour aujourd'hui.",
+    "endText": "Une nouvelle édition chaque matin.",
+    "previous": "Éditions précédentes",
+    "again": "Relire depuis le début",
+    "close": "Fermer",
+    "hint": "Touchez à droite ou glissez pour avancer",
+    "empty": "Aucun sujet dans cette édition.",
+    "says": "{who} :"
   }
 }

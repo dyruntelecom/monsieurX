@@ -76,6 +76,22 @@ Aucun code à toucher : on dépose un dossier et un manifeste.
 
 **Une nouvelle langue d'interface** : copier `i18n/en.json` en `i18n/<langue>.json` et traduire ; ajouter les pages fixes `content/pages/<page>.<langue>.md`.
 
+## Storink Daily (actualité en BD, générée chaque jour)
+
+Chaque matin (`publishHourUTC`, 5 h UTC par défaut), le serveur :
+1. lit les flux RSS de `content/news/config.json` ;
+2. fait choisir 10 sujets variés à un modèle de texte OpenAI (exclusions dans `exclude`, pas de redite de la veille) ;
+3. fait écrire chaque sujet en 4 écrans portrait (une bulle par écran, textes en anglais et en français, faits attribués, personnalités décrites par leur rôle et leur allure, sans nom ni jugement) ;
+4. choisit un style dans `content/news/styles.json` (15 traditions graphiques) : assorti au ton du sujet (`"styleMode": "match"`) ou au hasard (`"random"`) ;
+5. fait dessiner chaque écran **sans texte** ; Storink pose lui-même les bulles (orthographe garantie, traduction sans redessiner) ;
+6. publie au fur et à mesure dans `/data/generated/daily/episodes/<date>/` et envoie une notification avec le lien de relecture.
+
+- Lecture : `/en/daily/<date>` ou `/fr/daily/<date>` (toucher à droite ou glisser pour avancer, glisser vers le haut pour le sujet suivant).
+- Relecture : `/admin` (mot de passe des stats) : corriger un texte, modifier la description d'un dessin puis le redessiner, changer de style, retraduire depuis l'anglais, masquer ou supprimer un sujet, relancer l'édition du jour. Tout changement est en ligne immédiatement.
+- Plafond : `maxImagesPerDay` (60 par défaut), relectures comprises jusqu'à 1,5 fois ce plafond.
+- Variables Railway : `OPENAI_API_KEY` (sans elle, rien n'est généré), `NOTIFY_URL` (ex. `https://ntfy.sh/<canal>`), facultatives `OPENAI_TEXT_MODEL`, `OPENAI_IMAGE_MODEL` (sinon choisis automatiquement dans la liste des modèles du compte, voir les logs au démarrage).
+- Test sans clé : `NEWS_MOCK=1 bun server.ts`, puis `/admin` → « Générer l'édition du jour » (images factices).
+
 ## Statistiques
 
 Base SQLite `stats.db` sur le volume Railway monté sur `/data`. Aucune adresse IP, aucun cookie : l'identifiant de visiteur est une empreinte quotidienne non réversible, l'identifiant de session reste dans l'onglet du lecteur.
@@ -97,10 +113,13 @@ Chaque événement (`view`, `start`, `page`, `mode`) porte la série, l'épisode
 | `CANONICAL_HOST` | `storink.com` : redirige www et l'ancienne adresse `liseuse-production.up.railway.app` vers storink.com (vide = aucune redirection) |
 | `SITE_URL` | adresse utilisée dans les liens de partage (défaut `https://storink.com`) |
 | `ADS_ENABLED` | `1` pour afficher les emplacements publicitaires (vides pour l'instant) |
+| `OPENAI_API_KEY` | clé OpenAI de Storink Daily (génération coupée si absente) |
+| `NOTIFY_URL` | adresse qui reçoit la notification quotidienne (ntfy) |
+| `OPENAI_TEXT_MODEL`, `OPENAI_IMAGE_MODEL` | (facultatif) modèles OpenAI imposés |
 
 ## Préparé, pas encore construit
 
 - **Abonnements** : champ `access` dans les manifestes, page « réservé aux abonnés » ; pas de comptes ni de paiement.
 - **Publicité** : emplacements `adSlot()` sur l'accueil et les pages série, désactivés.
 - **Auteurs multiples** : `authors` est une liste partout ; un espace de publication pour d'autres auteurs reste à faire.
-- **Actualité en BD** : type de série `news`, épisodes datés.
+- **Actualité en BD** : en place (Storink Daily, ci-dessus).

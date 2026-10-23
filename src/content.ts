@@ -6,11 +6,14 @@ import { join, resolve, relative, sep } from "node:path";
 export const ROOT = resolve(import.meta.dir, "..");
 export const CONTENT = join(ROOT, "content");
 export const SERIES_DIR = join(CONTENT, "series");
+// Persistent volume (Railway /data): stats database and machine-generated editions (news series).
+export const DATA_DIR = resolve(Bun.env.DATA_DIR || (existsSync("/data") ? "/data" : join(ROOT, "data")));
+export const GEN_DIR = join(DATA_DIR, "generated");
 
 export type Text = Record<string, string>; // { fr: "...", en: "..." }
 export type Zone = [number, number, number, number]; // x, y, w, h as fractions of the page
 
-export type PageKind = "cover" | "comic" | "spread" | "doc" | "credits";
+export type PageKind = "cover" | "comic" | "spread" | "doc" | "credits" | "slide";
 export interface Page {
   src: string; thumb?: string; w: number; h: number;
   label: string; kind: PageKind; zones: Zone[];
@@ -38,8 +41,37 @@ export interface Episode {
   ogImage?: string;
   stamp?: string;
   pages: Page[];
+  format?: "comic" | "stories"; // "stories": generated news edition, read one bubble per screen
+  stories?: NewsStory[];
   // computed
   dir: string;              // absolute folder of this manifest
+  gen?: boolean;            // lives on the data volume (served under /gen/) rather than in git (/media/)
+}
+
+// ——— generated news editions (one manifest per day, all languages inside) ———
+export interface NewsSlide {
+  image: string; w: number; h: number;
+  text: Text;                // one bubble per screen, per language
+  kind?: "caption" | "speech";
+  speaker?: Text;
+  scene?: string;            // drawing brief sent to the image model (kept for regeneration)
+}
+export interface NewsStory {
+  id: string;
+  status: "published" | "hidden";
+  category?: string;
+  style: { id: string; name: Text };
+  headline: Text;
+  summary?: Text;
+  sources: { name: string; url: string }[];
+  slides: NewsSlide[];
+  edited?: boolean;
+  cast?: { role: string; look: string }[];
+}
+export interface NewsEdition {
+  series: string; episode: string; langs: string[]; baseLang?: string;
+  title: Text; published: string; status: Status; generatedAt?: string;
+  stories: NewsStory[];
 }
 
 export type SeriesType = "comic" | "news";
@@ -56,6 +88,7 @@ export interface Series {
   description?: Text;
   notice?: Text;
   frequency?: "daily" | "weekly"; // news series
+  source?: "generated";      // editions are produced by the news pipeline into GEN_DIR/<slug>/
   // computed
   dir: string;
   episodes: Map<string, Map<string, Episode>>; // episode -> lang -> version
@@ -71,19 +104,48 @@ export interface Catalog {
 
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
 const LANG = /^[a-z]{2}$/;
-const KINDS = new Set<PageKind>(["cover", "comic", "spread", "doc", "credits"]);
+const KINDS = new Set<PageKind>(["cover", "comic", "spread", "doc", "credits", "slide"]);
 
 function readJson(path: string): any {
   return JSON.parse(readFileSync(path, "utf8"));
 }
 const dirs = (p: string) => (existsSync(p) ? readdirSync(p).filter((d) => statSync(join(p, d)).isDirectory()).sort() : []);
 
-/** Resolves a path written in a manifest (relative to `base`) and returns it relative to SERIES_DIR, or null if it escapes `fence`. */
-export function mediaPath(base: string, rel: string, fence: string): string | null {
+/** Resolves a path written in a manifest (relative to `base`) and returns it relative to `root`, or null if it escapes `fence`. */
+export function mediaPath(base: string, rel: string, fence: string, root = SERIES_DIR): string | null {
   const abs = resolve(base, rel);
   if (!(abs + sep).startsWith(fence + sep) && abs !== fence) return null;
   if (!existsSync(abs)) return null;
-  return relative(SERIES_DIR, abs).split(sep).join("/");
+  return relative(root, abs).split(sep).join("/");
+}
+
+/** Reads a generated edition from disk (null if missing or invalid). */
+export function readEdition(slug: string, day: string): NewsEdition | null {
+  const f = join(GEN_DIR, slug, "episodes", day, "manifest.json");
+  if (!existsSync(f)) return null;
+  try { return readJson(f); } catch { return null; }
+}
+
+/** Turns a generated edition into one Episode per language: visible stories are flattened into slide pages. */
+function editionEpisodes(s: Series, ed: NewsEdition, dir: string, errors: string[]): Episode[] {
+  const langs = Array.isArray(ed.langs) && ed.langs.length ? ed.langs.filter((l) => LANG.test(l)) : ["en"];
+  const stories = (ed.stories || []).filter((st) => st.status !== "hidden" && Array.isArray(st.slides) && st.slides.length);
+  return langs.map((lang) => {
+    const pages: Page[] = [];
+    for (const st of stories) {
+      st.slides.forEach((sl, k) => {
+        if (!mediaPath(dir, sl.image, dir, GEN_DIR)) { errors.push(`${s.slug}/${ed.episode}: image introuvable ${sl.image}`); return; }
+        pages.push({ src: sl.image, w: sl.w || 1024, h: sl.h || 1536, label: `${pick(st.headline, lang)} · ${k + 1}/${st.slides.length}`, kind: "slide", zones: [] });
+      });
+    }
+    return {
+      series: s.slug, episode: ed.episode, lang, dir, gen: true, format: "stories",
+      title: (stories[0] && pick(stories[0].headline, lang)) || pick(ed.title, lang), published: ed.published, authors: s.authors,
+      status: ed.status === "published" ? "published" : "draft", access: "free",
+      cover: stories[0]?.slides[0]?.image, stories, pages,
+      blurb: stories.map((st) => pick(st.headline, lang)).slice(0, 3).join(" · "),
+    } as Episode;
+  });
 }
 
 export function loadCatalog(): Catalog {
@@ -108,6 +170,19 @@ export function loadCatalog(): Catalog {
     s.authors = Array.isArray(s.authors) ? s.authors : [];
     if (!s.title || typeof s.title !== "object") { errors.push(`${where}: "title" manquant`); continue; }
     for (const a of s.authors) if (!authors.has(a)) errors.push(`${where}: auteur inconnu "${a}" (ajouter content/authors/${a}.json)`);
+
+    if (s.source === "generated") {
+      const gdir = join(GEN_DIR, slug, "episodes");
+      for (const day of dirs(gdir)) {
+        const ed = readEdition(slug, day);
+        if (!ed) { errors.push(`${where}/${day}: édition illisible`); continue; }
+        ed.episode = day;
+        for (const e of editionEpisodes(s, ed, join(gdir, day), errors)) {
+          if (!s.episodes.has(day)) s.episodes.set(day, new Map());
+          s.episodes.get(day)!.set(e.lang, e);
+        }
+      }
+    }
 
     for (const ep of dirs(join(sdir, "episodes"))) {
       if (!SLUG.test(ep)) { errors.push(`${where}/episodes/${ep}: nom de dossier invalide`); continue; }
@@ -177,13 +252,21 @@ export function bestVersion(versions: Map<string, Episode>, lang: string): Episo
   return versions.get(lang) ?? versions.get("fr") ?? versions.get("en") ?? [...versions.values()][0];
 }
 
-export function mediaUrl(e: { dir: string }, rel: string | undefined, fenceDir: string): string | null {
+export function mediaUrl(e: { dir: string; gen?: boolean }, rel: string | undefined, fenceDir: string): string | null {
   if (!rel) return null;
+  if (e.gen) {
+    const p = mediaPath(e.dir, rel, e.dir, GEN_DIR);
+    return p ? "/gen/" + p.split("/").map(encodeURIComponent).join("/") : null;
+  }
   const p = mediaPath(e.dir, rel, fenceDir);
   return p ? "/media/" + p.split("/").map(encodeURIComponent).join("/") : null;
 }
 
 export function seriesCover(s: Series, lang: string): string | null {
+  if (s.type === "news") { // latest edition first, the static cover only as a fallback
+    const list = episodeList(s);
+    if (list.length) { const e = bestVersion(list[0].versions, lang); const u = mediaUrl(e, e.cover || e.pages[0]?.src, s.dir); if (u) return u; }
+  }
   if (s.cover) { const u = mediaUrl({ dir: s.dir }, s.cover, s.dir); if (u) return u; }
   const list = episodeList(s);
   if (list.length) { const e = bestVersion(list[0].versions, lang); return mediaUrl(e, e.cover || e.pages[0]?.src, s.dir); }
