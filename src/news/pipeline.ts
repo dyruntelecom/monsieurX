@@ -97,9 +97,9 @@ Reply with JSON:
   return [sys, user];
 }
 
-function imagePrompt(style: Style, cast: { role: string; look: string }[], scene: string): string {
+function imagePrompt(style: Style, cast: { role: string; look: string }[], scene: string, first = false): string {
   const castLine = cast.length ? `Recurring characters (keep identical): ${cast.map((c) => `${c.role}: ${c.look}`).join("; ")}. ` : "";
-  return `${style.prompt}. A single vertical comic panel in portrait format, full bleed, no border. Keep the lower fifth of the image calm and uncluttered, a caption will be laid over it. ${castLine}Scene: ${scene} Absolutely no text, letters, numbers, captions, speech bubbles, logos or watermarks anywhere in the image.`;
+  return `${style.prompt}. A single vertical comic panel in portrait format, full bleed, no border. Keep the lower fifth of the image calm and uncluttered, a caption will be laid over it.${first ? " Also keep the upper third open and simple (sky, wall, water or plain background): the story title will be laid over it." : ""} ${castLine}Scene: ${scene} Absolutely no text, letters, numbers, captions, speech bubbles, logos or watermarks anywhere in the image.`;
 }
 
 // ——— mock answers (NEWS_MOCK=1) ———
@@ -137,7 +137,7 @@ async function drawSlides(cfg: NewsConfig, series: string, day: string, story: N
     const sl = story.slides[k];
     for (let attempt = 1; attempt <= 2; attempt++) {
       try {
-        const { bytes, ext } = await generateImage(imagePrompt(style, cast, sl.scene || ""), cfg.imageSize, cfg.imageQuality);
+        const { bytes, ext } = await generateImage(imagePrompt(style, cast, sl.scene || "", k === 0), cfg.imageSize, cfg.imageQuality);
         const name = `${k + 1}-${Date.now().toString(36)}.${ext}`;
         writeFileSync(join(dir, name), bytes);
         const old = sl.image;

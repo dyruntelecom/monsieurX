@@ -32,7 +32,7 @@
     // progress bars for the current story
     $('#bars').innerHTML = st.slides.map((_, n) => `<i class="${n < k ? 'done' : n === k ? 'on' : ''}"></i>`).join('');
     $('#count').textContent = T.story.replace('{n}', si + 1).replace('{total}', S.length);
-    const h = $('#headline'); h.textContent = st.headline; h.classList.toggle('show', k === 0);
+    const h = $('#headline'); h.textContent = st.headline; h.classList.toggle('show', k === 0); frame.classList.toggle('first', k === 0);
     $('#who').textContent = sl.who ? T.says.replace('{who}', sl.who) : '';
     $('#who').hidden = !sl.who;
     $('#text').textContent = sl.who ? '“' + sl.text + '”' : sl.text;
