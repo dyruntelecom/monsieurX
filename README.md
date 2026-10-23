@@ -115,6 +115,7 @@ Chaque événement (`view`, `start`, `page`, `mode`) porte la série, l'épisode
 | `ADS_ENABLED` | `1` pour afficher les emplacements publicitaires (vides pour l'instant) |
 | `OPENAI_API_KEY` | clé OpenAI de Storink Daily (génération coupée si absente) |
 | `NOTIFY_URL` | adresse qui reçoit la notification quotidienne (ntfy) |
+| `NEWS_RUN_ON_BOOT` | `1` : génère l'édition du jour dès le redémarrage, quelle que soit l'heure |
 | `OPENAI_TEXT_MODEL`, `OPENAI_IMAGE_MODEL` | (facultatif) modèles OpenAI imposés |
 
 ## Préparé, pas encore construit

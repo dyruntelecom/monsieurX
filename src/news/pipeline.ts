@@ -325,6 +325,8 @@ export function startScheduler() {
     runEdition(day).catch((e) => console.error(e));
   };
   setTimeout(tick, 30000);
+  // NEWS_RUN_ON_BOOT=1: generate today's edition right after (re)start, whatever the hour (no-op if already complete).
+  if (Bun.env.NEWS_RUN_ON_BOOT === "1") setTimeout(() => { if (!status.running) runEdition(today()).catch((e) => console.error(e)); }, 15000);
   setInterval(tick, 10 * 60000);
   console.log(`News : Storink Daily programmé chaque jour à ${cfg.publishHour} h (${cfg.timezone})`);
 }
