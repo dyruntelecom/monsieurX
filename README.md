@@ -78,7 +78,7 @@ Aucun code à toucher : on dépose un dossier et un manifeste.
 
 ## Storink Daily (actualité en BD, générée chaque jour)
 
-Chaque matin (`publishHourUTC`, 5 h UTC par défaut), le serveur :
+Chaque matin (`publishHour`, 7 h heure de Paris par défaut, réglable avec `timezone`), le serveur :
 1. lit les flux RSS de `content/news/config.json` ;
 2. fait choisir 10 sujets variés à un modèle de texte OpenAI (exclusions dans `exclude`, pas de redite de la veille) ;
 3. fait écrire chaque sujet en 4 écrans portrait (une bulle par écran, textes en anglais et en français, faits attribués, personnalités décrites par leur rôle et leur allure, sans nom ni jugement) ;

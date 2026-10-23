@@ -8,7 +8,7 @@ import { chatJson, generateImage, aiReady, MOCK } from "./ai";
 
 export interface NewsConfig {
   series: string; baseLang: string; langs: string[]; storiesPerDay: number; slidesPerStory: number;
-  publishHourUTC: number; maxImagesPerDay: number; styleMode: "match" | "random"; imageSize: string; imageQuality: string;
+  timezone: string; publishHour: number; maxImagesPerDay: number; styleMode: "match" | "random"; imageSize: string; imageQuality: string;
   feeds: { name: string; url: string }[]; exclude: string[];
 }
 export interface Style { id: string; name: Text; fits: string; prompt: string }
@@ -16,7 +16,12 @@ export interface Style { id: string; name: Text; fits: string; prompt: string }
 export const loadConfig = (): NewsConfig => JSON.parse(readFileSync(join(CONTENT, "news", "config.json"), "utf8"));
 export const loadStyles = (): Style[] => JSON.parse(readFileSync(join(CONTENT, "news", "styles.json"), "utf8"));
 
-const today = () => new Date().toISOString().slice(0, 10);
+// Edition date and publication hour follow the readers' timezone (config "timezone"), not UTC.
+function localNow(tz: string) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", hourCycle: "h23" }).formatToParts(new Date()).map((x) => [x.type, x.value]));
+  return { day: `${p.year}-${p.month}-${p.day}`, hour: Number(p.hour) };
+}
+const today = () => { let tz = "Europe/Paris"; try { tz = loadConfig().timezone || tz; } catch {} return localNow(tz).day; };
 const dayDir = (series: string, day: string) => join(GEN_DIR, series, "episodes", day);
 const SITE = () => (Bun.env.SITE_URL || "https://storink.com").replace(/\/$/, "");
 
@@ -311,8 +316,8 @@ export function startScheduler() {
   if (!aiReady()) { console.log("News : OPENAI_API_KEY absente, Storink Daily en pause"); return; }
   const attempts = new Map<string, number>();
   const tick = () => {
-    const now = new Date(); const day = today();
-    if (status.running || now.getUTCHours() < cfg.publishHourUTC) return;
+    const { day, hour } = localNow(cfg.timezone || "Europe/Paris");
+    if (status.running || hour < cfg.publishHour) return;
     const ed = readEdition(cfg.series, day);
     if (ed && ed.stories.length >= Math.min(cfg.storiesPerDay, 6)) return;
     const n = attempts.get(day) || 0; if (n >= 2) return;
@@ -321,5 +326,5 @@ export function startScheduler() {
   };
   setTimeout(tick, 30000);
   setInterval(tick, 10 * 60000);
-  console.log(`News : Storink Daily programmé chaque jour à ${cfg.publishHourUTC} h UTC`);
+  console.log(`News : Storink Daily programmé chaque jour à ${cfg.publishHour} h (${cfg.timezone})`);
 }

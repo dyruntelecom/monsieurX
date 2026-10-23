@@ -28,9 +28,9 @@ ${status.log.length ? `<div class="log">${esc(status.log.slice(-60).join("\n"))}
 export function adminHome(): string {
   const cfg = loadConfig();
   const days = listEditions();
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: cfg.timezone || "Europe/Paris" }).format(new Date());
   return page("Storink Daily · relecture", `<div><h1>Storink Daily · relecture</h1>
-<p class="note">${aiReady() ? (MOCK ? "Mode test (NEWS_MOCK) : images factices." : `Génération automatique chaque jour à ${cfg.publishHourUTC} h UTC.`) : "OPENAI_API_KEY absente : génération en pause."} ${cfg.storiesPerDay} sujets, ${cfg.slidesPerStory} écrans chacun, styles « ${cfg.styleMode === "random" ? "aléatoires" : "assortis au sujet"} », plafond ${cfg.maxImagesPerDay} images par jour.</p></div>
+<p class="note">${aiReady() ? (MOCK ? "Mode test (NEWS_MOCK) : images factices." : `Génération automatique chaque jour à ${cfg.publishHour} h (${cfg.timezone}).`) : "OPENAI_API_KEY absente : génération en pause."} ${cfg.storiesPerDay} sujets, ${cfg.slidesPerStory} écrans chacun, styles « ${cfg.styleMode === "random" ? "aléatoires" : "assortis au sujet"} », plafond ${cfg.maxImagesPerDay} images par jour.</p></div>
 ${statusBlock()}
 <form method="post" action="/admin/run" class="row"><input type="hidden" name="day" value="${today}"><button class="primary" ${status.running || !aiReady() ? "disabled" : ""}>Générer l'édition du jour maintenant</button><label class="row note"><input type="checkbox" name="force" value="1"> compléter même si l'édition existe</label></form>
 <section><h2>Éditions</h2>${days.length ? `<ul class="days">${days.map((d) => { const ed = readEdition(cfg.series, d); return `<li><a href="/admin/${esc(cfg.series)}/${esc(d)}">${esc(d)}</a> <span class="note">${ed?.stories.length || 0} sujets · ${ed?.stories.filter((s) => s.status === "hidden").length || 0} masqués</span></li>`; }).join("")}</ul>` : `<p class="note">Aucune édition pour l'instant.</p>`}</section>
@@ -70,7 +70,7 @@ ${statusBlock()}${stories}`, status.running);
 export async function adminPost(path: string, form: FormData): Promise<string> {
   const cfg = loadConfig();
   if (path === "/admin/run") {
-    const day = String(form.get("day") || new Date().toISOString().slice(0, 10));
+    const day = String(form.get("day") || new Intl.DateTimeFormat("en-CA", { timeZone: cfg.timezone || "Europe/Paris" }).format(new Date()));
     runEdition(day, { force: form.get("force") === "1" }).catch((e) => console.error(e));
     return "/admin";
   }
