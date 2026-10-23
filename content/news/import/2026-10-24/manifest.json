@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 2,
+  "importVersion": 3,
   "stories": [
     {
       "id": "hormuz",
@@ -155,6 +155,78 @@
           "image": "coral/4.webp",
           "w": 493,
           "h": 755
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "status": "published",
+      "style": {
+        "id": "linocut",
+        "name": {
+          "en": "Linocut",
+          "fr": "Linogravure"
+        }
+      },
+      "headline": {
+        "en": "Summer heat killed over 50,000 in Europe's cities",
+        "fr": "La chaleur de l'été a tué plus de 50 000 personnes dans les villes d'Europe"
+      },
+      "sources": [
+        {
+          "name": "LSHTM",
+          "url": "https://www.lshtm.ac.uk/newsevents/news/2026/more-50000-heat-related-deaths-estimated-european-urban-areas-during-summer"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "A sun-baked southern European street at midday: closed shutters, empty café terrace chairs, heat waves rising from the pavement, a huge sun above the rooftops.",
+          "text": {
+            "en": "More than 50,000 people died from heat in European cities this summer, estimate researchers from LSHTM and Imperial College London.",
+            "fr": "Plus de 50 000 personnes sont mortes de la chaleur cet été dans les villes européennes, estiment des chercheurs de la LSHTM et de l'Imperial College de Londres."
+          },
+          "kind": "caption",
+          "image": "heat/1.webp",
+          "w": 489,
+          "h": 750
+        },
+        {
+          "scene": "A panorama of many European city skylines merged into one long horizon (domes, towers, bridges), all under the same burning sun.",
+          "text": {
+            "en": "It is the highest toll since 2000, nearly double 2003 or 2022. The study covers 854 urban areas in 30 countries.",
+            "fr": "C'est le pire bilan depuis 2000, près du double de 2003 ou de 2022. L'étude porte sur 854 zones urbaines dans 30 pays."
+          },
+          "kind": "caption",
+          "image": "heat/2.webp",
+          "w": 489,
+          "h": 751
+        },
+        {
+          "scene": "Two researchers in a university office at night, looking at curves on computer screens (no numbers or letters visible), a desk fan, an open window on a hot city.",
+          "text": {
+            "en": "About two thirds of these deaths are attributed to human-caused climate change. The figures are model estimates, not death certificates.",
+            "fr": "Environ deux tiers de ces décès sont attribués au changement climatique d'origine humaine. Ce sont des estimations par modèle, pas des certificats de décès."
+          },
+          "kind": "caption",
+          "image": "heat/3.webp",
+          "w": 487,
+          "h": 745
+        },
+        {
+          "scene": "A city square seen from above at dusk, people gathering in the shade of a few trees and around a public fountain, most of the square still glaring in the heat.",
+          "text": {
+            "en": "It is becoming increasingly clear our cities are poorly adapted to rising heat.",
+            "fr": "Il apparaît de plus en plus clairement que nos villes sont mal adaptées à la hausse des températures."
+          },
+          "kind": "speech",
+          "speaker": {
+            "en": "Pierre Masselot, co-author (LSHTM)",
+            "fr": "Pierre Masselot, coauteur (LSHTM)"
+          },
+          "image": "heat/4.webp",
+          "w": 487,
+          "h": 745
         }
       ]
     }
