@@ -99,6 +99,13 @@ Chaque matin (`publishHour`, 7 h heure de Paris par défaut, réglable avec `tim
 3. `python3 tools/edition.py build content/news/import/<date>.script.json content/news/import/<date>` : écrit le manifeste avec les sujets complets et augmente `importVersion`.
 4. Push sur `main` : au démarrage, le serveur copie l'édition sur le volume. Une édition importée n'est jamais complétée par la génération automatique.
 
+## Réseaux sociaux (Storink Daily)
+
+- Images de partage : `/cards/<série>/<date>/<sujet>/<n>-<langue>.jpg` (1080×1350, titre, bulle, sources et mention IA incrustés), fabriquées à partir des dessins sans texte. Les éditions stockent leurs images en JPEG (exigé par Instagram et par le moteur de rendu).
+- Calendrier : `content/news/social.json` — un post « édition du jour » avec lien (`editionPost`), puis un post par sujet étalé entre `firstSlot` et `lastSlot`, pour chaque langue de `x.langs`. Un créneau manqué de plus de 90 min n'est pas rattrapé.
+- X : 4 images par sujet, sans lien (sur X le post avec lien coûte bien plus cher ; `storink.com` figure sur les images). État des publications dans `/data/generated/daily/episodes/<date>/social.json`, visible et relançable dans `/admin/daily/<date>`.
+- Variables : `SOCIAL_ENABLED=1`, `X_API_KEY`, `X_API_SECRET` (app), puis par compte `X_FR_ACCESS_TOKEN`, `X_FR_ACCESS_SECRET`, `X_EN_ACCESS_TOKEN`, `X_EN_ACCESS_SECRET`.
+
 ## Statistiques
 
 Base SQLite `stats.db` sur le volume Railway monté sur `/data`. Aucune adresse IP, aucun cookie : l'identifiant de visiteur est une empreinte quotidienne non réversible, l'identifiant de session reste dans l'onglet du lecteur.

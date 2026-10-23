@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 10,
+  "importVersion": 11,
   "stories": [
     {
       "id": "hormuz",
@@ -47,7 +47,7 @@
             "fr": "Détroit d'Ormuz. Les Gardiens de la révolution iraniens affirment que plusieurs tankers ont heurté des mines ce mois-ci sur des routes non autorisées par Téhéran."
           },
           "kind": "caption",
-          "image": "hormuz/1.webp",
+          "image": "hormuz/1.jpg",
           "w": 1024,
           "h": 1536
         },
@@ -58,7 +58,7 @@
             "fr": "L'armée américaine parle de désinformation. Les centres de surveillance maritime disent n'avoir trouvé aucune preuve de ces explosions."
           },
           "kind": "caption",
-          "image": "hormuz/2.webp",
+          "image": "hormuz/2.jpg",
           "w": 1024,
           "h": 1536
         },
@@ -69,7 +69,7 @@
             "fr": "Le trafic reste environ 70 % sous son niveau d'avant-guerre. Avant la guerre, quelque 20 millions de barils de pétrole y passaient chaque jour."
           },
           "kind": "caption",
-          "image": "hormuz/3.webp",
+          "image": "hormuz/3.jpg",
           "w": 1024,
           "h": 1536
         },
@@ -80,7 +80,7 @@
             "fr": "Le pétrole a grimpé cette semaine à son plus haut depuis environ cinq mois. Les efforts pour mettre fin à la guerre américano-israélienne contre l'Iran sont dans l'impasse."
           },
           "kind": "caption",
-          "image": "hormuz/4.webp",
+          "image": "hormuz/4.jpg",
           "w": 1024,
           "h": 1536
         }
@@ -128,7 +128,7 @@
             "fr": "Le Brésil élit son président dimanche 25 octobre. Le sortant Lula, qui vise un quatrième mandat, affronte au second tour le sénateur Flávio Bolsonaro."
           },
           "kind": "caption",
-          "image": "brazil/1.webp",
+          "image": "brazil/1.jpg",
           "w": 497,
           "h": 752
         },
@@ -139,7 +139,7 @@
             "fr": "Au premier tour, le 4 octobre, Bolsonaro a obtenu environ 47 % et Lula un peu plus de 45 %. Les derniers sondages placent Bolsonaro légèrement devant, dans la marge d'erreur."
           },
           "kind": "caption",
-          "image": "brazil/2.webp",
+          "image": "brazil/2.jpg",
           "w": 496,
           "h": 753
         },
@@ -150,7 +150,7 @@
             "fr": "Sécurité, économie et corruption dominent la campagne. Le père de Flávio, l'ex-président Jair Bolsonaro, purge 27 ans de prison pour un projet de coup d'État."
           },
           "kind": "caption",
-          "image": "brazil/3.webp",
+          "image": "brazil/3.jpg",
           "w": 494,
           "h": 753
         },
@@ -161,7 +161,7 @@
             "fr": "Des diplomates étrangers envisagent de reconnaître rapidement le vainqueur, pour dissuader toute tentative extérieure de proclamer un gagnant avant l'heure, rapporte Reuters."
           },
           "kind": "caption",
-          "image": "brazil/4.webp",
+          "image": "brazil/4.jpg",
           "w": 496,
           "h": 754
         }
@@ -196,7 +196,7 @@
             "fr": "L'UICN a publié la première évaluation mondiale des écosystèmes coralliens : 127 régions dans plus de 80 pays et territoires."
           },
           "kind": "caption",
-          "image": "coral/1.webp",
+          "image": "coral/1.jpg",
           "w": 491,
           "h": 744
         },
@@ -207,7 +207,7 @@
             "fr": "Son verdict : 96 % sont en danger critique si l'on tient compte du réchauffement à venir, avec un risque très élevé d'effondrement d'ici 2075."
           },
           "kind": "caption",
-          "image": "coral/2.webp",
+          "image": "coral/2.jpg",
           "w": 494,
           "h": 744
         },
@@ -218,7 +218,7 @@
             "fr": "La chaleur est la principale menace : elle blanchit et tue les coraux. La surpêche d'espèces comme le poisson-perroquet ou le mérou aggrave les dégâts."
           },
           "kind": "caption",
-          "image": "coral/3.webp",
+          "image": "coral/3.jpg",
           "w": 491,
           "h": 755
         },
@@ -233,7 +233,7 @@
             "en": "Grethel Aguilar, IUCN Director General",
             "fr": "Grethel Aguilar, directrice générale de l'UICN"
           },
-          "image": "coral/4.webp",
+          "image": "coral/4.jpg",
           "w": 493,
           "h": 755
         }
@@ -268,7 +268,7 @@
             "fr": "Plus de 50 000 personnes sont mortes de la chaleur cet été dans les villes européennes, estiment des chercheurs de la LSHTM et de l'Imperial College de Londres."
           },
           "kind": "caption",
-          "image": "heat/1.webp",
+          "image": "heat/1.jpg",
           "w": 489,
           "h": 750
         },
@@ -279,7 +279,7 @@
             "fr": "C'est le pire bilan depuis 2000, près du double de 2003 ou de 2022. L'étude porte sur 854 zones urbaines dans 30 pays."
           },
           "kind": "caption",
-          "image": "heat/2.webp",
+          "image": "heat/2.jpg",
           "w": 489,
           "h": 751
         },
@@ -290,7 +290,7 @@
             "fr": "Environ deux tiers de ces décès sont attribués au changement climatique d'origine humaine. Ce sont des estimations par modèle, pas des certificats de décès."
           },
           "kind": "caption",
-          "image": "heat/3.webp",
+          "image": "heat/3.jpg",
           "w": 487,
           "h": 745
         },
@@ -305,7 +305,7 @@
             "en": "Pierre Masselot, co-author (LSHTM)",
             "fr": "Pierre Masselot, coauteur (LSHTM)"
           },
-          "image": "heat/4.webp",
+          "image": "heat/4.jpg",
           "w": 487,
           "h": 745
         }
@@ -340,7 +340,7 @@
             "fr": "Le département américain de l'Énergie a classé l'hélium comme matériau critique, en raison de son rôle essentiel dans la fabrication des semi-conducteurs."
           },
           "kind": "caption",
-          "image": "helium/1.webp",
+          "image": "helium/1.jpg",
           "w": 486,
           "h": 744
         },
@@ -351,7 +351,7 @@
             "fr": "L'hélium sert aussi aux IRM, aux smartphones, aux voitures et à l'informatique quantique, et pour beaucoup d'usages il est irremplaçable."
           },
           "kind": "caption",
-          "image": "helium/2.webp",
+          "image": "helium/2.jpg",
           "w": 489,
           "h": 744
         },
@@ -362,7 +362,7 @@
             "fr": "La fermeture du détroit d'Ormuz en février a bloqué un tiers de l'offre mondiale dans le Golfe. Des frappes iraniennes ont touché un producteur qatari en mars."
           },
           "kind": "caption",
-          "image": "helium/3.webp",
+          "image": "helium/3.jpg",
           "w": 486,
           "h": 747
         },
@@ -373,7 +373,7 @@
             "fr": "Ce statut ouvre davantage de financements fédéraux aux producteurs. Les États-Unis sont déjà le premier producteur mondial d'hélium."
           },
           "kind": "caption",
-          "image": "helium/4.webp",
+          "image": "helium/4.jpg",
           "w": 489,
           "h": 747
         }
@@ -408,7 +408,7 @@
             "fr": "Des manifestations contre la vie chère sont prévues aujourd'hui en Italie et en France, après des violences dans des villes italiennes les 17 et 18 octobre."
           },
           "kind": "caption",
-          "image": "italy/1.webp",
+          "image": "italy/1.jpg",
           "w": 495,
           "h": 749
         },
@@ -419,7 +419,7 @@
             "fr": "Des cortèges sont prévus à Milan, Rome, Turin, Bologne, Gênes et Florence : plus de 30 actions au total, selon une carte militante en ligne."
           },
           "kind": "caption",
-          "image": "italy/2.webp",
+          "image": "italy/2.jpg",
           "w": 494,
           "h": 750
         },
@@ -430,7 +430,7 @@
             "fr": "À Milan, 500 militaires renforcent environ 1 000 policiers au titre d'un nouveau décret sécurité, et des drones surveilleront les cortèges. Rome mobilise environ 1 500 agents."
           },
           "kind": "caption",
-          "image": "italy/3.webp",
+          "image": "italy/3.jpg",
           "w": 495,
           "h": 752
         },
@@ -441,7 +441,7 @@
             "fr": "À Milan, les cortèges autorisés seront tenus à l'écart de la place du Duomo, et les manifestations sont interdites dans deux quartiers du centre."
           },
           "kind": "caption",
-          "image": "italy/4.webp",
+          "image": "italy/4.jpg",
           "w": 495,
           "h": 752
         }
@@ -489,7 +489,7 @@
             "fr": "Un tanker chargé de 40 000 tonnes de diesel russe fait route vers New York, selon des données de suivi maritime citées par Reuters."
           },
           "kind": "caption",
-          "image": "diesel/1.webp",
+          "image": "diesel/1.jpg",
           "w": 490,
           "h": 745
         },
@@ -500,7 +500,7 @@
             "fr": "C'est la première livraison depuis l'accord annoncé par Donald Trump avec Moscou. La Russie a levé le 9 octobre sa propre interdiction d'exporter du diesel."
           },
           "kind": "caption",
-          "image": "diesel/2.webp",
+          "image": "diesel/2.jpg",
           "w": 491,
           "h": 747
         },
@@ -511,7 +511,7 @@
             "fr": "Selon Donald Trump, 300 000 tonnes suivront rapidement, puis 500 000 en novembre. Vladimir Poutine affirme que les prix mondiaux du diesel ont baissé de 5 à 6 % après l'accord."
           },
           "kind": "caption",
-          "image": "diesel/3.webp",
+          "image": "diesel/3.jpg",
           "w": 489,
           "h": 747
         },
@@ -522,7 +522,7 @@
             "fr": "La Russie avait interdit ses exportations après des frappes de drones ukrainiens sur ses raffineries. L'accord a tendu les relations entre Washington et Kyiv."
           },
           "kind": "caption",
-          "image": "diesel/4.webp",
+          "image": "diesel/4.jpg",
           "w": 491,
           "h": 749
         }
@@ -570,7 +570,7 @@
             "fr": "Elon Musk a ordonné le ralentissement d'un service Starlink de qualité militaire utilisé par l'Ukraine, a rapporté le Wall Street Journal le 20 octobre."
           },
           "kind": "caption",
-          "image": "starlink/1.webp",
+          "image": "starlink/1.jpg",
           "w": 492,
           "h": 750
         },
@@ -581,7 +581,7 @@
             "fr": "L'Ukraine s'en sert pour ses communications sur le front. Ces restrictions ont gêné ses missions de drones d'attaque et de défense aérienne, selon le journal."
           },
           "kind": "caption",
-          "image": "starlink/2.webp",
+          "image": "starlink/2.jpg",
           "w": 491,
           "h": 750
         },
@@ -592,7 +592,7 @@
             "fr": "Elon Musk assure que ces décisions relèvent de l'armée américaine ou du président. Donald Trump dit ne pas penser que lui ou Musk en soient responsables."
           },
           "kind": "caption",
-          "image": "starlink/3.webp",
+          "image": "starlink/3.jpg",
           "w": 490,
           "h": 749
         },
@@ -603,7 +603,7 @@
             "fr": "Donald Trump aurait appelé Elon Musk mercredi pour lever ces restrictions. Selon des responsables américains, le service fonctionnait ensuite plus normalement."
           },
           "kind": "caption",
-          "image": "starlink/4.webp",
+          "image": "starlink/4.jpg",
           "w": 490,
           "h": 748
         }
@@ -638,7 +638,7 @@
             "fr": "Le Trésor américain propose d'étendre les restrictions sur les investissements américains susceptibles de renforcer la puissance militaire de « pays préoccupants »."
           },
           "kind": "caption",
-          "image": "outbound/1.webp",
+          "image": "outbound/1.jpg",
           "w": 489,
           "h": 747
         },
@@ -649,7 +649,7 @@
             "fr": "Parmi ces pays figurent la Chine, la Russie et la Corée du Nord, selon l'agence Associated Press."
           },
           "kind": "caption",
-          "image": "outbound/2.webp",
+          "image": "outbound/2.jpg",
           "w": 489,
           "h": 747
         },
@@ -660,7 +660,7 @@
             "fr": "La règle viserait les systèmes hypersoniques, qui volent à au moins cinq fois la vitesse du son, ainsi que les supercalculateurs, les biotechnologies et l'IA."
           },
           "kind": "caption",
-          "image": "outbound/3.webp",
+          "image": "outbound/3.jpg",
           "w": 489,
           "h": 748
         },
@@ -671,7 +671,7 @@
             "fr": "Il ne s'agit pour l'instant que d'une proposition : la règle peut encore évoluer avant d'entrer en vigueur."
           },
           "kind": "caption",
-          "image": "outbound/4.webp",
+          "image": "outbound/4.jpg",
           "w": 489,
           "h": 747
         }
@@ -711,7 +711,7 @@
             "fr": "Vladimir Poutine a déclaré que de futures négociations sur l'Ukraine devraient porter sur des garanties de sécurité pour les deux pays, rapporte Reuters."
           },
           "kind": "caption",
-          "image": "putin/1.webp",
+          "image": "putin/1.jpg",
           "w": 492,
           "h": 744
         },
@@ -722,7 +722,7 @@
             "fr": "Il souhaite aussi que les discussions incluent un cadre de sécurité plus large pour l'Europe."
           },
           "kind": "caption",
-          "image": "putin/2.webp",
+          "image": "putin/2.jpg",
           "w": 493,
           "h": 744
         },
@@ -733,7 +733,7 @@
             "fr": "Toute paix, a-t-il dit, devrait venir « sous sa forme définitive » et non d'un cessez-le-feu temporaire."
           },
           "kind": "caption",
-          "image": "putin/3.webp",
+          "image": "putin/3.jpg",
           "w": 492,
           "h": 752
         }

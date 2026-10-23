@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds a hand-made Storink Daily edition for content/news/import/<day>/.
 
-  tools/edition.py split  <page.png> <out_dir> <story_id>   # cuts a 2x2 comic page into <story_id>/1..4.webp
+  tools/edition.py split  <page.png> <out_dir> <story_id>   # cuts a 2x2 comic page into <story_id>/1..4.jpg (JPEG: needed by Instagram and the share cards)
   tools/edition.py single <img> <out_dir> <story_id> <n>    # adds one separate image as slide n
   tools/edition.py build  <script.json> <out_dir>           # writes manifest.json for every story that has its images
 
@@ -12,7 +12,7 @@ from PIL import Image, ImageStat
 
 def save(img, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    img.convert("RGB").save(path, "WEBP", quality=86, method=6)
+    img.convert("RGB").save(path, "JPEG", quality=88, optimize=True, progressive=True)
 
 def gutter(img, axis):
     """Index of the gutter line along axis (0 = vertical gutter → x, 1 = horizontal gutter → y), searched in the middle 30%."""
@@ -56,7 +56,7 @@ def split(page, out, sid):
     for n, bx in enumerate(boxes, 1):
         panel = trim(img.crop(bx))
         i = 3  # small inset: drops any anti-aliased gutter edge
-        save(panel.crop((i, i, panel.width - i, panel.height - i)), os.path.join(out, sid, f"{n}.webp"))
+        save(panel.crop((i, i, panel.width - i, panel.height - i)), os.path.join(out, sid, f"{n}.jpg"))
     print(f"{sid}: page {W}x{H}, gutters x {x0}-{x1}, y {y0}-{y1}, cases " + ", ".join(f"{b[2]-b[0]}x{b[3]-b[1]}" for b in boxes))
 
 def build(script, out):
@@ -66,10 +66,10 @@ def build(script, out):
     for st in src["stories"]:
         slides = []
         for k, s in enumerate(st["slides"], 1):
-            p = os.path.join(out, st["id"], f"{k}.webp")
+            p = os.path.join(out, st["id"], f"{k}.jpg")
             if not os.path.exists(p): break
             w, h = Image.open(p).size
-            slides.append({**s, "image": f"{st['id']}/{k}.webp", "w": w, "h": h})
+            slides.append({**s, "image": f"{st['id']}/{k}.jpg", "w": w, "h": h})
         if len(slides) != len(st["slides"]): continue
         stories.append({"id": st["id"], "status": "published", "style": {"id": st["style"], "name": styles[st["style"]]["name"]},
                         "headline": st["headline"], "sources": st["sources"], "cast": st.get("cast", []), "slides": slides})
@@ -85,5 +85,5 @@ def build(script, out):
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "split": split(sys.argv[2], sys.argv[3], sys.argv[4])
-    elif cmd == "single": save(Image.open(sys.argv[2]), os.path.join(sys.argv[3], sys.argv[4], f"{sys.argv[5]}.webp"))
+    elif cmd == "single": save(Image.open(sys.argv[2]), os.path.join(sys.argv[3], sys.argv[4], f"{sys.argv[5]}.jpg"))
     elif cmd == "build": build(sys.argv[2], sys.argv[3])

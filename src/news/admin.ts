@@ -3,6 +3,7 @@ import { readEdition, type NewsEdition, type Text } from "../content";
 import { esc } from "../md";
 import { loadConfig, loadStyles, status, listEditions, withEdition, runEdition, regenerateSlides, retranslate, deleteStory } from "./pipeline";
 import { aiReady, MOCK } from "./ai";
+import { plan, readState, publish, socialOn, xReady, loadSocial } from "./social";
 
 const CSS = `:root{--bg:#0c0e12;--ink:#16191f;--line:#2a2f38;--fg:#efe4cf;--mut:#8d96a3;--acc:#5b7cff;--red:#d0453a;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif;padding:20px max(16px,env(safe-area-inset-left)) 60px}
@@ -63,12 +64,43 @@ export function adminEdition(day: string, msg = ""): string | null {
   return page(`Relecture ${day}`, `<p class="note"><a href="/admin">← Toutes les éditions</a></p>
 <div><h1>Storink Daily · ${esc(day)}</h1><p class="note">${ed.stories.length} sujets. Tout est publié dès la génération ; les changements enregistrés ici sont en ligne immédiatement. Les dessins décrits ici sont régénérés avec la nouvelle description si vous la modifiez avant de redessiner.</p></div>
 ${msg ? `<p class="tag" style="color:var(--acc)">${esc(msg)}</p>` : ""}
-${statusBlock()}${stories}`, status.running);
+${statusBlock()}${socialBlock(cfg.series, day)}${stories}`, status.running);
+}
+
+function socialBlock(series: string, day: string): string {
+  const posts = plan(series, day);
+  if (!posts.length) return "";
+  const st = readState(series, day);
+  const hhmm = (m: number) => `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
+  const rows = posts.map((p) => {
+    const done = st.posted[p.key]; const err = st.errors[p.key];
+    const link = done && p.network === "x" ? `<a href="https://x.com/i/web/status/${esc(done.id)}" target="_blank" rel="noopener">publié</a>` : "";
+    const stateTxt = done ? link : err ? `<span style="color:var(--red)">${esc(err.slice(0, 140))}</span>` : !xReady(p.lang) ? "clés X absentes" : "prévu";
+    return `<tr><td>${hhmm(p.at)}</td><td>X ${esc(p.lang.toUpperCase())}</td><td>${esc(p.label)}</td><td>${stateTxt}</td>
+<td>${done ? "" : `<form method="post" action="/admin/social/${esc(day)}/${encodeURIComponent(p.key)}"><button ${xReady(p.lang) ? "" : "disabled"}>Publier maintenant</button></form>`}</td>
+<td>${p.storyId ? `<a href="/cards/${esc(series)}/${esc(day)}/${esc(p.storyId)}/1-${esc(p.lang)}.jpg" target="_blank">image</a>` : ""}</td></tr>`;
+  }).join("");
+  return `<section><div class="row"><h2>Réseaux sociaux</h2><span class="tag">${socialOn() && loadSocial().enabled ? "publication automatique active" : "publication automatique coupée (SOCIAL_ENABLED)"}</span></div>
+<table style="width:100%;border-collapse:collapse;font-size:.9rem">${rows}</table></section>`;
 }
 
 /** Handles POST /admin/... ; returns where to redirect. */
 export async function adminPost(path: string, form: FormData): Promise<string> {
   const cfg = loadConfig();
+  const sm = /^\/admin\/social\/(\d{4}-\d{2}-\d{2})\/(.+)$/.exec(path);
+  if (sm) {
+    const day = sm[1], key = decodeURIComponent(sm[2]);
+    const p = plan(cfg.series, day).find((x) => x.key === key);
+    if (!p) throw new Error("publication inconnue");
+    const st = readState(cfg.series, day);
+    if (!st.posted[key]) {
+      const id = await publish(cfg.series, day, p);
+      st.posted[key] = { id, at: new Date().toISOString() }; delete st.errors[key];
+      const { writeFileSync } = await import("node:fs"); const { join } = await import("node:path"); const { GEN_DIR } = await import("../content");
+      writeFileSync(join(GEN_DIR, cfg.series, "episodes", day, "social.json"), JSON.stringify(st, null, 2));
+    }
+    return `/admin/${cfg.series}/${day}`;
+  }
   if (path === "/admin/run") {
     const day = String(form.get("day") || new Intl.DateTimeFormat("en-CA", { timeZone: cfg.timezone || "Europe/Paris" }).format(new Date()));
     runEdition(day, { force: form.get("force") === "1" }).catch((e) => console.error(e));

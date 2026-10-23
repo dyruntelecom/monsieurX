@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "timezone": "Europe/Paris",
+  "editionPost": "07:30",
+  "firstSlot": "08:00",
+  "lastSlot": "21:00",
+  "x": { "langs": ["fr", "en"] }
+}

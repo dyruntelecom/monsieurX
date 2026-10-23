@@ -10,7 +10,9 @@ import { readerPage } from "./src/reader";
 import { openStats, track, statsPage } from "./src/stats";
 import { newsReaderPage } from "./src/news/view";
 import { adminHome, adminEdition, adminPost } from "./src/news/admin";
-import { startScheduler, setOnChange } from "./src/news/pipeline";
+import { startScheduler, setOnChange, loadConfig as loadNewsConfig } from "./src/news/pipeline";
+import { startSocial } from "./src/news/social";
+import { renderCard } from "./src/news/cards";
 
 const PORT = Number(Bun.env.PORT || 8080);
 const STATS_PASSWORD = Bun.env.STATS_PASSWORD || "";
@@ -30,6 +32,7 @@ const stats = openStats(DATA_DIR);
 // Storink Daily: reload the catalog whenever the pipeline or the review page writes an edition.
 setOnChange(() => { catalog = loadCatalog(); });
 startScheduler();
+startSocial(loadNewsConfig().series);
 
 // ——— responses ———
 const html = (body: string, status = 200, extra: Record<string, string> = {}) =>
@@ -143,6 +146,15 @@ Bun.serve({
 
     const lr = legacyRedirect(url); if (lr) return lr;
 
+    // Share cards (title + bubble burned in): /cards/<series>/<day>/<story>/<n>-<lang>.jpg — public, needed by Instagram's API.
+    const card = /^\/cards\/([a-z0-9-]+)\/(\d{4}-\d{2}-\d{2})\/([a-z0-9-]+)\/(\d+)-([a-z]{2})\.jpg$/.exec(path);
+    if (card) {
+      try {
+        const [, series, day, story, n, l] = card;
+        const bytes = renderCard({ series, day, storyId: story, slide: Number(n) - 1, lang: l, dateLabel: l === "fr" ? day.split("-").reverse().join(".") : new Date(day + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) });
+        return new Response(bytes, { headers: { "content-type": "image/jpeg", "cache-control": "public, max-age=3600" } });
+      } catch { return new Response("Introuvable", { status: 404 }); }
+    }
     if (path.startsWith("/gen/")) {
       return serveFile(GEN_DIR, path.slice(5), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
     }

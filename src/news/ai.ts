@@ -65,7 +65,7 @@ export async function chatJson<T = any>(system: string, user: string, mock: () =
 export async function generateImage(prompt: string, size: string, quality: string): Promise<{ bytes: Uint8Array; ext: string }> {
   if (MOCK) return { bytes: new TextEncoder().encode(mockSvg(prompt, size)), ext: "svg" };
   const { image } = await resolveModels();
-  const body: any = { model: image, prompt, size, quality, n: 1, output_format: "webp", output_compression: 82 };
+  const body: any = { model: image, prompt, size, quality, n: 1, output_format: "jpeg", output_compression: 88 };
   let out: any;
   try { out = await api("/images/generations", body); }
   catch (e) {
@@ -77,7 +77,7 @@ export async function generateImage(prompt: string, size: string, quality: strin
   const d = out.data?.[0];
   if (d?.b64_json) {
     const bytes = Uint8Array.from(atob(d.b64_json), (c) => c.charCodeAt(0));
-    const ext = bytes[0] === 0x89 ? "png" : bytes[0] === 0xff ? "jpg" : "webp";
+    const ext = bytes[0] === 0x89 ? "png" : bytes[0] === 0xff ? "jpg" : "webp"; // JPEG requested: Instagram and share cards need it
     return { bytes, ext };
   }
   if (d?.url) {
