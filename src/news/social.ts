@@ -75,6 +75,17 @@ async function xPost(lang: string, text: string, mediaIds: string[]): Promise<st
   return String(j.data.id);
 }
 
+/** Checks the keys of one account without posting (GET /2/users/me). */
+export async function xWhoami(lang: string): Promise<string> {
+  const keys = xKeys(lang);
+  if (!keys) throw new Error("clés absentes");
+  const url = "https://api.x.com/2/users/me";
+  const r = await fetch(url, { headers: { authorization: oauthHeader("GET", url, keys) }, signal: AbortSignal.timeout(20000) });
+  const j: any = await r.json().catch(() => ({}));
+  if (!r.ok || !j?.data?.username) throw new Error(`X ${r.status}: ${JSON.stringify(j).slice(0, 300)}`);
+  return "@" + j.data.username;
+}
+
 /** X counts every character as 1 except a few ranges; keep a margin under 280. */
 const clip = (s: string, max = 270) => (s.length <= max ? s : s.slice(0, max - 1).trimEnd() + "…");
 
@@ -161,4 +172,6 @@ export function startSocial(series: string) {
   setInterval(() => tick(series).catch((e) => console.error(e)), 3 * 60000);
   setTimeout(() => tick(series).catch((e) => console.error(e)), 45000);
   console.log(`Social : publication automatique active (X ${loadSocial().x.langs.filter(xReady).join(", ") || "sans clés"})`);
+  for (const lang of loadSocial().x.langs.filter(xReady))
+    xWhoami(lang).then((u) => console.log(`Social : X ${lang} connecté en tant que ${u}`), (e) => console.warn(`Social : X ${lang} refuse les clés :`, (e as Error).message));
 }

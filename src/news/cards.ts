@@ -1,7 +1,7 @@
 // Share cards for social networks: one JPEG per screen with the title, the bubble and the sources burned in,
 // rendered from the same drawings as the site (no text in the drawings), in any language of the edition.
 import { Resvg } from "@resvg/resvg-js";
-import opentype from "opentype.js";
+import * as opentype from "opentype.js";
 import jpeg from "jpeg-js";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
