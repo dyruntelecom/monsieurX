@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 5,
+  "importVersion": 6,
   "stories": [
     {
       "id": "hormuz",
@@ -293,6 +293,74 @@
           },
           "kind": "caption",
           "image": "helium/4.webp",
+          "w": 489,
+          "h": 747
+        }
+      ]
+    },
+    {
+      "id": "outbound",
+      "status": "published",
+      "style": {
+        "id": "editorial-line",
+        "name": {
+          "en": "Editorial line drawing",
+          "fr": "Dessin de presse au trait"
+        }
+      },
+      "headline": {
+        "en": "US widens limits on investment in rivals' military tech",
+        "fr": "Washington étend les limites aux investissements dans la tech militaire de ses rivaux"
+      },
+      "sources": [
+        {
+          "name": "AP via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "The neoclassical facade of the US Treasury building in Washington with tall columns, an official walking up the steps with a folder under his arm.",
+          "text": {
+            "en": "The US Treasury has proposed a rule widening limits on American investments that could boost the military power of 'countries of concern'.",
+            "fr": "Le Trésor américain propose d'étendre les restrictions sur les investissements américains susceptibles de renforcer la puissance militaire de « pays préoccupants »."
+          },
+          "kind": "caption",
+          "image": "outbound/1.webp",
+          "w": 489,
+          "h": 747
+        },
+        {
+          "scene": "A large antique globe on a desk, a hand holding back a stream of gold coins flowing across the globe toward East Asia, simple and elegant.",
+          "text": {
+            "en": "Those countries include China, Russia and North Korea, according to the Associated Press.",
+            "fr": "Parmi ces pays figurent la Chine, la Russie et la Corée du Nord, selon l'agence Associated Press."
+          },
+          "kind": "caption",
+          "image": "outbound/2.webp",
+          "w": 489,
+          "h": 747
+        },
+        {
+          "scene": "A montage of four small vignettes in one image: a glider streaking through the upper atmosphere with a fiery trail, rows of supercomputer cabinets, a DNA double helix, a robot hand.",
+          "text": {
+            "en": "The rule would cover hypersonic systems, which fly at five times the speed of sound or more, plus supercomputing, biotechnology and AI.",
+            "fr": "La règle viserait les systèmes hypersoniques, qui volent à au moins cinq fois la vitesse du son, ainsi que les supercalculateurs, les biotechnologies et l'IA."
+          },
+          "kind": "caption",
+          "image": "outbound/3.webp",
+          "w": 489,
+          "h": 748
+        },
+        {
+          "scene": "A fountain pen resting on a blank document on a polished desk, a desk lamp, a window showing the Washington Monument at dusk.",
+          "text": {
+            "en": "For now it is only a proposal: the rule can still change before it takes effect.",
+            "fr": "Il ne s'agit pour l'instant que d'une proposition : la règle peut encore évoluer avant d'entrer en vigueur."
+          },
+          "kind": "caption",
+          "image": "outbound/4.webp",
           "w": 489,
           "h": 747
         }
