@@ -125,3 +125,15 @@ section > h2.eyebrow{font-family:var(--ui);font-size:.95rem;font-weight:600;colo
   .series-head{grid-template-columns:1fr}.series-cover{max-width:220px}
   .ep{grid-template-columns:60px minmax(0,1fr)}.ep .go{display:none}
 }
+
+/* news series: one block per day, one card per story */
+.day h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 18px}
+.day + .day{margin-top:44px}
+.story-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:22px}
+.story-card{display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.story-card .thumb{aspect-ratio:2/3;border-radius:8px;overflow:hidden;background:var(--panel);border:1px solid var(--line)}
+.story-card .thumb img{width:100%;height:100%;object-fit:cover}
+.story-card:hover .thumb{border-color:var(--rain)}
+.story-card .title{font-family:var(--display);font-weight:700;font-size:1.08rem;line-height:1.15;text-wrap:balance}
+.story-card .style{font-size:.85rem;color:var(--rain)}
+@media (max-width:640px){.story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.story-card .title{font-size:.98rem}}

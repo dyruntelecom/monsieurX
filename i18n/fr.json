@@ -123,6 +123,11 @@
     "close": "Fermer",
     "hint": "Touchez à droite ou glissez pour avancer",
     "empty": "Aucun sujet dans cette édition.",
-    "says": "{who} :"
+    "says": "{who} :",
+    "next": "Sujet suivant",
+    "allToday": "Tous les sujets du {date}",
+    "endStory": "Fin du sujet",
+    "lastStory": "C'était le dernier sujet du jour.",
+    "storyN": "Sujet {n} sur {total}"
   }
 }

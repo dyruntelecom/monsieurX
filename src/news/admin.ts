@@ -45,7 +45,7 @@ export function adminEdition(day: string, msg = ""): string | null {
   const field = (name: string, t: Text | undefined, area = true) => L.map((l) => `<label class="lbl">${l.toUpperCase()}</label>${area ? `<textarea name="${name}.${l}">${esc(t?.[l] || "")}</textarea>` : `<input type="text" name="${name}.${l}" value="${esc(t?.[l] || "")}">`}`).join("");
   const stories = ed.stories.map((st, n) => `<article class="story${st.status === "hidden" ? " hidden" : ""}" id="${esc(st.id)}">
 <div class="row"><h2>${n + 1}. ${esc(st.headline[cfg.baseLang] || "")}</h2><span class="tag">${esc(st.style.name.fr || st.style.id)}</span>${st.status === "hidden" ? '<span class="tag" style="color:var(--red)">masqué</span>' : ""}${st.edited ? '<span class="tag">modifié</span>' : ""}
-<a class="note" href="/${esc(cfg.baseLang)}/${esc(cfg.series)}/${esc(day)}#s${n + 1}-1" target="_blank">voir en ligne</a></div>
+<a class="note" href="/${esc(cfg.baseLang)}/${esc(cfg.series)}/${esc(day)}/${esc(st.id)}" target="_blank">voir en ligne</a></div>
 <p class="note">Sources : ${st.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(", ")}</p>
 <form method="post" action="/admin/${esc(cfg.series)}/${esc(day)}/${esc(st.id)}/save" style="display:grid;gap:12px">
 <div>${field("headline", st.headline, false)}</div>

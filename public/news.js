@@ -31,7 +31,7 @@
     img.src = sl.src; bg.style.backgroundImage = `url("${sl.src}")`;
     // progress bars for the current story
     $('#bars').innerHTML = st.slides.map((_, n) => `<i class="${n < k ? 'done' : n === k ? 'on' : ''}"></i>`).join('');
-    $('#count').textContent = T.story.replace('{n}', si + 1).replace('{total}', S.length);
+    $('#count').textContent = T.storyN.replace('{n}', D.position).replace('{total}', D.total);
     const h = $('#headline'); h.textContent = st.headline; h.classList.toggle('show', k === 0); frame.classList.toggle('first', k === 0);
     $('#who').textContent = sl.who ? T.says.replace('{who}', sl.who) : '';
     $('#who').hidden = !sl.who;
@@ -42,8 +42,8 @@
       ? `<span>${esc(T.sources)}${C}${st.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ')}</span><span>${esc(T.style)}${C}${esc(st.style)} · ${esc(T.ai)}</span>`
       : '';
     frame.classList.toggle('has-foot', last);
-    if (!seen.has(i)) { seen.add(i); track('page', { p: i }); }
-    try { history.replaceState(null, '', '#s' + (si + 1) + '-' + (k + 1)); } catch (e) {}
+    if (!seen.has(i)) { seen.add(i); track('page', { p: D.offset + i }); }
+    try { history.replaceState(null, '', '#' + (k + 1)); } catch (e) {}
     store.set(D.key, String(i));
     for (let n = 1; n <= 3; n++) load(i + n);
   }
@@ -63,8 +63,8 @@
   }
   const next = () => (ended ? null : go(i + 1));
   const prev = () => (ended ? go(flat.length - 1) : go(i - 1));
-  const nextStory = () => { const si = flat[i].si; const n = flat.findIndex((f) => f.si === si + 1); n < 0 ? showEnd() : go(n); };
-  const prevStory = () => { const si = flat[i].si; const n = flat.findIndex((f) => f.si === Math.max(0, (flat[i].k === 0 ? si - 1 : si))); go(n); };
+  const nextStory = () => { if (D.next) location.href = D.next.url; else showEnd(); };
+  const prevStory = () => go(0);
 
   $('#nextArea').addEventListener('click', next);
   $('#prevArea').addEventListener('click', prev);
@@ -80,34 +80,20 @@
     if (Math.abs(dx) > Math.abs(dy)) dx < 0 ? next() : prev(); else dy < 0 ? nextStory() : prevStory();
   });
   addEventListener('keydown', (e) => {
-    if (!$('#index').hidden) { if (e.key === 'Escape') closeIndex(); return; }
     if (['ArrowRight', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); next(); }
     else if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); prev(); }
     else if (e.key === 'ArrowDown') { e.preventDefault(); nextStory(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); prevStory(); }
   });
 
-  // index of stories
-  const ix = $('#ixList');
-  S.forEach((st, si) => {
-    const li = document.createElement('li');
-    li.innerHTML = `<button><img loading="lazy" src="${esc(st.slides[0].src)}" alt=""><span>${esc(st.headline)}</span></button>`;
-    li.querySelector('button').onclick = () => { closeIndex(); go(flat.findIndex((f) => f.si === si)); };
-    ix.appendChild(li);
-  });
-  function openIndex() { $('#index').hidden = false; }
-  function closeIndex() { $('#index').hidden = true; }
-  $('#ixBtn').onclick = openIndex; $('#ixClose').onclick = closeIndex;
-
   // tip
   const tip = $('#tip');
   function hideTip() { tip.classList.add('gone'); }
 
-  // start: deep link (#s3-2), else saved position, else the beginning
-  const m = /^#s(\d+)-(\d+)$/.exec(location.hash);
+  // start: deep link (#2 = second screen), else the beginning
+  const m = /^#(\d+)$/.exec(location.hash);
   let startAt = 0;
-  if (m) { const n = flat.findIndex((f) => f.si === +m[1] - 1 && f.k === +m[2] - 1); if (n >= 0) startAt = n; }
-  else { const saved = Number(store.get(D.key)); if (saved > 0 && saved < flat.length) startAt = saved; }
+  if (m && +m[1] >= 1 && +m[1] <= flat.length) startAt = +m[1] - 1;
   i = startAt; render();
   if (!startAt) { tip.classList.remove('gone'); setTimeout(hideTip, 3500); }
 })();

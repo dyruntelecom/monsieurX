@@ -2,7 +2,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { CONTENT, type Catalog, type Series, type Episode, pick, episodeList, seriesLangs, bestVersion, seriesCover, mediaUrl } from "./content";
-import { t, tr, uiLang, langName, fmtDate, routeOf, UI_LANGS } from "./i18n";
+import { t, tr, uiLang, langName, fmtDate, fmtDay, routeOf, UI_LANGS } from "./i18n";
 import { esc, markdown } from "./md";
 
 export const config = {
@@ -164,11 +164,27 @@ ${date ? `<span class="date">${esc(date)}</span>` : ""}
 ${desc ? `<p class="lead">${esc(desc)}</p>` : ""}
 ${s.notice ? `<p class="notice">${esc(pick(s.notice, L))}</p>` : ""}
 ${s.aiAssisted ? `<p class="ai-badge">${esc(t(L, "site.aiShort"))}</p>` : ""}</div></section>
-<section aria-labelledby="eps-h"><h2 id="eps-h" class="eyebrow">${esc(t(L, "series.episodes"))}</h2>
-${eps.length ? `<ul class="eps">${items}</ul>` : `<p class="muted">${esc(t(L, "series.comingSoon"))}</p>`}</section>
+${s.type === "news" ? newsDays(s, eps, L) : `<section aria-labelledby="eps-h"><h2 id="eps-h" class="eyebrow">${esc(t(L, "series.episodes"))}</h2>
+${eps.length ? `<ul class="eps">${items}</ul>` : `<p class="muted">${esc(t(L, "series.comingSoon"))}</p>`}</section>`}
 ${adSlot("series")}`;
   return page({ lang: L, title: `${pick(s.title, L)} · Storink`, description: desc, path: `/${L}/${s.slug}`, image: cover,
     alternates: UI_LANGS.map((l) => ({ lang: l, path: `/${l}/${s.slug}` })) }, body, allLangPaths((l) => `/${l}/${s.slug}`));
+}
+
+/** News series: one section per day (the date is the heading), one card per story. */
+function newsDays(s: Series, eps: { id: string; versions: Map<string, Episode> }[], L: string): string {
+  if (!eps.length) return `<p class="muted">${esc(t(L, "series.comingSoon"))}</p>`;
+  return eps.map(({ id, versions }) => {
+    const e = bestVersion(versions, L);
+    const cards = (e.stories || []).map((st) => {
+      const img = mediaUrl(e, st.slides[0]?.image, s.dir);
+      return `<li><a class="story-card" href="/${esc(e.lang)}/${esc(s.slug)}/${esc(id)}/${esc(st.id)}">
+<span class="thumb">${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : ""}</span>
+<span class="title">${esc(pick(st.headline, e.lang))}</span>
+<span class="style">${esc(pick(st.style?.name, L))}</span></a></li>`;
+    }).join("");
+    return `<section class="day" id="d${esc(id)}" aria-labelledby="h${esc(id)}"><h2 id="h${esc(id)}">${esc(fmtDay(L, e.published || id))}</h2><ul class="story-grid">${cards}</ul></section>`;
+  }).join("");
 }
 
 // ——— fixed pages (content/pages/<page>.<lang>.md) ———

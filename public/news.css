@@ -87,3 +87,11 @@ a{color:inherit}
 #tip{position:fixed;left:50%;bottom:calc(140px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:5;background:#000c;color:#fff;font-size:.82rem;padding:8px 14px;border-radius:999px;white-space:nowrap;transition:opacity .6s;pointer-events:none}
 #tip.gone{opacity:0}
 @media (prefers-reduced-motion:reduce){#headline,#tip{transition:none}}
+
+/* end of a story: next story card */
+.end-label{font-size:.85rem;color:var(--rain);margin-top:6px!important}
+.next-card{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center;padding:10px;border:1px solid #ffffff40;border-radius:12px;text-decoration:none;background:#0006}
+.next-card img{width:84px;aspect-ratio:2/3;object-fit:cover;border-radius:6px}
+.next-card span{font-family:var(--display);font-weight:800;font-size:1.25rem;line-height:1.1}
+.next-card:hover{border-color:#fff}
+#meta a#ixBtn{width:36px;height:36px;display:inline-grid;place-items:center;border-radius:50%;background:#0006}

@@ -123,6 +123,11 @@
     "close": "Close",
     "hint": "Tap the right side or swipe to move on",
     "empty": "No stories in this edition.",
-    "says": "{who}:"
+    "says": "{who}:",
+    "next": "Next story",
+    "allToday": "All stories of {date}",
+    "endStory": "End of story",
+    "lastStory": "That was the last story of the day.",
+    "storyN": "Story {n} of {total}"
   }
 }

@@ -35,6 +35,13 @@ export function tr(lang: string, key: string): any {
 /** Name of a language in its own language when we have a dictionary for it, else the code. */
 export const langName = (code: string) => DICTS.get(code)?.langName ?? (new Intl.DisplayNames([code], { type: "language" }).of(code) || code);
 
+export function fmtDay(lang: string, iso: string): string {
+  const d = new Date(iso + "T12:00:00Z");
+  if (isNaN(+d)) return iso;
+  const out = d.toLocaleDateString(DICTS.get(uiLang(lang))?.locale || lang, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+  return out.charAt(0).toUpperCase() + out.slice(1);
+}
+
 export function fmtDate(lang: string, iso?: string): string {
   if (!iso) return "";
   const d = new Date(iso + "T12:00:00Z");

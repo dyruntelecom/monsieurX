@@ -92,7 +92,11 @@ function sitemap(c: Catalog): string {
   for (const s of c.series.values()) {
     if (s.status !== "published") continue;
     for (const l of UI_LANGS) urls.add(`/${l}/${s.slug}`);
-    for (const { id, versions } of episodeList(s)) for (const e of versions.values()) if (e.access === "free") urls.add(`/${e.lang}/${s.slug}/${id}`);
+    for (const { id, versions } of episodeList(s)) for (const e of versions.values()) {
+      if (e.access !== "free") continue;
+      if (e.format === "stories") for (const st of e.stories || []) urls.add(`/${e.lang}/${s.slug}/${id}/${st.id}`);
+      else urls.add(`/${e.lang}/${s.slug}/${id}`);
+    }
   }
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...urls].map((u) => `<url><loc>${config.siteUrl}${u}</loc></url>`).join("\n")}\n</urlset>\n`;
 }
@@ -163,6 +167,20 @@ Bun.serve({
         const s = c.series.get(a);
         if (s && (s.status === "published" || preview)) return html(seriesPage(c, s, lang, preview));
       }
+      // News series: /:lang/:series/:day lists the day on the series page; /:lang/:series/:day/:story reads one story.
+      if (parts.length === 3 && c.series.get(a)?.type === "news") return redirect(`/${uiLang(lang)}/${a}#d${b}`, 302);
+      if (parts.length === 4) {
+        const s = c.series.get(a);
+        const versions = s?.type === "news" ? s.episodes.get(b) : undefined;
+        if (s && versions) {
+          const e = versions.get(lang) ?? (() => { const vis = [...versions.values()].filter((v) => isVisible(v, preview)); return vis.length ? bestVersion(new Map(vis.map((v) => [v.lang, v])), lang) : undefined; })();
+          if (e && isVisible(e, preview)) {
+            if (e.lang !== lang) return redirect(`/${e.lang}/${a}/${b}/${parts[3]}${url.search}`, 302);
+            const out = newsReaderPage(c, s, e, preview, parts[3]);
+            if (out) return html(out);
+          }
+        }
+      }
       if (parts.length === 3) {
         const s = c.series.get(a);
         const versions = s?.episodes.get(b);
@@ -170,7 +188,6 @@ Bun.serve({
           const e = versions.get(lang);
           if (e && isVisible(e, preview)) {
             if (e.access === "subscribers") return html(lockedPage(s, e, lang)); // accounts and subscriptions: not built yet
-            if (e.format === "stories") return html(newsReaderPage(c, s, e, preview));
             return html(readerPage(c, s, e, preview));
           }
           // Episode not available in this language: send to the version that exists.
