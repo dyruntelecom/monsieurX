@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 8,
+  "importVersion": 9,
   "stories": [
     {
       "id": "hormuz",
@@ -83,6 +83,87 @@
           "image": "hormuz/4.webp",
           "w": 1024,
           "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "brazil",
+      "status": "published",
+      "style": {
+        "id": "muralism",
+        "name": {
+          "en": "Mexican muralism",
+          "fr": "Muralisme mexicain"
+        }
+      },
+      "headline": {
+        "en": "Brazil votes Sunday: Lula against Flávio Bolsonaro",
+        "fr": "Le Brésil vote dimanche : Lula face à Flávio Bolsonaro"
+      },
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off"
+        },
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "cast": [
+        {
+          "role": "the incumbent president of Brazil",
+          "look": "elderly man with short white hair and a full white beard, dark suit, warm smile"
+        },
+        {
+          "role": "the challenger, a senator",
+          "look": "man in his mid-forties, short dark hair, clean-shaven, dark suit and tie"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A vast crowd on a wide modernist esplanade in Brasília under a bright sky, many green and yellow flags without any lettering, the curved white government buildings in the background.",
+          "text": {
+            "en": "Brazil elects its president on Sunday 25 October. Incumbent Lula, seeking a fourth term, faces senator Flávio Bolsonaro in the run-off.",
+            "fr": "Le Brésil élit son président dimanche 25 octobre. Le sortant Lula, qui vise un quatrième mandat, affronte au second tour le sénateur Flávio Bolsonaro."
+          },
+          "kind": "caption",
+          "image": "brazil/1.webp",
+          "w": 497,
+          "h": 752
+        },
+        {
+          "scene": "Two rallies facing each other across the image: on the left the incumbent president waving to a crowd in red, on the right the challenger waving to a crowd in green and yellow, both on stages, same size, same dignity.",
+          "text": {
+            "en": "In the first round on 4 October, Bolsonaro won about 47% and Lula just over 45%. Recent polls put Bolsonaro slightly ahead, within the margin of error.",
+            "fr": "Au premier tour, le 4 octobre, Bolsonaro a obtenu environ 47 % et Lula un peu plus de 45 %. Les derniers sondages placent Bolsonaro légèrement devant, dans la marge d'erreur."
+          },
+          "kind": "caption",
+          "image": "brazil/2.webp",
+          "w": 496,
+          "h": 753
+        },
+        {
+          "scene": "A busy São Paulo street at evening: a market stall with fruit, people carrying shopping bags, a police car passing slowly, skyscrapers behind.",
+          "text": {
+            "en": "Crime, the economy and corruption dominate the campaign. Flávio's father, ex-president Jair Bolsonaro, is serving 27 years for a coup plot.",
+            "fr": "Sécurité, économie et corruption dominent la campagne. Le père de Flávio, l'ex-président Jair Bolsonaro, purge 27 ans de prison pour un projet de coup d'État."
+          },
+          "kind": "caption",
+          "image": "brazil/3.webp",
+          "w": 494,
+          "h": 753
+        },
+        {
+          "scene": "A group of foreign diplomats of different origins seated around a round table in an embassy salon, small plain flags on the table, discussing quietly, tall windows with tropical trees outside.",
+          "text": {
+            "en": "Foreign diplomats are discussing a quick recognition of the winner, to deter any outside attempt to declare a winner early, Reuters reports.",
+            "fr": "Des diplomates étrangers envisagent de reconnaître rapidement le vainqueur, pour dissuader toute tentative extérieure de proclamer un gagnant avant l'heure, rapporte Reuters."
+          },
+          "kind": "caption",
+          "image": "brazil/4.webp",
+          "w": 496,
+          "h": 754
         }
       ]
     },
