@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 1,
+  "importVersion": 2,
   "stories": [
     {
       "id": "hormuz",
@@ -83,6 +83,78 @@
           "image": "hormuz/4.webp",
           "w": 1024,
           "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "coral",
+      "status": "published",
+      "style": {
+        "id": "watercolour",
+        "name": {
+          "en": "Watercolour",
+          "fr": "Aquarelle"
+        }
+      },
+      "headline": {
+        "en": "Almost all coral reefs at high risk of collapse",
+        "fr": "Presque tous les récifs coralliens menacés d'effondrement"
+      },
+      "sources": [
+        {
+          "name": "IUCN",
+          "url": "https://iucn.org/press-release/202610/virtually-all-coral-reef-ecosystems-face-high-risk-collapse-50-years-iucn-red"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "A colourful tropical coral reef seen underwater, shoals of small fish, a diver-scientist in a wetsuit taking notes on a slate, sun rays coming through clear turquoise water.",
+          "text": {
+            "en": "The IUCN has published the first global assessment of coral reef ecosystems: 127 regions in more than 80 countries and territories.",
+            "fr": "L'UICN a publié la première évaluation mondiale des écosystèmes coralliens : 127 régions dans plus de 80 pays et territoires."
+          },
+          "kind": "caption",
+          "image": "coral/1.webp",
+          "w": 491,
+          "h": 744
+        },
+        {
+          "scene": "A coral reef split down the middle: the left half alive and colourful, the right half bleached ghostly white with a few lonely fish, the same water and light on both sides.",
+          "text": {
+            "en": "Its verdict: 96% are critically endangered once future ocean warming is counted, with an extremely high risk of collapse by 2075.",
+            "fr": "Son verdict : 96 % sont en danger critique si l'on tient compte du réchauffement à venir, avec un risque très élevé d'effondrement d'ici 2075."
+          },
+          "kind": "caption",
+          "image": "coral/2.webp",
+          "w": 494,
+          "h": 744
+        },
+        {
+          "scene": "A parrotfish and a large grouper swimming near pale corals, the shadow of a fishing net and a boat hull at the surface above, warm hazy water.",
+          "text": {
+            "en": "Heat is the main threat: it bleaches and kills corals. Overfishing of species such as parrotfish and grouper adds to the damage.",
+            "fr": "La chaleur est la principale menace : elle blanchit et tue les coraux. La surpêche d'espèces comme le poisson-perroquet ou le mérou aggrave les dégâts."
+          },
+          "kind": "caption",
+          "image": "coral/3.webp",
+          "w": 491,
+          "h": 755
+        },
+        {
+          "scene": "A young coral fragment growing on a restoration frame underwater, small fish coming back around it, light from above, a hopeful mood.",
+          "text": {
+            "en": "It is not too late to give coral reefs a chance to recover.",
+            "fr": "Il n'est pas trop tard pour donner aux récifs coralliens une chance de se rétablir."
+          },
+          "kind": "speech",
+          "speaker": {
+            "en": "Grethel Aguilar, IUCN Director General",
+            "fr": "Grethel Aguilar, directrice générale de l'UICN"
+          },
+          "image": "coral/4.webp",
+          "w": 493,
+          "h": 755
         }
       ]
     }
