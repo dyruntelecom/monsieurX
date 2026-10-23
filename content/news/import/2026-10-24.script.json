@@ -1,0 +1,543 @@
+{
+  "day": "2026-10-24",
+  "stories": [
+    {
+      "id": "hormuz",
+      "style": "ukiyo-e",
+      "cast": [],
+      "headline": {
+        "en": "Hormuz: Iran claims tanker mine strikes, the US denies",
+        "fr": "Ormuz : l'Iran revendique des tankers minés, Washington dément"
+      },
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "Wide view of a narrow sea strait at dawn between arid rocky mountains. Two huge oil tankers in the middle distance, a thin column of dark smoke rising far away on the horizon, a small patrol boat in the foreground cutting through the waves.",
+          "text": {
+            "en": "Strait of Hormuz. Iran's Revolutionary Guard says several tankers hit mines this month on routes Tehran had not authorised.",
+            "fr": "Détroit d'Ormuz. Les Gardiens de la révolution iraniens affirment que plusieurs tankers ont heurté des mines ce mois-ci sur des routes non autorisées par Téhéran."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Inside a dim naval operations room: three officers in US Navy uniforms stand around a large glowing radar table showing small ship dots, one of them shaking his head, blue light on their faces.",
+          "text": {
+            "en": "The US military calls these claims disinformation. Maritime monitors say they found no evidence of the mine strikes.",
+            "fr": "L'armée américaine parle de désinformation. Les centres de surveillance maritime disent n'avoir trouvé aucune preuve de ces explosions."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "High aerial view of the strait with very few ships: wide empty water, one lone tanker escorted by a grey warship, long wakes behind them, mountains along the coast.",
+          "text": {
+            "en": "Ship traffic is still about 70% below pre-war levels. Before the war, some 20 million barrels of oil a day passed through here.",
+            "fr": "Le trafic reste environ 70 % sous son niveau d'avant-guerre. Avant la guerre, quelque 20 millions de barils de pétrole y passaient chaque jour."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A coastal oil refinery at dusk with tall flaring chimneys, storage tanks, heavy storm clouds gathering over the sea beyond, waves breaking on the shore.",
+          "text": {
+            "en": "Oil prices climbed this week to about a five-month high. Efforts to end the US-Israel war on Iran remain deadlocked.",
+            "fr": "Le pétrole a grimpé cette semaine à son plus haut depuis environ cinq mois. Les efforts pour mettre fin à la guerre américano-israélienne contre l'Iran sont dans l'impasse."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "brazil",
+      "style": "muralism",
+      "cast": [
+        {
+          "role": "the incumbent president of Brazil",
+          "look": "elderly man with short white hair and a full white beard, dark suit, warm smile"
+        },
+        {
+          "role": "the challenger, a senator",
+          "look": "man in his mid-forties, short dark hair, clean-shaven, dark suit and tie"
+        }
+      ],
+      "headline": {
+        "en": "Brazil votes Sunday: Lula against Flávio Bolsonaro",
+        "fr": "Le Brésil vote dimanche : Lula face à Flávio Bolsonaro"
+      },
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off"
+        },
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A vast crowd on a wide modernist esplanade in Brasília under a bright sky, many green and yellow flags without any lettering, the curved white government buildings in the background.",
+          "text": {
+            "en": "Brazil elects its president on Sunday 25 October. Incumbent Lula, seeking a fourth term, faces senator Flávio Bolsonaro in the run-off.",
+            "fr": "Le Brésil élit son président dimanche 25 octobre. Le sortant Lula, qui vise un quatrième mandat, affronte au second tour le sénateur Flávio Bolsonaro."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Two rallies facing each other across the image: on the left the incumbent president waving to a crowd in red, on the right the challenger waving to a crowd in green and yellow, both on stages, same size, same dignity.",
+          "text": {
+            "en": "In the first round on 4 October, Bolsonaro won about 47% and Lula just over 45%. Recent polls put Bolsonaro slightly ahead, within the margin of error.",
+            "fr": "Au premier tour, le 4 octobre, Bolsonaro a obtenu environ 47 % et Lula un peu plus de 45 %. Les derniers sondages placent Bolsonaro légèrement devant, dans la marge d'erreur."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A busy São Paulo street at evening: a market stall with fruit, people carrying shopping bags, a police car passing slowly, skyscrapers behind.",
+          "text": {
+            "en": "Crime, the economy and corruption dominate the campaign. Flávio's father, ex-president Jair Bolsonaro, is serving 27 years for a coup plot.",
+            "fr": "Sécurité, économie et corruption dominent la campagne. Le père de Flávio, l'ex-président Jair Bolsonaro, purge 27 ans de prison pour un projet de coup d'État."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A group of foreign diplomats of different origins seated around a round table in an embassy salon, small plain flags on the table, discussing quietly, tall windows with tropical trees outside.",
+          "text": {
+            "en": "Foreign diplomats are discussing a quick recognition of the winner, to deter any outside attempt to declare a winner early, Reuters reports.",
+            "fr": "Des diplomates étrangers envisagent de reconnaître rapidement le vainqueur, pour dissuader toute tentative extérieure de proclamer un gagnant avant l'heure, rapporte Reuters."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "coral",
+      "style": "watercolour",
+      "cast": [],
+      "headline": {
+        "en": "Almost all coral reefs at high risk of collapse",
+        "fr": "Presque tous les récifs coralliens menacés d'effondrement"
+      },
+      "sources": [
+        {
+          "name": "IUCN",
+          "url": "https://iucn.org/press-release/202610/virtually-all-coral-reef-ecosystems-face-high-risk-collapse-50-years-iucn-red"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A colourful tropical coral reef seen underwater, shoals of small fish, a diver-scientist in a wetsuit taking notes on a slate, sun rays coming through clear turquoise water.",
+          "text": {
+            "en": "The IUCN has published the first global assessment of coral reef ecosystems: 127 regions in more than 80 countries and territories.",
+            "fr": "L'UICN a publié la première évaluation mondiale des écosystèmes coralliens : 127 régions dans plus de 80 pays et territoires."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A coral reef split down the middle: the left half alive and colourful, the right half bleached ghostly white with a few lonely fish, the same water and light on both sides.",
+          "text": {
+            "en": "Its verdict: 96% are critically endangered once future ocean warming is counted, with an extremely high risk of collapse by 2075.",
+            "fr": "Son verdict : 96 % sont en danger critique si l'on tient compte du réchauffement à venir, avec un risque très élevé d'effondrement d'ici 2075."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A parrotfish and a large grouper swimming near pale corals, the shadow of a fishing net and a boat hull at the surface above, warm hazy water.",
+          "text": {
+            "en": "Heat is the main threat: it bleaches and kills corals. Overfishing of species such as parrotfish and grouper adds to the damage.",
+            "fr": "La chaleur est la principale menace : elle blanchit et tue les coraux. La surpêche d'espèces comme le poisson-perroquet ou le mérou aggrave les dégâts."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A young coral fragment growing on a restoration frame underwater, small fish coming back around it, light from above, a hopeful mood.",
+          "text": {
+            "en": "It is not too late to give coral reefs a chance to recover.",
+            "fr": "Il n'est pas trop tard pour donner aux récifs coralliens une chance de se rétablir."
+          },
+          "kind": "speech",
+          "speaker": {
+            "en": "Grethel Aguilar, IUCN Director General",
+            "fr": "Grethel Aguilar, directrice générale de l'UICN"
+          }
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "style": "linocut",
+      "cast": [],
+      "headline": {
+        "en": "Summer heat killed over 50,000 in Europe's cities",
+        "fr": "La chaleur de l'été a tué plus de 50 000 personnes dans les villes d'Europe"
+      },
+      "sources": [
+        {
+          "name": "LSHTM",
+          "url": "https://www.lshtm.ac.uk/newsevents/news/2026/more-50000-heat-related-deaths-estimated-european-urban-areas-during-summer"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A sun-baked southern European street at midday: closed shutters, empty café terrace chairs, heat waves rising from the pavement, a huge sun above the rooftops.",
+          "text": {
+            "en": "More than 50,000 people died from heat in European cities this summer, estimate researchers from LSHTM and Imperial College London.",
+            "fr": "Plus de 50 000 personnes sont mortes de la chaleur cet été dans les villes européennes, estiment des chercheurs de la LSHTM et de l'Imperial College de Londres."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A panorama of many European city skylines merged into one long horizon (domes, towers, bridges), all under the same burning sun.",
+          "text": {
+            "en": "It is the highest toll since 2000, nearly double 2003 or 2022. The study covers 854 urban areas in 30 countries.",
+            "fr": "C'est le pire bilan depuis 2000, près du double de 2003 ou de 2022. L'étude porte sur 854 zones urbaines dans 30 pays."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Two researchers in a university office at night, looking at curves on computer screens (no numbers or letters visible), a desk fan, an open window on a hot city.",
+          "text": {
+            "en": "About two thirds of these deaths are attributed to human-caused climate change. The figures are model estimates, not death certificates.",
+            "fr": "Environ deux tiers de ces décès sont attribués au changement climatique d'origine humaine. Ce sont des estimations par modèle, pas des certificats de décès."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A city square seen from above at dusk, people gathering in the shade of a few trees and around a public fountain, most of the square still glaring in the heat.",
+          "text": {
+            "en": "It is becoming increasingly clear our cities are poorly adapted to rising heat.",
+            "fr": "Il apparaît de plus en plus clairement que nos villes sont mal adaptées à la hausse des températures."
+          },
+          "kind": "speech",
+          "speaker": {
+            "en": "Pierre Masselot, co-author (LSHTM)",
+            "fr": "Pierre Masselot, coauteur (LSHTM)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "helium",
+      "style": "silver-age",
+      "cast": [],
+      "headline": {
+        "en": "Helium is now a critical material in the US",
+        "fr": "L'hélium devient un matériau critique aux États-Unis"
+      },
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/news/helium-critical-material-energy-department-supply-chain/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A semiconductor clean room: two technicians in white full-body suits and masks hold up a shining silicon wafer under yellow light, machines all around.",
+          "text": {
+            "en": "The US Energy Department has designated helium a critical material, citing its essential role in making semiconductors.",
+            "fr": "Le département américain de l'Énergie a classé l'hélium comme matériau critique, en raison de son rôle essentiel dans la fabrication des semi-conducteurs."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A hospital MRI scanner room, a technician helping a patient lie down on the bed, the big round machine glowing, a smartphone and a car key on a small tray in the foreground.",
+          "text": {
+            "en": "Helium is also used for MRI scanners, smartphones, cars and quantum computing, and for many uses it cannot be replaced.",
+            "fr": "L'hélium sert aussi aux IRM, aux smartphones, aux voitures et à l'informatique quantique, et pour beaucoup d'usages il est irremplaçable."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A gas carrier ship with round tanks stuck at anchor in a hot desert gulf, a gas plant on the shore with a damaged chimney, smoke drifting.",
+          "text": {
+            "en": "The closure of the Strait of Hormuz in February trapped a third of world supply in the Gulf. Iranian strikes hit a producer in Qatar in March.",
+            "fr": "La fermeture du détroit d'Ormuz en février a bloqué un tiers de l'offre mondiale dans le Golfe. Des frappes iraniennes ont touché un producteur qatari en mars."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A big helium plant on the American prairie under a vast blue sky, large white spherical tanks, a worker in a hard hat giving a thumbs-up, a pickup truck nearby.",
+          "text": {
+            "en": "The new status opens more federal financing to producers. The United States is already the world's largest helium producer.",
+            "fr": "Ce statut ouvre davantage de financements fédéraux aux producteurs. Les États-Unis sont déjà le premier producteur mondial d'hélium."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "style": "constructivist",
+      "cast": [],
+      "headline": {
+        "en": "Italy braces for cost-of-living protests",
+        "fr": "L'Italie se prépare à des manifestations contre la vie chère"
+      },
+      "sources": [
+        {
+          "name": "Euronews",
+          "url": "https://www.euronews.com/2026/10/23/italy-preparing-with-elite-troops-and-drone-surveillance-for-24-october-protests"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A large crowd marching down a narrow Italian street lined with old ochre buildings, people holding up blank banners and flags without lettering, shop shutters half closed.",
+          "text": {
+            "en": "Protests against the rising cost of living are planned today in Italy and France, after violent unrest in Italian cities on 17 and 18 October.",
+            "fr": "Des manifestations contre la vie chère sont prévues aujourd'hui en Italie et en France, après des violences dans des villes italiennes les 17 et 18 octobre."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Six symbolic Italian city landmarks arranged together in one composition (a cathedral spire, an ancient arena, a mountain-backed square, a port with cranes, a red-brick tower, a dome), small crowds gathering at each.",
+          "text": {
+            "en": "Marches are planned in Milan, Rome, Turin, Bologna, Genoa and Florence: more than 30 actions in all, according to an online protest map.",
+            "fr": "Des cortèges sont prévus à Milan, Rome, Turin, Bologne, Gênes et Florence : plus de 30 actions au total, selon une carte militante en ligne."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Rows of police officers and soldiers in a wide city square, a surveillance drone hovering above, armoured vans parked at the edge, seen from a low angle.",
+          "text": {
+            "en": "In Milan, 500 soldiers join about 1,000 police under a new security decree, and drones will watch the marches. Rome deploys about 1,500 officers.",
+            "fr": "À Milan, 500 militaires renforcent environ 1 000 policiers au titre d'un nouveau décret sécurité, et des drones surveilleront les cortèges. Rome mobilise environ 1 500 agents."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A grand gothic cathedral square fenced off with metal barriers, almost empty, pigeons flying, a few officers standing guard, long shadows.",
+          "text": {
+            "en": "In Milan, authorised marches will be kept away from the cathedral square, and protests are banned in two central districts.",
+            "fr": "À Milan, les cortèges autorisés seront tenus à l'écart de la place du Duomo, et les manifestations sont interdites dans deux quartiers du centre."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "diesel",
+      "style": "noir-brush",
+      "cast": [
+        {
+          "role": "the US president",
+          "look": "elderly man with swept-back blond hair, dark suit, white shirt, long red tie"
+        },
+        {
+          "role": "the Russian president",
+          "look": "man in his seventies with thinning light hair, dark suit, calm expression"
+        }
+      ],
+      "headline": {
+        "en": "First Russian diesel cargo heads for the US",
+        "fr": "Une première cargaison de diesel russe en route vers les États-Unis"
+      },
+      "sources": [
+        {
+          "name": "Baird Maritime",
+          "url": "https://www.bairdmaritime.com/shipping/tankers/russia-sends-first-us-bound-diesel-cargo-following-deal-with-trump"
+        },
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A large tanker ploughing through a grey stormy Atlantic, seen from a low angle on the waves, heavy clouds, spray on the bow.",
+          "text": {
+            "en": "A tanker carrying 40,000 tonnes of Russian diesel is heading for New York, according to ship-tracking data cited by Reuters.",
+            "fr": "Un tanker chargé de 40 000 tonnes de diesel russe fait route vers New York, selon des données de suivi maritime citées par Reuters."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Split composition: on the left the US president speaking on a phone in a classic Washington office, on the right the Russian president on a phone in an ornate Moscow office, the two halves facing each other.",
+          "text": {
+            "en": "It is the first shipment since Donald Trump announced a deal with Moscow. Russia lifted its own ban on diesel exports on 9 October.",
+            "fr": "C'est la première livraison depuis l'accord annoncé par Donald Trump avec Moscou. La Russie a levé le 9 octobre sa propre interdiction d'exporter du diesel."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Close-up of a truck driver's hand holding a diesel pump nozzle at a night-time highway fuel station, trucks lined up behind under harsh light.",
+          "text": {
+            "en": "Trump said 300,000 tonnes would follow quickly, then 500,000 in November. Vladimir Putin said world diesel prices fell 5 to 6% after the deal.",
+            "fr": "Selon Donald Trump, 300 000 tonnes suivront rapidement, puis 500 000 en novembre. Vladimir Poutine affirme que les prix mondiaux du diesel ont baissé de 5 à 6 % après l'accord."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A Russian oil refinery in winter, snow on the ground, tall columns and pipes, a distant plume of smoke on the horizon, a lone guard tower.",
+          "text": {
+            "en": "Russia had banned diesel exports after Ukrainian drone strikes on its refineries. The deal has strained relations between Washington and Kyiv.",
+            "fr": "La Russie avait interdit ses exportations après des frappes de drones ukrainiens sur ses raffineries. L'accord a tendu les relations entre Washington et Kyiv."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "starlink",
+      "style": "risograph",
+      "cast": [
+        {
+          "role": "the SpaceX chief executive",
+          "look": "man in his fifties with short dark hair, black jacket over a black t-shirt"
+        },
+        {
+          "role": "the US president",
+          "look": "elderly man with swept-back blond hair, dark suit, long red tie"
+        }
+      ],
+      "headline": {
+        "en": "Starlink slowdown hampered Ukraine's drones, WSJ says",
+        "fr": "Un ralentissement de Starlink a gêné les drones ukrainiens, selon le WSJ"
+      },
+      "sources": [
+        {
+          "name": "Korea Times / Reuters",
+          "url": "https://www.koreatimes.co.kr/world/20261021/musk-ordered-slowdown-of-starlink-service-used-by-ukraines-military-wsj-reports"
+        },
+        {
+          "name": "Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "A swarm of small satellites forming a chain across the night sky above the curve of the Earth, city lights glowing below.",
+          "text": {
+            "en": "Elon Musk ordered a slowdown of a military-grade Starlink service used by Ukraine, the Wall Street Journal reported on 20 October.",
+            "fr": "Elon Musk a ordonné le ralentissement d'un service Starlink de qualité militaire utilisé par l'Ukraine, a rapporté le Wall Street Journal le 20 octobre."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Two Ukrainian soldiers in a muddy autumn field crouching next to a flat satellite dish on the ground, one holding a tablet, a small quadcopter drone lifting off.",
+          "text": {
+            "en": "Ukraine relies on it for battlefield communications. The restrictions hampered its attack and air-defence drone missions, the paper says.",
+            "fr": "L'Ukraine s'en sert pour ses communications sur le front. Ces restrictions ont gêné ses missions de drones d'attaque et de défense aérienne, selon le journal."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "The SpaceX chief executive standing in a huge rocket hangar, phone to his ear, a gleaming rocket behind him, workers small in the background.",
+          "text": {
+            "en": "Musk said such decisions rest with the US military or the president. Donald Trump said he did not think he or Musk was responsible.",
+            "fr": "Elon Musk assure que ces décisions relèvent de l'armée américaine ou du président. Donald Trump dit ne pas penser que lui ou Musk en soient responsables."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "The US president sitting at a large wooden desk in an oval room, speaking on the phone, flags standing behind him without any lettering.",
+          "text": {
+            "en": "Trump reportedly called Musk on Wednesday to lift the restrictions. US officials said the service then worked more normally.",
+            "fr": "Donald Trump aurait appelé Elon Musk mercredi pour lever ces restrictions. Selon des responsables américains, le service fonctionnait ensuite plus normalement."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "outbound",
+      "style": "editorial-line",
+      "cast": [],
+      "headline": {
+        "en": "US widens limits on investment in rivals' military tech",
+        "fr": "Washington étend les limites aux investissements dans la tech militaire de ses rivaux"
+      },
+      "sources": [
+        {
+          "name": "AP via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "The neoclassical facade of the US Treasury building in Washington with tall columns, an official walking up the steps with a folder under his arm.",
+          "text": {
+            "en": "The US Treasury has proposed a rule widening limits on American investments that could boost the military power of 'countries of concern'.",
+            "fr": "Le Trésor américain propose d'étendre les restrictions sur les investissements américains susceptibles de renforcer la puissance militaire de « pays préoccupants »."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A large antique globe on a desk, a hand holding back a stream of gold coins flowing across the globe toward East Asia, simple and elegant.",
+          "text": {
+            "en": "Those countries include China, Russia and North Korea, according to the Associated Press.",
+            "fr": "Parmi ces pays figurent la Chine, la Russie et la Corée du Nord, selon l'agence Associated Press."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A montage of four small vignettes in one image: a glider streaking through the upper atmosphere with a fiery trail, rows of supercomputer cabinets, a DNA double helix, a robot hand.",
+          "text": {
+            "en": "The rule would cover hypersonic systems, which fly at five times the speed of sound or more, plus supercomputing, biotechnology and AI.",
+            "fr": "La règle viserait les systèmes hypersoniques, qui volent à au moins cinq fois la vitesse du son, ainsi que les supercalculateurs, les biotechnologies et l'IA."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A fountain pen resting on a blank document on a polished desk, a desk lamp, a window showing the Washington Monument at dusk.",
+          "text": {
+            "en": "For now it is only a proposal: the rule can still change before it takes effect.",
+            "fr": "Il ne s'agit pour l'instant que d'une proposition : la règle peut encore évoluer avant d'entrer en vigueur."
+          },
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "id": "putin",
+      "style": "ligne-claire",
+      "cast": [
+        {
+          "role": "the Russian president",
+          "look": "man in his seventies with thinning light hair, dark suit, calm expression"
+        }
+      ],
+      "headline": {
+        "en": "Putin wants a final peace, not a truce",
+        "fr": "Poutine veut une paix définitive, pas une trêve"
+      },
+      "sources": [
+        {
+          "name": "Reuters via Just Security",
+          "url": "https://www.justsecurity.org/161891/early-edition-october-23-2026/"
+        }
+      ],
+      "slides": [
+        {
+          "scene": "The Russian president speaking at a long table in an ornate hall with white columns and chandeliers, a few officials listening.",
+          "text": {
+            "en": "Vladimir Putin said future talks on Ukraine should focus on security guarantees for both countries, Reuters reports.",
+            "fr": "Vladimir Poutine a déclaré que de futures négociations sur l'Ukraine devraient porter sur des garanties de sécurité pour les deux pays, rapporte Reuters."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "A large table map of Europe without any lettering, small chess pieces placed on several countries, hands of unseen negotiators hovering above.",
+          "text": {
+            "en": "He also wants a broader European security framework to be part of the discussions.",
+            "fr": "Il souhaite aussi que les discussions incluent un cadre de sécurité plus large pour l'Europe."
+          },
+          "kind": "caption"
+        },
+        {
+          "scene": "Two empty chairs facing each other across a long negotiation table in a grand hall, two glasses of water, winter light through tall windows.",
+          "text": {
+            "en": "Any peace, he said, should come 'in its final form', not as the result of a temporary ceasefire.",
+            "fr": "Toute paix, a-t-il dit, devrait venir « sous sa forme définitive » et non d'un cessez-le-feu temporaire."
+          },
+          "kind": "caption"
+        }
+      ]
+    }
+  ]
+}

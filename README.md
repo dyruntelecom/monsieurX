@@ -92,6 +92,13 @@ Chaque matin (`publishHour`, 7 h heure de Paris par défaut, réglable avec `tim
 - Variables Railway : `OPENAI_API_KEY` (sans elle, rien n'est généré), `NOTIFY_URL` (ex. `https://ntfy.sh/<canal>`), facultatives `OPENAI_TEXT_MODEL`, `OPENAI_IMAGE_MODEL` (sinon choisis automatiquement dans la liste des modèles du compte, voir les logs au démarrage).
 - Test sans clé : `NEWS_MOCK=1 bun server.ts`, puis `/admin` → « Générer l'édition du jour » (images factices).
 
+### Édition faite à la main (images dessinées ailleurs)
+
+1. Préparer le script (textes, descriptions, sources) : `content/news/import/<date>.script.json`.
+2. Découper chaque planche 2×2 : `python3 tools/edition.py split planche.png content/news/import/<date> <sujet>` (ou `single image.png … <sujet> <n>` pour une image séparée).
+3. `python3 tools/edition.py build content/news/import/<date>.script.json content/news/import/<date>` : écrit le manifeste avec les sujets complets et augmente `importVersion`.
+4. Push sur `main` : au démarrage, le serveur copie l'édition sur le volume. Une édition importée n'est jamais complétée par la génération automatique.
+
 ## Statistiques
 
 Base SQLite `stats.db` sur le volume Railway monté sur `/data`. Aucune adresse IP, aucun cookie : l'identifiant de visiteur est une empreinte quotidienne non réversible, l'identifiant de session reste dans l'onglet du lecteur.

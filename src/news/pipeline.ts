@@ -1,6 +1,6 @@
 // Storink Daily: every morning, RSS → selection → script → images → published edition, then a notification.
 // Editions live on the data volume: GEN_DIR/<series>/episodes/<YYYY-MM-DD>/manifest.json + <story>/<n>.<ext>.
-import { mkdirSync, existsSync, readFileSync, writeFileSync, renameSync, rmSync, readdirSync } from "node:fs";
+import { mkdirSync, existsSync, readFileSync, writeFileSync, renameSync, rmSync, readdirSync, cpSync } from "node:fs";
 import { join } from "node:path";
 import { CONTENT, GEN_DIR, readEdition, type NewsEdition, type NewsStory, type NewsSlide, type Text } from "../content";
 import { fetchFeeds, fetchArticleText, type FeedItem } from "./rss";
@@ -172,6 +172,7 @@ export async function runEdition(day = today(), opts: { force?: boolean } = {}):
   try {
     let ed = readEdition(cfg.series, day);
     if (ed && !opts.force && ed.stories.length >= cfg.storiesPerDay) { log(`édition ${day} déjà complète`); return; }
+    if (ed && !opts.force && (ed as any).importVersion) { log(`édition ${day} faite à la main : génération automatique ignorée`); return; }
 
     status.step = "lecture des flux";
     const { items, errors } = MOCK ? { items: MOCK_ITEMS, errors: [] } : await fetchFeeds(cfg.feeds);
@@ -310,8 +311,29 @@ export function listEditions(): string[] {
   return existsSync(d) ? readdirSync(d).filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x)).sort().reverse() : [];
 }
 
+// ——— editions prepared by hand (images drawn elsewhere) and committed to git ———
+// content/news/import/<day>/manifest.json + images: copied to the volume at start-up when new or when "importVersion" grows.
+export function importFromRepo() {
+  const cfg = loadConfig();
+  const root = join(CONTENT, "news", "import");
+  if (!existsSync(root)) return;
+  for (const day of readdirSync(root).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d))) {
+    try {
+      const src = JSON.parse(readFileSync(join(root, day, "manifest.json"), "utf8"));
+      const cur = readEdition(cfg.series, day) as any;
+      if (cur && (cur.importVersion || 0) >= (src.importVersion || 1)) continue;
+      const dest = dayDir(cfg.series, day);
+      mkdirSync(dest, { recursive: true });
+      cpSync(join(root, day), dest, { recursive: true, force: true });
+      console.log(`News : édition ${day} importée depuis le dépôt (version ${src.importVersion || 1})`);
+      onChange();
+    } catch (e) { console.warn(`News : import ${day} impossible :`, (e as Error).message); }
+  }
+}
+
 // ——— scheduler: checks every 10 minutes whether today's edition is due ———
 export function startScheduler() {
+  importFromRepo();
   const cfg = loadConfig();
   if (!aiReady()) { console.log("News : OPENAI_API_KEY absente, Storink Daily en pause"); return; }
   const attempts = new Map<string, number>();
@@ -319,6 +341,7 @@ export function startScheduler() {
     const { day, hour } = localNow(cfg.timezone || "Europe/Paris");
     if (status.running || hour < cfg.publishHour) return;
     const ed = readEdition(cfg.series, day);
+    if ((ed as any)?.importVersion) return; // edition made by hand: leave it alone
     if (ed && ed.stories.length >= Math.min(cfg.storiesPerDay, 6)) return;
     const n = attempts.get(day) || 0; if (n >= 2) return;
     attempts.set(day, n + 1);

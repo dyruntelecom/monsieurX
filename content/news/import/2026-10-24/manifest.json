@@ -1,0 +1,90 @@
+{
+  "series": "daily",
+  "episode": "2026-10-24",
+  "langs": [
+    "en",
+    "fr"
+  ],
+  "baseLang": "en",
+  "title": {
+    "en": "2026-10-24",
+    "fr": "2026-10-24"
+  },
+  "published": "2026-10-24",
+  "status": "published",
+  "importVersion": 1,
+  "stories": [
+    {
+      "id": "hormuz",
+      "status": "published",
+      "style": {
+        "id": "ukiyo-e",
+        "name": {
+          "en": "Japanese woodblock print",
+          "fr": "Estampe japonaise"
+        }
+      },
+      "headline": {
+        "en": "Hormuz: Iran claims tanker mine strikes, the US denies",
+        "fr": "Ormuz : l'Iran revendique des tankers minés, Washington dément"
+      },
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/are-global-oil-reserves-sufficient-to-withstand-renewed-us-iran-war"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/iran-claims-more-tankers-hit-mines-in-hormuz-but-evidence-remains-elusive/"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "Wide view of a narrow sea strait at dawn between arid rocky mountains. Two huge oil tankers in the middle distance, a thin column of dark smoke rising far away on the horizon, a small patrol boat in the foreground cutting through the waves.",
+          "text": {
+            "en": "Strait of Hormuz. Iran's Revolutionary Guard says several tankers hit mines this month on routes Tehran had not authorised.",
+            "fr": "Détroit d'Ormuz. Les Gardiens de la révolution iraniens affirment que plusieurs tankers ont heurté des mines ce mois-ci sur des routes non autorisées par Téhéran."
+          },
+          "kind": "caption",
+          "image": "hormuz/1.webp",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "scene": "Inside a dim naval operations room: three officers in US Navy uniforms stand around a large glowing radar table showing small ship dots, one of them shaking his head, blue light on their faces.",
+          "text": {
+            "en": "The US military calls these claims disinformation. Maritime monitors say they found no evidence of the mine strikes.",
+            "fr": "L'armée américaine parle de désinformation. Les centres de surveillance maritime disent n'avoir trouvé aucune preuve de ces explosions."
+          },
+          "kind": "caption",
+          "image": "hormuz/2.webp",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "scene": "High aerial view of the strait with very few ships: wide empty water, one lone tanker escorted by a grey warship, long wakes behind them, mountains along the coast.",
+          "text": {
+            "en": "Ship traffic is still about 70% below pre-war levels. Before the war, some 20 million barrels of oil a day passed through here.",
+            "fr": "Le trafic reste environ 70 % sous son niveau d'avant-guerre. Avant la guerre, quelque 20 millions de barils de pétrole y passaient chaque jour."
+          },
+          "kind": "caption",
+          "image": "hormuz/3.webp",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "scene": "A coastal oil refinery at dusk with tall flaring chimneys, storage tanks, heavy storm clouds gathering over the sea beyond, waves breaking on the shore.",
+          "text": {
+            "en": "Oil prices climbed this week to about a five-month high. Efforts to end the US-Israel war on Iran remain deadlocked.",
+            "fr": "Le pétrole a grimpé cette semaine à son plus haut depuis environ cinq mois. Les efforts pour mettre fin à la guerre américano-israélienne contre l'Iran sont dans l'impasse."
+          },
+          "kind": "caption",
+          "image": "hormuz/4.webp",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    }
+  ]
+}
