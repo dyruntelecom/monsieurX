@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 3,
+  "importVersion": 4,
   "stories": [
     {
       "id": "hormuz",
@@ -227,6 +227,74 @@
           "image": "heat/4.webp",
           "w": 487,
           "h": 745
+        }
+      ]
+    },
+    {
+      "id": "helium",
+      "status": "published",
+      "style": {
+        "id": "silver-age",
+        "name": {
+          "en": "1960s American comic",
+          "fr": "Comic américain des années 60"
+        }
+      },
+      "headline": {
+        "en": "Helium is now a critical material in the US",
+        "fr": "L'hélium devient un matériau critique aux États-Unis"
+      },
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/news/helium-critical-material-energy-department-supply-chain/"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "scene": "A semiconductor clean room: two technicians in white full-body suits and masks hold up a shining silicon wafer under yellow light, machines all around.",
+          "text": {
+            "en": "The US Energy Department has designated helium a critical material, citing its essential role in making semiconductors.",
+            "fr": "Le département américain de l'Énergie a classé l'hélium comme matériau critique, en raison de son rôle essentiel dans la fabrication des semi-conducteurs."
+          },
+          "kind": "caption",
+          "image": "helium/1.webp",
+          "w": 486,
+          "h": 744
+        },
+        {
+          "scene": "A hospital MRI scanner room, a technician helping a patient lie down on the bed, the big round machine glowing, a smartphone and a car key on a small tray in the foreground.",
+          "text": {
+            "en": "Helium is also used for MRI scanners, smartphones, cars and quantum computing, and for many uses it cannot be replaced.",
+            "fr": "L'hélium sert aussi aux IRM, aux smartphones, aux voitures et à l'informatique quantique, et pour beaucoup d'usages il est irremplaçable."
+          },
+          "kind": "caption",
+          "image": "helium/2.webp",
+          "w": 489,
+          "h": 744
+        },
+        {
+          "scene": "A gas carrier ship with round tanks stuck at anchor in a hot desert gulf, a gas plant on the shore with a damaged chimney, smoke drifting.",
+          "text": {
+            "en": "The closure of the Strait of Hormuz in February trapped a third of world supply in the Gulf. Iranian strikes hit a producer in Qatar in March.",
+            "fr": "La fermeture du détroit d'Ormuz en février a bloqué un tiers de l'offre mondiale dans le Golfe. Des frappes iraniennes ont touché un producteur qatari en mars."
+          },
+          "kind": "caption",
+          "image": "helium/3.webp",
+          "w": 486,
+          "h": 747
+        },
+        {
+          "scene": "A big helium plant on the American prairie under a vast blue sky, large white spherical tanks, a worker in a hard hat giving a thumbs-up, a pickup truck nearby.",
+          "text": {
+            "en": "The new status opens more federal financing to producers. The United States is already the world's largest helium producer.",
+            "fr": "Ce statut ouvre davantage de financements fédéraux aux producteurs. Les États-Unis sont déjà le premier producteur mondial d'hélium."
+          },
+          "kind": "caption",
+          "image": "helium/4.webp",
+          "w": 489,
+          "h": 747
         }
       ]
     }
