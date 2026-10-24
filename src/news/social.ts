@@ -15,6 +15,8 @@ export interface SocialConfig {
   editionPost: string; // "07:30": the daily post with the link to the edition
   timezone: string;
   x: { langs: string[] };
+  cta?: Record<string, string>;        // call to action under the headline, per language (no URL: see publish())
+  hashtags?: Record<string, string[]>; // hashtags added to every story post, per language, without "#"
 }
 export const loadSocial = (): SocialConfig => JSON.parse(readFileSync(join(CONTENT, "news", "social.json"), "utf8"));
 const SITE = () => (Bun.env.SITE_URL || "https://storink.com").replace(/\/$/, "");
@@ -132,8 +134,12 @@ export async function publish(series: string, day: string, p: PlannedPost): Prom
   const media: string[] = [];
   for (let k = 0; k < Math.min(4, st.slides.length); k++) media.push(await xMedia(p.lang, renderCard({ series, day, storyId: st.id, slide: k, lang: p.lang, dateLabel: cardDate })));
   // No URL in story posts: on X's pay-per-use pricing a post with a link costs much more. The cards carry storink.com.
-  const tag = p.lang === "fr" ? "L'actu en BD" : "News in comics";
-  return xPost(p.lang, clip(`${pick(st.headline, p.lang)}\n\n${tag} · Storink Daily`), media);
+  const cfg = loadSocial();
+  const cta = cfg.cta?.[p.lang] || (p.lang === "fr" ? "La BD complète sur Storink (lien en bio)" : "Read the full comic on Storink (link in bio)");
+  const tags = [...new Set([...(st.hashtags || []), ...(cfg.hashtags?.[p.lang] || [])].map((t) => t.replace(/[^\p{L}\p{N}_]/gu, "")).filter(Boolean))]
+    .map((t) => "#" + t).join(" ");
+  const tail = `\n\n${cta}${tags ? "\n\n" + tags : ""}`;
+  return xPost(p.lang, clip(pick(st.headline, p.lang), 270 - tail.length) + tail, media);
 }
 
 // ——— runner ———

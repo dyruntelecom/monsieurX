@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 11,
+  "importVersion": 12,
   "stories": [
     {
       "id": "hormuz",
@@ -84,6 +84,10 @@
           "w": 1024,
           "h": 1536
         }
+      ],
+      "hashtags": [
+        "Hormuz",
+        "Iran"
       ]
     },
     {
@@ -165,6 +169,10 @@
           "w": 496,
           "h": 754
         }
+      ],
+      "hashtags": [
+        "Brazil",
+        "Lula"
       ]
     },
     {
@@ -237,6 +245,10 @@
           "w": 493,
           "h": 755
         }
+      ],
+      "hashtags": [
+        "CoralReefs",
+        "Climate"
       ]
     },
     {
@@ -309,6 +321,10 @@
           "w": 487,
           "h": 745
         }
+      ],
+      "hashtags": [
+        "Heatwave",
+        "Europe"
       ]
     },
     {
@@ -377,6 +393,9 @@
           "w": 489,
           "h": 747
         }
+      ],
+      "hashtags": [
+        "Helium"
       ]
     },
     {
@@ -445,6 +464,9 @@
           "w": 495,
           "h": 752
         }
+      ],
+      "hashtags": [
+        "Italy"
       ]
     },
     {
@@ -526,6 +548,10 @@
           "w": 491,
           "h": 749
         }
+      ],
+      "hashtags": [
+        "Russia",
+        "Diesel"
       ]
     },
     {
@@ -607,6 +633,10 @@
           "w": 490,
           "h": 748
         }
+      ],
+      "hashtags": [
+        "Starlink",
+        "Ukraine"
       ]
     },
     {
@@ -675,6 +705,10 @@
           "w": 489,
           "h": 747
         }
+      ],
+      "hashtags": [
+        "Tech",
+        "Investment"
       ]
     },
     {
@@ -737,6 +771,10 @@
           "w": 492,
           "h": 752
         }
+      ],
+      "hashtags": [
+        "Putin",
+        "Ukraine"
       ]
     }
   ]

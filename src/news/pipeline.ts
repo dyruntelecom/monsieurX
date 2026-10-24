@@ -91,7 +91,7 @@ ${RULES_IMAGE}
 Recurring characters: list them once in "cast" with a fixed look so every scene draws them the same way.
 ${styleRule}
 Reply with JSON:
-{"headline":${L("max 70 characters")},"summary":${L("one sentence")},"category":"...","style":"style-id","cast":[{"role":"...","look":"..."}],
+{"headline":${L("max 70 characters")},"summary":${L("one sentence")},"category":"...","hashtags":["2 or 3 short topical hashtags without #, CamelCase, understood in every language: places, people, topics (e.g. Hormuz, Iran)"],"style":"style-id","cast":[{"role":"...","look":"..."}],
 "slides":[{"scene":"...","kind":"caption or speech","speaker":${L("who speaks, only for speech")} or null,"text":${L("bubble text")}}]}`;
   const user = sources.map((s, n) => `SOURCE ${n + 1} — ${s.source}: ${s.title}\n${s.link}\n${s.text || "(article text unavailable; rely on the title and summary only, and stay cautious)"}`).join("\n\n");
   return [sys, user];
@@ -217,6 +217,7 @@ export async function runEdition(day = today(), opts: { force?: boolean } = {}):
         const story: NewsStory = {
           id, status: "published", category: sc.category || pick.category,
           style: { id: style.id, name: style.name }, headline: sc.headline, summary: sc.summary,
+          hashtags: Array.isArray(sc.hashtags) ? sc.hashtags.slice(0, 3).map(String) : undefined,
           sources: sources.map((s) => ({ name: s.source, url: s.link })),
           slides: sc.slides.slice(0, cfg.slidesPerStory).map((s: any): NewsSlide => ({ image: "", w: 0, h: 0, text: s.text, kind: s.kind === "speech" ? "speech" : "caption", speaker: s.speaker || undefined, scene: s.scene })),
         };

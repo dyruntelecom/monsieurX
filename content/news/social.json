@@ -4,5 +4,24 @@
   "editionPost": "07:30",
   "firstSlot": "08:00",
   "lastSlot": "21:00",
-  "x": { "langs": ["fr", "en"] }
+  "x": {
+    "langs": [
+      "fr",
+      "en"
+    ]
+  },
+  "cta": {
+    "en": "Read the full comic on Storink (link in bio)",
+    "fr": "La BD complète sur Storink (lien en bio)"
+  },
+  "hashtags": {
+    "en": [
+      "NewsInComics",
+      "Comics"
+    ],
+    "fr": [
+      "ActuEnBD",
+      "BD"
+    ]
+  }
 }

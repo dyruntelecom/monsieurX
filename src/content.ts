@@ -67,6 +67,7 @@ export interface NewsStory {
   slides: NewsSlide[];
   edited?: boolean;
   cast?: { role: string; look: string }[];
+  hashtags?: string[]; // topical hashtags for social posts, without "#" (e.g. "Hormuz", "Iran")
 }
 export interface NewsEdition {
   series: string; episode: string; langs: string[]; baseLang?: string;
