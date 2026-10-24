@@ -55,7 +55,9 @@ function serveFile(root: string, rel: string, cache: string, allowed?: Set<strin
   if (allowed && !allowed.has(ext)) return null;
   const file = Bun.file(abs);
   if (!existsSync(abs) || !statSync(abs).isFile() || !file.size) return null;
-  return new Response(file, { headers: { "content-type": MIME[ext] || file.type, "cache-control": cache, "x-content-type-options": "nosniff" } });
+  // Brand images are fetched cross-origin (setting up social pages from the browser).
+  const cors: Record<string, string> = rel.replace(/^\//, "").startsWith("brand/") ? { "access-control-allow-origin": "*" } : {};
+  return new Response(file, { headers: { "content-type": MIME[ext] || file.type, "cache-control": cache, "x-content-type-options": "nosniff", ...cors } });
 }
 
 function authorized(req: Request): boolean {
@@ -152,7 +154,7 @@ Bun.serve({
       try {
         const [, series, day, story, n, l] = card;
         const bytes = renderCard({ series, day, storyId: story, slide: Number(n) - 1, lang: l, dateLabel: l === "fr" ? day.split("-").reverse().join(".") : new Date(day + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) });
-        return new Response(bytes, { headers: { "content-type": "image/jpeg", "cache-control": "public, max-age=3600" } });
+        return new Response(bytes, { headers: { "content-type": "image/jpeg", "cache-control": "public, max-age=3600", "access-control-allow-origin": "*" } });
       } catch { return new Response("Introuvable", { status: 404 }); }
     }
     if (path.startsWith("/gen/")) {
