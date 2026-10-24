@@ -4,7 +4,7 @@
   "status": "published",
   "authors": ["loic-texier"],
   "aiAssisted": true,
-  "cover": "cover.svg",
+  "cover": "cover.webp",
   "order": 2,
   "title": { "en": "Napkin Ideas" },
   "tagline": { "en": "Business ideas sketched over lunch.", "fr": "Des idées de business griffonnées au déjeuner." },

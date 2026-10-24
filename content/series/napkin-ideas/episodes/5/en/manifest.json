@@ -1,0 +1,272 @@
+{
+  "series": "napkin-ideas",
+  "episode": "5",
+  "number": 5,
+  "lang": "en",
+  "title": "The Wallet Trip · Part 2: Route 66",
+  "eyebrow": "Episode 5 · Route 66, Arizona",
+  "blurb": "No signal, cash-only diners, donkeys in the street. Meanwhile, the wallet heads to Arizona. The last mile is always physical.",
+  "description": "Napkin Ideas, episode 5: The Wallet Trip · Part 2: Route 66. No signal, cash-only diners, donkeys in the street. Meanwhile, the wallet heads to Arizona. The last mile is always physical.",
+  "shareDescription": "Do you still carry a wallet? Napkin Ideas, episode 5.",
+  "authors": [
+    "loic-texier"
+  ],
+  "published": "2026-10-24",
+  "status": "published",
+  "access": "free",
+  "cover": "pages/p00.webp",
+  "ogImage": "og.jpg",
+  "pages": [
+    {
+      "src": "pages/p00.webp",
+      "thumb": "thumbs/t00.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "Cover",
+      "kind": "cover",
+      "zones": []
+    },
+    {
+      "src": "pages/p01.webp",
+      "thumb": "thumbs/t01.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "1",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3977
+        ],
+        [
+          0.0059,
+          0.393,
+          0.5781,
+          0.2672
+        ],
+        [
+          0.584,
+          0.393,
+          0.4121,
+          0.2687
+        ],
+        [
+          0.0059,
+          0.6594,
+          0.5332,
+          0.3328
+        ],
+        [
+          0.5391,
+          0.6602,
+          0.457,
+          0.332
+        ]
+      ]
+    },
+    {
+      "src": "pages/p02.webp",
+      "thumb": "thumbs/t02.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "2",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0029,
+          0.0,
+          0.9971,
+          0.3352
+        ],
+        [
+          0.0029,
+          0.3289,
+          0.5449,
+          0.3078
+        ],
+        [
+          0.5469,
+          0.3289,
+          0.4512,
+          0.1516
+        ],
+        [
+          0.5469,
+          0.4781,
+          0.4512,
+          0.1586
+        ],
+        [
+          0.0049,
+          0.6359,
+          0.9912,
+          0.3523
+        ]
+      ]
+    },
+    {
+      "src": "pages/p03.webp",
+      "thumb": "thumbs/t03.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "3",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0029,
+          0.0,
+          0.9961,
+          0.2617
+        ],
+        [
+          0.0029,
+          0.2547,
+          0.6221,
+          0.3844
+        ],
+        [
+          0.623,
+          0.2547,
+          0.376,
+          0.1914
+        ],
+        [
+          0.623,
+          0.443,
+          0.376,
+          0.1961
+        ],
+        [
+          0.0059,
+          0.6367,
+          0.9922,
+          0.3531
+        ]
+      ]
+    },
+    {
+      "src": "pages/p04.webp",
+      "thumb": "thumbs/t04.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "4",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0029,
+          0.0,
+          0.5195,
+          0.2484
+        ],
+        [
+          0.5205,
+          0.0,
+          0.4785,
+          0.2484
+        ],
+        [
+          0.0029,
+          0.243,
+          0.9961,
+          0.2789
+        ],
+        [
+          0.0039,
+          0.5195,
+          0.4248,
+          0.2008
+        ],
+        [
+          0.4268,
+          0.5188,
+          0.2764,
+          0.2016
+        ],
+        [
+          0.7012,
+          0.5195,
+          0.2979,
+          0.2008
+        ],
+        [
+          0.0039,
+          0.7188,
+          0.9951,
+          0.2711
+        ]
+      ]
+    },
+    {
+      "src": "pages/p05.webp",
+      "thumb": "thumbs/t05.webp",
+      "w": 1024,
+      "h": 1280,
+      "label": "5",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0039,
+          0.0,
+          0.9941,
+          0.2758
+        ],
+        [
+          0.0039,
+          0.2695,
+          0.5352,
+          0.3102
+        ],
+        [
+          0.5381,
+          0.2687,
+          0.46,
+          0.1664
+        ],
+        [
+          0.5381,
+          0.4328,
+          0.46,
+          0.1461
+        ],
+        [
+          0.0039,
+          0.5773,
+          0.9941,
+          0.3727
+        ]
+      ]
+    }
+  ]
+}
