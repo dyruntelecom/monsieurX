@@ -1,0 +1,60 @@
+{
+  "series": "scenes-actu",
+  "episode": "1",
+  "number": 1,
+  "lang": "en",
+  "title": "Plywood",
+  "eyebrow": "October 24, 2026 · Paris, protest day",
+  "blurb": "Paris, 7 a.m. The march comes past his bakery at noon. He can't afford to close. So he boards up, and opens anyway.",
+  "description": "News Scenes: a Paris baker facing the October 24, 2026 protest. A comic to read panel by panel.",
+  "shareDescription": "A Paris baker facing the October 24 protest. One page, read panel by panel.",
+  "authors": [
+    "loic-texier"
+  ],
+  "published": "2026-10-24",
+  "status": "published",
+  "access": "free",
+  "cover": "pages/p01.webp",
+  "pages": [
+    {
+      "src": "pages/p01.webp",
+      "thumb": "thumbs/t01.webp",
+      "w": 1254,
+      "h": 1254,
+      "label": "1",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.488,
+          0.4848
+        ],
+        [
+          0.5104,
+          0.0,
+          0.4896,
+          0.4848
+        ],
+        [
+          0.0,
+          0.5056,
+          0.488,
+          0.4944
+        ],
+        [
+          0.5104,
+          0.5056,
+          0.4896,
+          0.4944
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "series": "scenes-actu",
+  "episode": "1",
+  "number": 1,
+  "lang": "fr",
+  "title": "Contreplaqué",
+  "eyebrow": "24 octobre 2026 · Paris, jour de manifestation",
+  "blurb": "Paris, 7 h. Le cortège passe à midi devant sa boulangerie. Fermer, il ne peut pas. Alors il barricade, et il ouvre quand même.",
+  "description": "Scènes d'actu : un boulanger parisien face à la manifestation du 24 octobre 2026. BD à lire case par case.",
+  "shareDescription": "Un boulanger face à la manif du 24 octobre. Une planche, à lire case par case.",
+  "authors": [
+    "loic-texier"
+  ],
+  "published": "2026-10-24",
+  "status": "published",
+  "access": "free",
+  "cover": "pages/p01.webp",
+  "pages": [
+    {
+      "src": "pages/p01.webp",
+      "thumb": "thumbs/t01.webp",
+      "w": 1250,
+      "h": 1258,
+      "label": "1",
+      "kind": "comic",
+      "zones": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0.0,
+          0.0,
+          0.4888,
+          0.4857
+        ],
+        [
+          0.5112,
+          0.0,
+          0.4888,
+          0.4857
+        ],
+        [
+          0.0,
+          0.5064,
+          0.4888,
+          0.4936
+        ],
+        [
+          0.5112,
+          0.5064,
+          0.4888,
+          0.4936
+        ]
+      ]
+    }
+  ]
+}
