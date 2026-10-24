@@ -2,9 +2,11 @@
 
 ## Éditeur du site
 
-[À COMPLÉTER : nom ou raison sociale, forme juridique, adresse, numéro d'immatriculation, adresse e-mail de contact]
+Storink est une marque de **FLOWTEX**, société par actions simplifiée, immatriculée au RCS d'Aix-en-Provence sous le numéro 940 536 865, dont le siège est situé 23 impasse du Luchet, 13480 Cabriès, France.
 
-Directeur de la publication : [À COMPLÉTER]
+Contact : contact@storink.com
+
+Directeur de la publication : Loïc Texier, président de FLOWTEX.
 
 ## Hébergement
 

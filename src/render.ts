@@ -58,7 +58,7 @@ export function page(h: Head, body: string, switchPaths: Record<string, string>)
 ${langSwitch(L, switchPaths)}</header>
 <main id="main">${body}</main>
 <footer class="foot"><p class="ai">${esc(t(L, "site.ai"))}</p>
-<nav><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "about"))}">${esc(t(L, "site.about"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "credits"))}">${esc(t(L, "site.credits"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "legal"))}">${esc(t(L, "site.legal"))}</a></nav>
+<nav><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "about"))}">${esc(t(L, "site.about"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "credits"))}">${esc(t(L, "site.credits"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "legal"))}">${esc(t(L, "site.legal"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "privacy"))}">${esc(t(L, "site.privacy"))}</a></nav>
 <p class="copy">© ${new Date().getFullYear()} Storink</p></footer>
 </body></html>`;
 }

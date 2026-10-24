@@ -5,13 +5,15 @@
   "routes": {
     "about": "about",
     "legal": "legal",
-    "credits": "credits"
+    "credits": "credits",
+    "privacy": "privacy"
   },
   "site": {
     "tagline": "Comic stories, to read panel by panel.",
     "series": "Series",
     "about": "About",
     "legal": "Legal notice",
+    "privacy": "Privacy",
     "credits": "Credits",
     "ai": "Storink comics are created with the help of artificial intelligence.",
     "aiShort": "Made with the help of AI",

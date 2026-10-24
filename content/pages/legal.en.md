@@ -2,9 +2,11 @@
 
 ## Publisher
 
-[TO BE COMPLETED: name or company name, legal form, address, registration number, contact e-mail]
+Storink is a brand of **FLOWTEX**, a French simplified joint-stock company (SAS) registered with the Aix-en-Provence Trade and Companies Register under number 940 536 865, with its registered office at 23 impasse du Luchet, 13480 Cabriès, France.
 
-Publication director: [TO BE COMPLETED]
+Contact: contact@storink.com
+
+Publication director: Loïc Texier, President of FLOWTEX.
 
 ## Hosting
 

@@ -5,13 +5,15 @@
   "routes": {
     "about": "a-propos",
     "legal": "mentions-legales",
-    "credits": "credits"
+    "credits": "credits",
+    "privacy": "confidentialite"
   },
   "site": {
     "tagline": "Des histoires en bande dessinée, à lire case par case.",
     "series": "Séries",
     "about": "À propos",
     "legal": "Mentions légales",
+    "privacy": "Confidentialité",
     "credits": "Crédits",
     "ai": "Les bandes dessinées de Storink sont créées avec l'aide de l'intelligence artificielle.",
     "aiShort": "Créé avec l'aide de l'IA",
