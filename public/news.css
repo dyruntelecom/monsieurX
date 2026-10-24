@@ -48,6 +48,10 @@ a{color:inherit}
 #who{margin:0 0 4px;font-family:var(--ui);font-weight:600;font-size:.78rem;letter-spacing:.02em;color:#555}
 #text{margin:0;font-family:var(--letter);font-size:clamp(1.15rem,4.6vw,1.45rem);line-height:1.22}
 #frame.ended #bubble{display:none}
+#bubble[hidden]{display:none}
+/* hand-made pages: the text is drawn in the image, show it whole and lay nothing over it */
+#frame.baked #img{object-fit:contain}
+#frame.baked #shade{background:linear-gradient(to bottom,#0008 0,#0000 12%,#0000 88%,#0008 100%)}
 
 /* sources line on the last screen of a story */
 #foot{position:absolute;left:14px;right:14px;bottom:max(12px,env(safe-area-inset-bottom));z-index:3;display:flex;flex-direction:column;gap:2px;

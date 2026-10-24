@@ -32,11 +32,13 @@
     // progress bars for the current story
     $('#bars').innerHTML = st.slides.map((_, n) => `<i class="${n < k ? 'done' : n === k ? 'on' : ''}"></i>`).join('');
     $('#count').textContent = T.storyN.replace('{n}', D.position).replace('{total}', D.total);
-    const h = $('#headline'); h.textContent = st.headline; h.classList.toggle('show', k === 0); frame.classList.toggle('first', k === 0);
+    frame.classList.toggle('baked', !!st.baked); // hand-made page: the text is in the drawing
+    const h = $('#headline'); h.textContent = st.headline; h.classList.toggle('show', k === 0 && !st.baked); frame.classList.toggle('first', k === 0 && !st.baked);
     $('#who').textContent = sl.who ? T.says.replace('{who}', sl.who) : '';
     $('#who').hidden = !sl.who;
     $('#text').textContent = sl.who ? '“' + sl.text + '”' : sl.text;
     $('#bubble').classList.toggle('speech', !!sl.who);
+    $('#bubble').hidden = !sl.text;
     const last = k === st.slides.length - 1;
     $('#foot').innerHTML = last
       ? `<span>${esc(T.sources)}${C}${st.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ')}</span><span>${esc(T.style)}${C}${esc(st.style)} · ${esc(T.ai)}</span>`

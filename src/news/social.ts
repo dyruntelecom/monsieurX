@@ -110,7 +110,7 @@ export function plan(series: string, day: string): PlannedPost[] {
   const out: PlannedPost[] = [];
   for (const lang of cfg.x.langs) {
     out.push({ key: `x:${lang}:edition`, network: "x", lang, kind: "edition", at: toMin(cfg.editionPost), label: "Édition du jour (avec lien)" });
-    stories.forEach((st, i) => out.push({ key: `x:${lang}:${st.id}`, network: "x", lang, kind: "story", storyId: st.id, at: Math.round(a + i * step), label: pick(st.headline, lang) }));
+    stories.forEach((st, i) => st.socialLangs && !st.socialLangs.includes(lang) ? null : out.push({ key: `x:${lang}:${st.id}`, network: "x", lang, kind: "story", storyId: st.id, at: Math.round(a + i * step), label: pick(st.headline, lang) }));
   }
   return out.sort((p, q) => p.at - q.at);
 }

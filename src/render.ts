@@ -1,7 +1,7 @@
 // Server-rendered pages of the site: home (catalog), series, fixed pages, 404, locked episode.
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { CONTENT, type Catalog, type Series, type Episode, pick, episodeList, seriesLangs, bestVersion, seriesCover, mediaUrl } from "./content";
+import { CONTENT, type Catalog, type Series, type Episode, pick, episodeList, seriesLangs, bestVersion, seriesCover, mediaUrl, slideImage } from "./content";
 import { t, tr, uiLang, langName, fmtDate, fmtDay, routeOf, UI_LANGS } from "./i18n";
 import { esc, markdown } from "./md";
 
@@ -177,7 +177,7 @@ function newsDays(s: Series, eps: { id: string; versions: Map<string, Episode> }
   return eps.map(({ id, versions }) => {
     const e = bestVersion(versions, L);
     const cards = (e.stories || []).map((st) => {
-      const img = mediaUrl(e, st.slides[0]?.image, s.dir);
+      const img = mediaUrl(e, st.slides[0] && slideImage(st.slides[0], e.lang), s.dir);
       return `<li><a class="story-card" href="/${esc(e.lang)}/${esc(s.slug)}/${esc(id)}/${esc(st.id)}">
 <span class="thumb">${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : ""}</span>
 <span class="title">${esc(pick(st.headline, e.lang))}</span>

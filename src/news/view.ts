@@ -1,5 +1,5 @@
 // Stories reader for a generated news edition: full-screen portrait slides, one bubble per screen.
-import { type Catalog, type Series, type Episode, pick, mediaUrl, episodeList } from "../content";
+import { type Catalog, type Series, type Episode, pick, mediaUrl, episodeList, slideImage } from "../content";
 import { t, uiLang, langName, fmtDate, DICTS, DEFAULT_LANG } from "../i18n";
 import { head, config } from "../render";
 import { esc } from "../md";
@@ -12,9 +12,10 @@ export function newsReaderPage(c: Catalog, s: Series, e: Episode, preview: boole
     headline: pick(st.headline, lang),
     style: pick(st.style?.name, lang),
     sources: st.sources || [],
+    baked: !!st.baked, // text already drawn in the image: nothing laid over it
     slides: st.slides.map((sl) => ({
-      src: mediaUrl(e, sl.image, s.dir), w: sl.w, h: sl.h,
-      text: pick(sl.text, lang), who: sl.kind === "speech" && sl.speaker ? pick(sl.speaker, lang) : "",
+      src: mediaUrl(e, slideImage(sl, lang), s.dir), w: sl.w, h: sl.h,
+      text: st.baked ? "" : pick(sl.text, lang), who: !st.baked && sl.kind === "speech" && sl.speaker ? pick(sl.speaker, lang) : "",
     })).filter((sl) => sl.src),
   })).filter((st) => st.slides.length);
   // One story per page: the reader shows only this story, then offers the next one.

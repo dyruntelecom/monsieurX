@@ -12,7 +12,7 @@
   },
   "published": "2026-10-24",
   "status": "published",
-  "importVersion": 12,
+  "importVersion": 13,
   "stories": [
     {
       "id": "hormuz",
@@ -775,6 +775,102 @@
       "hashtags": [
         "Putin",
         "Ukraine"
+      ]
+    },
+    {
+      "id": "boulangerie",
+      "status": "published",
+      "style": {
+        "id": "ligne-claire",
+        "name": {
+          "en": "Franco-Belgian clear line",
+          "fr": "Ligne claire franco-belge"
+        }
+      },
+      "headline": {
+        "en": "Protest day in Paris: the baker who opens anyway",
+        "fr": "Jour de manif à Paris : le boulanger qui ouvre quand même"
+      },
+      "sources": [
+        {
+          "name": "France 3 Paris Île-de-France",
+          "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/on-nous-dit-debrouillez-vous-mais-on-n-a-pas-de-tresorerie-s-inquietent-des-commercants-sur-le-parcours-de-la-manifestation-du-24-octobre-3438252.html"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/24/france-braces-for-another-day-of-mass-protests-as-security-on-high-alert"
+        },
+        {
+          "name": "ICI",
+          "url": "https://www.ici.fr/infos/societe/direct-mobilisation-du-24-octobre-des-manifestations-partout-en-france-70-000-policiers-et-gendarmes-deployes-8725021"
+        }
+      ],
+      "cast": [],
+      "slides": [
+        {
+          "text": {
+            "en": "Paris, Saturday October 24, 7 a.m. The protest march comes down this street at noon. A baker boards up his window.",
+            "fr": "Paris, samedi 24 octobre, 7 h. Le cortège de la manifestation passe dans cette rue à midi. Un boulanger barricade sa vitrine."
+          },
+          "kind": "caption",
+          "image": "boulangerie/1-en.jpg",
+          "images": {
+            "en": "boulangerie/1-en.jpg",
+            "fr": "boulangerie/1-fr.jpg"
+          },
+          "w": 602,
+          "h": 599
+        },
+        {
+          "text": {
+            "en": "Saturday is a third of his week: he can't afford to close. 70,000 police officers are deployed across France.",
+            "fr": "Le samedi, c'est un tiers de sa semaine : fermer, il ne peut pas. 70 000 policiers et gendarmes sont mobilisés en France."
+          },
+          "kind": "caption",
+          "image": "boulangerie/2-en.jpg",
+          "images": {
+            "en": "boulangerie/2-en.jpg",
+            "fr": "boulangerie/2-fr.jpg"
+          },
+          "w": 602,
+          "h": 599
+        },
+        {
+          "text": {
+            "en": "And what if it turns ugly? Then they pull down the shutter. Not before.",
+            "fr": "Et si ça dégénère ? On baisse le rideau. Mais pas avant."
+          },
+          "kind": "caption",
+          "image": "boulangerie/3-en.jpg",
+          "images": {
+            "en": "boulangerie/3-en.jpg",
+            "fr": "boulangerie/3-fr.jpg"
+          },
+          "w": 601,
+          "h": 603
+        },
+        {
+          "text": {
+            "en": "On the plywood, a sign: open anyway. An old lady knocks for her baguette.",
+            "fr": "Sur le contreplaqué, un panneau : ouvert quand même. Une vieille dame frappe pour sa baguette."
+          },
+          "kind": "caption",
+          "image": "boulangerie/4-en.jpg",
+          "images": {
+            "en": "boulangerie/4-en.jpg",
+            "fr": "boulangerie/4-fr.jpg"
+          },
+          "w": 602,
+          "h": 603
+        }
+      ],
+      "hashtags": [
+        "Paris",
+        "Manifestation"
+      ],
+      "baked": true,
+      "socialLangs": [
+        "en"
       ]
     }
   ]

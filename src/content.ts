@@ -55,6 +55,7 @@ export interface NewsSlide {
   kind?: "caption" | "speech";
   speaker?: Text;
   scene?: string;            // drawing brief sent to the image model (kept for regeneration)
+  images?: Record<string, string>; // hand-made stories: one image per language with the text already drawn in (see NewsStory.baked)
 }
 export interface NewsStory {
   id: string;
@@ -68,7 +69,11 @@ export interface NewsStory {
   edited?: boolean;
   cast?: { role: string; look: string }[];
   hashtags?: string[]; // topical hashtags for social posts, without "#" (e.g. "Hormuz", "Iran")
+  baked?: boolean;      // text drawn into the images (slides[].images per language): no bubble or title laid over them
+  socialLangs?: string[]; // languages posted automatically on X for this story (default: all of social.json)
 }
+/** The image of a screen in one language: the per-language drawing of a hand-made story, else the shared drawing. */
+export const slideImage = (sl: NewsSlide, lang: string): string => sl.images?.[lang] || sl.image;
 export interface NewsEdition {
   series: string; episode: string; langs: string[]; baseLang?: string;
   title: Text; published: string; status: Status; generatedAt?: string;
@@ -135,15 +140,16 @@ function editionEpisodes(s: Series, ed: NewsEdition, dir: string, errors: string
     const pages: Page[] = [];
     for (const st of stories) {
       st.slides.forEach((sl, k) => {
-        if (!mediaPath(dir, sl.image, dir, GEN_DIR)) { errors.push(`${s.slug}/${ed.episode}: image introuvable ${sl.image}`); return; }
-        pages.push({ src: sl.image, w: sl.w || 1024, h: sl.h || 1536, label: `${pick(st.headline, lang)} · ${k + 1}/${st.slides.length}`, kind: "slide", zones: [] });
+        const im = slideImage(sl, lang);
+        if (!mediaPath(dir, im, dir, GEN_DIR)) { errors.push(`${s.slug}/${ed.episode}: image introuvable ${im}`); return; }
+        pages.push({ src: im, w: sl.w || 1024, h: sl.h || 1536, label: `${pick(st.headline, lang)} · ${k + 1}/${st.slides.length}`, kind: "slide", zones: [] });
       });
     }
     return {
       series: s.slug, episode: ed.episode, lang, dir, gen: true, format: "stories",
       title: (stories[0] && pick(stories[0].headline, lang)) || pick(ed.title, lang), published: ed.published, authors: s.authors,
       status: ed.status === "published" ? "published" : "draft", access: "free",
-      cover: stories[0]?.slides[0]?.image, stories, pages,
+      cover: stories[0]?.slides[0] && slideImage(stories[0].slides[0], lang), stories, pages,
       blurb: stories.map((st) => pick(st.headline, lang)).slice(0, 3).join(" · "),
     } as Episode;
   });

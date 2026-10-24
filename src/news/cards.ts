@@ -5,7 +5,7 @@ import * as opentype from "opentype.js";
 import jpeg from "jpeg-js";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { ROOT, GEN_DIR, readEdition, pick, type NewsStory } from "../content";
+import { ROOT, GEN_DIR, readEdition, pick, slideImage, type NewsStory } from "../content";
 
 const FONT_DIR = join(ROOT, "assets", "fonts");
 const FILES = {
@@ -59,9 +59,10 @@ export function renderCard(o: CardOpts): Uint8Array {
   if (!ed || !st) throw new Error("sujet introuvable");
   const sl = st.slides[o.slide];
   if (!sl) throw new Error("écran introuvable");
-  const imgPath = join(GEN_DIR, o.series, "episodes", o.day, sl.image);
+  const file = slideImage(sl, o.lang);
+  const imgPath = join(GEN_DIR, o.series, "episodes", o.day, file);
   if (!existsSync(imgPath)) throw new Error("image introuvable");
-  const ext = sl.image.toLowerCase().endsWith(".png") ? "png" : "jpeg";
+  const ext = file.toLowerCase().endsWith(".png") ? "png" : "jpeg";
   const b64 = readFileSync(imgPath).toString("base64");
   const L = LABELS[o.lang] || LABELS.en;
   const first = o.slide === 0, last = o.slide === st.slides.length - 1;
@@ -74,6 +75,7 @@ export function renderCard(o: CardOpts): Uint8Array {
   const dx = (W - dw) / 2, dy = Math.min(0, (H - dh) * 0.35);
 
   const parts: string[] = [];
+  if (st.baked) return bakedCard(o, st, b64, ext, iw, ih, first, last, L, brand);
   parts.push(`<image href="data:image/${ext};base64,${b64}" x="${dx}" y="${dy}" width="${dw}" height="${dh}" preserveAspectRatio="none"/>`);
   parts.push(`<defs>
 <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="${first ? 0.82 : 0.55}"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
@@ -117,6 +119,30 @@ export function renderCard(o: CardOpts): Uint8Array {
   parts.push(`<text x="${M}" y="${H - 30}" font-family="IBM Plex Sans Condensed" font-size="26" fill="#ffffffc0">${esc(L.ai)} · ${esc(pick(st.style?.name, o.lang))}</text>`);
   parts.push(`<text x="${W - M}" y="${H - 30}" text-anchor="end" font-family="IBM Plex Sans Condensed" font-weight="700" font-size="28" fill="#fff">${esc(brand)}</text>`);
 
+  return toJpeg(parts);
+}
+
+/** Hand-made page (text drawn in the image): the whole drawing on a dark card, header and footer around it, nothing over it. */
+function bakedCard(o: CardOpts, st: NewsStory, b64: string, ext: string, iw: number, ih: number, first: boolean, last: boolean, L: typeof LABELS["en"], brand: string): Uint8Array {
+  const top = 104, bottom = last ? 128 : 72;
+  const scale = Math.min(W / iw, (H - top - bottom) / ih);
+  const dw = iw * scale, dh = ih * scale;
+  const dx = (W - dw) / 2, dy = top + (H - top - bottom - dh) / 2;
+  const parts: string[] = [];
+  parts.push(`<image href="data:image/${ext};base64,${b64}" x="${dx}" y="${dy}" width="${dw}" height="${dh}" preserveAspectRatio="none"/>`);
+  parts.push(`<text x="${M}" y="68" font-family="IBM Plex Sans Condensed" font-weight="700" font-size="34" fill="#fff">STORINK DAILY</text>`);
+  parts.push(`<text x="${W - M}" y="68" text-anchor="end" font-family="IBM Plex Sans Condensed" font-size="30" fill="#ffffffcc">${esc(o.dateLabel)} · ${o.slide + 1}/${st.slides.length}</text>`);
+  if (last) {
+    const src = `${L.sources} ${st.sources.map((s) => s.name).join(", ")}`;
+    const srcLine = fit(fonts.regular, src, 28, 22, W - 2 * M, 1).lines[0];
+    parts.push(`<text x="${M}" y="${H - 76}" font-family="IBM Plex Sans Condensed" font-size="26" fill="#ffffffe0">${esc(srcLine)}</text>`);
+  }
+  parts.push(`<text x="${M}" y="${H - 28}" font-family="IBM Plex Sans Condensed" font-size="26" fill="#ffffffc0">${esc(L.ai)}</text>`);
+  parts.push(`<text x="${W - M}" y="${H - 28}" text-anchor="end" font-family="IBM Plex Sans Condensed" font-weight="700" font-size="28" fill="#fff">${esc(brand)}</text>`);
+  return toJpeg(parts);
+}
+
+function toJpeg(parts: string[]): Uint8Array {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="#12161f"/>${parts.join("")}</svg>`;
   const r = new Resvg(svg, { font: { fontFiles: Object.values(FILES), loadSystemFonts: false, defaultFontFamily: "IBM Plex Sans Condensed" }, fitTo: { mode: "original" } });
   const img = r.render();

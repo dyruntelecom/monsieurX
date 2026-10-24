@@ -99,6 +99,8 @@ Chaque matin (`publishHour`, 7 h heure de Paris par défaut, réglable avec `tim
 3. `python3 tools/edition.py build content/news/import/<date>.script.json content/news/import/<date>` : écrit le manifeste avec les sujets complets et augmente `importVersion`.
 4. Push sur `main` : au démarrage, le serveur copie l'édition sur le volume. Une édition importée n'est jamais complétée par la génération automatique.
 
+**Planche avec texte dessiné** (une image par langue, bulles incrustées) : découper chaque version avec `split planche-fr.png … <sujet> fr` puis `… <sujet> en` (fichiers `<n>-fr.jpg`, `<n>-en.jpg`) et mettre `"baked": true` dans le sujet. La liseuse affiche l'image entière de la langue lue, sans titre ni bulle par-dessus ; les images de partage gardent seulement l'en-tête et le pied. `"socialLangs": ["en"]` limite la publication automatique sur X à ces langues.
+
 ## Réseaux sociaux (Storink Daily)
 
 - Images de partage : `/cards/<série>/<date>/<sujet>/<n>-<langue>.jpg` (1080×1350, titre, bulle, sources et mention IA incrustés), fabriquées à partir des dessins sans texte. Les éditions stockent leurs images en JPEG (exigé par Instagram et par le moteur de rendu).

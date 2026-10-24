@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Builds a hand-made Storink Daily edition for content/news/import/<day>/.
 
-  tools/edition.py split  <page.png> <out_dir> <story_id>   # cuts a 2x2 comic page into <story_id>/1..4.jpg (JPEG: needed by Instagram and the share cards)
+  tools/edition.py split  <page.png> <out_dir> <story_id> [lang]  # cuts a 2x2 comic page into <story_id>/1..4.jpg (JPEG: needed by Instagram and the share cards)
+                                                            # with [lang]: <story_id>/1-<lang>.jpg… for a page whose text is drawn in ("baked": true in the script)
   tools/edition.py single <img> <out_dir> <story_id> <n>    # adds one separate image as slide n
   tools/edition.py build  <script.json> <out_dir>           # writes manifest.json for every story that has its images
 
@@ -48,7 +49,7 @@ def trim(img):
     while b > H - H // 10 and blank((0, b - 1, W, b)): b -= 1
     return img.crop((l, t, r, b))
 
-def split(page, out, sid):
+def split(page, out, sid, lang=None):
     img = trim(Image.open(page))
     W, H = img.size
     x0, x1 = gutter(img, 0); y0, y1 = gutter(img, 1)
@@ -56,7 +57,7 @@ def split(page, out, sid):
     for n, bx in enumerate(boxes, 1):
         panel = trim(img.crop(bx))
         i = 3  # small inset: drops any anti-aliased gutter edge
-        save(panel.crop((i, i, panel.width - i, panel.height - i)), os.path.join(out, sid, f"{n}.jpg"))
+        save(panel.crop((i, i, panel.width - i, panel.height - i)), os.path.join(out, sid, f"{n}-{lang}.jpg" if lang else f"{n}.jpg"))
     print(f"{sid}: page {W}x{H}, gutters x {x0}-{x1}, y {y0}-{y1}, cases " + ", ".join(f"{b[2]-b[0]}x{b[3]-b[1]}" for b in boxes))
 
 def build(script, out):
@@ -65,14 +66,22 @@ def build(script, out):
     stories = []
     for st in src["stories"]:
         slides = []
+        baked = st.get("baked", False)  # text drawn in: one image per language, <id>/<k>-<lang>.jpg
         for k, s in enumerate(st["slides"], 1):
+            if baked:
+                imgs = {l: f"{st['id']}/{k}-{l}.jpg" for l in ("en", "fr")}
+                if not all(os.path.exists(os.path.join(out, v)) for v in imgs.values()): break
+                w, h = Image.open(os.path.join(out, imgs["en"])).size
+                slides.append({**s, "image": imgs["en"], "images": imgs, "w": w, "h": h})
+                continue
             p = os.path.join(out, st["id"], f"{k}.jpg")
             if not os.path.exists(p): break
             w, h = Image.open(p).size
             slides.append({**s, "image": f"{st['id']}/{k}.jpg", "w": w, "h": h})
         if len(slides) != len(st["slides"]): continue
         stories.append({"id": st["id"], "status": "published", "style": {"id": st["style"], "name": styles[st["style"]]["name"]},
-                        "headline": st["headline"], "sources": st["sources"], "cast": st.get("cast", []), "slides": slides})
+                        "headline": st["headline"], "sources": st["sources"], "cast": st.get("cast", []), "slides": slides,
+                        **({k: st[k] for k in ("hashtags", "baked", "socialLangs") if k in st})})
     day = src["day"]
     prev = {}
     mp = os.path.join(out, "manifest.json")
@@ -84,6 +93,6 @@ def build(script, out):
 
 if __name__ == "__main__":
     cmd = sys.argv[1]
-    if cmd == "split": split(sys.argv[2], sys.argv[3], sys.argv[4])
+    if cmd == "split": split(sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5] if len(sys.argv) > 5 else None)
     elif cmd == "single": save(Image.open(sys.argv[2]), os.path.join(sys.argv[3], sys.argv[4], f"{sys.argv[5]}.jpg"))
     elif cmd == "build": build(sys.argv[2], sys.argv[3])
