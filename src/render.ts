@@ -146,7 +146,7 @@ export function seriesPage(c: Catalog, s: Series, lang: string, preview: boolean
     const e = bestVersion(versions, L);
     const others = [...versions.keys()];
     const img = mediaUrl(e, e.cover || e.pages[0]?.src, s.dir);
-    const head = s.type === "news" ? fmtDate(L, e.published) : t(L, "series.episode", { n: e.number ?? id });
+    const head = s.type === "news" ? fmtDate(L, e.published) : e.listLabel || t(L, "series.episode", { n: e.number ?? id });
     const date = e.broadcastDate ? t(L, "series.broadcast", { date: fmtDate(L, e.broadcastDate) }) : e.published && s.type !== "news" ? t(L, "series.published", { date: fmtDate(L, e.published) }) : "";
     return `<li><a class="ep" href="/${esc(e.lang)}/${esc(s.slug)}/${esc(id)}">
 <span class="thumb">${img ? `<img src="${esc(img)}" alt="" loading="lazy">` : ""}</span>

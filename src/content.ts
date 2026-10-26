@@ -26,6 +26,7 @@ export interface Episode {
   series: string;
   episode: string;          // folder name, used in the URL: "1", "2", or a date for news series
   number?: number;
+  listLabel?: string;       // replaces "Episode n" in the episode list (e.g. "Hors-série"); number still sets the order
   lang: string;
   title: string;
   eyebrow?: string;
