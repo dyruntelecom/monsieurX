@@ -2,6 +2,6 @@
  {"type": "balloon", "seed": [60, 30], "text": "PARIS, SATURDAY 26 MAY 2012, 7 A.M.", "max": 26, "margin": 3},
  {"type": "balloon", "seed": [716, 112], "text": "THE NEWS.|IN SYRIA, MORE THAN 90 DEAD|IN HOULA, NEAR HOMS."},
  {"type": "balloon", "seed": [160, 548], "text": "FRANÇOIS HOLLANDE|IS BACK FROM AFGHANISTAN:|THE WITHDRAWAL OF COMBAT|TROOPS IS CONFIRMED."},
- {"type": "balloon", "seed": [615, 772], "text": "RECORDING|AT HIS PLACE,|AS USUAL?"},
+ {"type": "balloon", "seed": [615, 772], "text": "RECORDING|AT HIS PLACE,|AS USUAL?", "max": 20},
  {"type": "balloon", "seed": [565, 1200], "text": "HE NEVER COMES|TO THE STUDIO."}
 ]}
