@@ -1,0 +1,85 @@
+{
+ "blocks": [
+  {
+   "type": "plain",
+   "rects": [
+    [
+     25,
+     620,
+     405,
+     740
+    ],
+    [
+     25,
+     750,
+     405,
+     780
+    ]
+   ],
+   "fill": [
+    2,
+    2,
+    2
+   ],
+   "color": [
+    240,
+    236,
+    228
+   ],
+   "lines": [
+    {
+     "text": "POPOV,",
+     "x": 34,
+     "y": 679,
+     "cap": 49,
+     "weight": 470,
+     "squeeze": 0.86
+    },
+    {
+     "text": "THE SPY WHO INSPIRED BOND",
+     "x": 34,
+     "y": 728,
+     "cap": 36,
+     "weight": 470,
+     "fit": 360,
+     "squeeze": 0.86
+    },
+    {
+     "text": "LISBON – NEW YORK – PEARL HARBOR, 1941",
+     "x": 34,
+     "y": 773,
+     "cap": 16,
+     "weight": 400,
+     "fit": 356,
+     "squeeze": 0.95
+    }
+   ]
+  },
+  {
+   "type": "plain",
+   "rects": [
+    [
+     40,
+     1330,
+     384,
+     1358
+    ]
+   ],
+   "color": [
+    20,
+    18,
+    16
+   ],
+   "lines": [
+    {
+     "text": "EPISODE 1 • AIRED 26.05.2012",
+     "x": 46,
+     "y": 1352,
+     "cap": 15,
+     "font": "typewriter",
+     "fit": 330
+    }
+   ]
+  }
+ ]
+}

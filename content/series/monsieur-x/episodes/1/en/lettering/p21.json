@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    595,
+    65
+   ],
+   "text": "THIS SCENE TURNS UP ALMOST WORD FOR WORD IN THE FIRST JAMES BOND."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    140,
+    490
+   ],
+   "text": "BUT IT'S POPOV HIMSELF WHO TELLS IT..."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    595,
+    485
+   ],
+   "text": "PROFESSIONAL LIARS SOMETIMES|TELL THE TRUTH. THAT'S WHAT|MAKES THEM DANGEROUS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    185,
+    985
+   ],
+   "text": "BUT BOND NEVER CARRIED WHAT|POPOV HAD IN HIS POCKET|IN AUGUST 1941."
+  }
+ ]
+}

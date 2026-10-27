@@ -1,0 +1,28 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    905,
+    70
+   ],
+   "text": "I LEFT IT|ON HIS|DESK..."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    340,
+    815
+   ],
+   "text": "THE PLAQUE...|IT'S GONE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    895,
+    1440
+   ],
+   "text": "END OF EPISODE 1"
+  }
+ ]
+}

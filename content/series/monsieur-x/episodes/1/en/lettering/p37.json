@@ -1,0 +1,35 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     90,
+     960,
+     1000,
+     1405
+    ]
+   ],
+   "left": 100,
+   "size": 25,
+   "width": 840,
+   "lh": 32,
+   "lines": [
+    {
+     "text": "AFTER THE WAR",
+     "y": 1006,
+     "size": 36,
+     "underline": 20
+    },
+    {
+     "para": "What we know. Dusko Popov receives the Order of the British Empire and becomes a British citizen. He goes into business and lives between Switzerland and the French Riviera. In 1974, he publishes his memoirs. J. Edgar Hoover had died two years earlier.",
+     "y": 1081
+    },
+    {
+     "para": "What we will never know. Whether Ian Fleming really watched him at the Estoril casino. Why the questions about Hawaii never left the FBI’s offices. And where Johnny Jebsen lies, declared dead in 1950, with no grave.",
+     "y": 1274
+    }
+   ]
+  }
+ ]
+}

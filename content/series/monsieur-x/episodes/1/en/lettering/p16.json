@@ -1,0 +1,67 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    245,
+    68
+   ],
+   "text": "HOTEL PALÁCIO|THE BRITISH"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    175,
+    310
+   ],
+   "text": "HOTEL ATLÂNTICO|THE GERMANS"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    713,
+    677
+   ],
+   "text": "PORT OF LISBON"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    255,
+    843
+   ],
+   "text": "CABO RUIVO – PAN AM SEAPLANES"
+  },
+  {
+   "type": "typed",
+   "rects": [
+    [
+     55,
+     1155,
+     1000,
+     1425
+    ]
+   ],
+   "left": 67,
+   "size": 20,
+   "width": 880,
+   "lh": 27,
+   "lines": [
+    {
+     "text": "LISBON 1940, A NEST OF SPIES",
+     "y": 1178,
+     "size": 21,
+     "underline": null
+    },
+    {
+     "para": "Salazar’s Portugal stays neutral. Lisbon becomes the last way out of Europe at war: tens of thousands of refugees wait there for a visa, a ship, a seat on the Pan Am seaplane to New York.",
+     "y": 1230
+    },
+    {
+     "para": "In Estoril, the two sides share the grand hotels: the British at the Palácio, the Germans at the Atlântico. In the evening, everyone meets at the casino. They gamble, they drink, and above all, they listen.",
+     "y": 1361
+    }
+   ]
+  }
+ ]
+}

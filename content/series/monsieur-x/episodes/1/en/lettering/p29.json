@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    175,
+    38
+   ],
+   "text": "WASHINGTON, AUTUMN 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    815,
+    43
+   ],
+   "text": "ONE DAY, THE HEAD OF THE FBI HIMSELF|WANTED A CLOSER LOOK AT THIS PLAYBOY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    282,
+    418
+   ],
+   "text": "YOU'RE A DOUBLE AGENT|AND YOU LIVE LIKE|A MILLIONAIRE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    922,
+    413
+   ],
+   "text": "I'M BRINGING YOU|THE QUESTIONS BERLIN|IS ASKING ABOUT|PEARL HARBOR!"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    405,
+    880
+   ],
+   "text": "I DON'T NEED A PLAYBOY|TO DO MY JOB.|ONE FALSE STEP,|AND I'LL HAVE YOU ARRESTED."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    585,
+    1210
+   ],
+   "text": "ONLY POPOV TELLS|THIS SCENE. AND HE|WAITED FOR HOOVER|TO DIE BEFORE WRITING IT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    840,
+    1433
+   ],
+   "text": "IN HIS PLACE, I'D HAVE|DONE THE SAME. HOOVER|HAD FILES ON EVERYONE."
+  }
+ ]
+}

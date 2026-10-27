@@ -1,0 +1,126 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     1035,
+     1010,
+     1445
+    ]
+   ],
+   "left": 71,
+   "size": 22,
+   "width": 900,
+   "lh": 29,
+   "lines": [
+    {
+     "text": "THE DOUBLE CROSS SYSTEM",
+     "y": 1059,
+     "size": 27,
+     "underline": 26
+    },
+    {
+     "para": "In 1940, MI5 pulls off an extraordinary feat: almost every spy Germany sends to England is spotted and arrested. Once caught, they have only one choice: cooperate, or face British justice.",
+     "y": 1113
+    },
+    {
+     "para": "Those who agree keep writing to their German handlers. But every message is drafted in London by a secret committee, the Twenty Committee. In Roman numerals, twenty is written XX: the “double cross”.",
+     "y": 1255
+    },
+    {
+     "para": "Berlin believes it has a vast network in England. In reality, the entire network works for the British.",
+     "y": 1407
+    }
+   ]
+  },
+  {
+   "type": "typed",
+   "flow": false,
+   "rects": [
+    [
+     395,
+     318,
+     615,
+     376
+    ],
+    [
+     62,
+     566,
+     282,
+     597
+    ],
+    [
+     708,
+     518,
+     975,
+     556
+    ],
+    [
+     785,
+     880,
+     925,
+     913
+    ],
+    [
+     355,
+     918,
+     585,
+     986
+    ]
+   ],
+   "lines": [
+    {
+     "text": "BERLIN SENDS",
+     "cx": 503,
+     "y": 342,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "A SPY",
+     "cx": 510,
+     "y": 371,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "BERLIN FALLS FOR IT",
+     "cx": 171,
+     "y": 590,
+     "size": 25,
+     "font": "comic"
+    },
+    {
+     "text": "ARRESTED BY MI5",
+     "cx": 840,
+     "y": 548,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "TURNED",
+     "cx": 854,
+     "y": 908,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "THE COMMITTEE",
+     "cx": 467,
+     "y": 948,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "DICTATES THE MESSAGES",
+     "cx": 470,
+     "y": 979,
+     "size": 25,
+     "font": "comic"
+    }
+   ]
+  }
+ ]
+}

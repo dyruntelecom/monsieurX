@@ -1,0 +1,66 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    155,
+    42
+   ],
+   "text": "LISBON, AUGUST 1941"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    442,
+    128
+   ],
+   "text": "BERLIN IS SENDING YOU|TO AMERICA. YOU WILL|BUILD A NETWORK THERE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    330,
+    638
+   ],
+   "text": "AMERICA|IS NOT|AT WAR."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    380,
+    775
+   ],
+   "text": "NOT YET.",
+   "ellipse": [
+    326,
+    752,
+    432,
+    806
+   ]
+  },
+  {
+   "type": "caption",
+   "seed": [
+    580,
+    577
+   ],
+   "text": "THE QUESTIONNAIRE FIT INSIDE|A PUNCTUATION MARK. IT WAS|CALLED A MICRODOT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    865,
+    578
+   ],
+   "text": "A WHOLE PAGE WAS ABOUT|A SINGLE ISLAND, ON THE|OTHER SIDE OF THE WORLD."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    265,
+    982
+   ],
+   "text": "BERLIN HAD NO FLEET IN THE PACIFIC.|SO WHO WAS IT ASKING THESE QUESTIONS FOR?"
+  }
+ ]
+}

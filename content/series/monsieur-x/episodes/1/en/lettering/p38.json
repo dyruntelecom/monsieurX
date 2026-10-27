@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    355,
+    60
+   ],
+   "text": "TWO MINUTES|LEFT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    370,
+    450
+   ],
+   "text": "ONE LAST|QUESTION. WHY|DID JOHNNY|NEVER TALK?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    870,
+    463
+   ],
+   "text": "BECAUSE HE WAS HIS FRIEND.|IN THIS TRADE, IT'S THE ONLY|LOYALTY THAT ISN'T FOR SALE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    305,
+    820
+   ],
+   "text": "AND YOU... WERE YOU|AT THE RITZ BAR|THAT DAY?"
+  }
+ ]
+}

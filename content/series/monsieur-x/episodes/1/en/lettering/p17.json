@@ -1,0 +1,68 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    160,
+    32
+   ],
+   "text": "LONDON, DECEMBER 1940"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    840,
+    42
+   ],
+   "text": "HE TRADED THE LISBON SUN|FOR THE LONDON BOMBS."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    300,
+    380
+   ],
+   "text": "THE SPIES BERLIN SENDS TO ENGLAND, WE ARREST THEM ALL. THOSE WHO COOPERATE KEEP WRITING TO BERLIN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    585,
+    355
+   ],
+   "text": "BUT WE ARE THE ONES WHO DICTATE THEIR LETTERS. YOU WILL BE ONE OF THEM."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    858,
+    330
+   ],
+   "text": "THE BRITISH GAVE HIM|A CODE NAME: TRICYCLE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    820,
+    690
+   ],
+   "text": "WHY|TRICYCLE?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    938,
+    850
+   ],
+   "text": "FIND OUT|YOURSELF."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    230,
+    948
+   ],
+   "text": "THE SYSTEM WAS CALLED DOUBLE CROSS.|IT HAD JUST FOUND ITS BEST PLAYER."
+  }
+ ]
+}

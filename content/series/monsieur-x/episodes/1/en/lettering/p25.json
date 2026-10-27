@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    170,
+    40
+   ],
+   "text": "LISBON, AUGUST 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    260,
+    95
+   ],
+   "text": "THE PAN AM CLIPPER. THE ONLY AIR BRIDGE|BETWEEN EUROPE AT WAR AND AMERICA AT PEACE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    860,
+    925
+   ],
+   "text": "THE BRITISH HAD DECIDED|TO HAND THE QUESTIONNAIRE|TO THE AMERICANS.|AS A GIFT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    170,
+    1095
+   ],
+   "text": "YOU DON'T ALWAYS CHECK|WHO OPENS THE GIFTS."
+  }
+ ]
+}

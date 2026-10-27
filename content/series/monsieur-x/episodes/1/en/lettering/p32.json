@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    750,
+    80
+   ],
+   "text": "LET'S RECAP. BY AUGUST 1941, THE FBI|HAS THE PEARL HARBOR QUESTIONNAIRE|AND POPOV'S WARNING ABOUT TARANTO.|FOUR MONTHS BEFORE THE ATTACK."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    483
+   ],
+   "text": "AND NOBODY WARNS THE NAVY|IN HAWAII. NEGLIGENCE?|RIVALRY BETWEEN AGENCIES?|OR HOOVER'S CONTEMPT FOR POPOV?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    565,
+    490
+   ],
+   "text": "NO HISTORIAN HAS PROVED|ANYONE MEANT TO LET IT|HAPPEN. AND THE QUESTIONNAIRE|GAVE NEITHER A DATE|NOR AN ATTACK."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    815,
+    895
+   ],
+   "text": "I'M NOT SAYING ANYONE WANTED|THE DISASTER. I'M SAYING NOBODY|LISTENED TO THE WARNING, BECAUSE|IT CAME FROM A PLAYBOY."
+  }
+ ]
+}

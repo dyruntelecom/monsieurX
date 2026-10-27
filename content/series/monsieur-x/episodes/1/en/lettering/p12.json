@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     55,
+     795,
+     1010,
+     1320
+    ]
+   ],
+   "left": 72,
+   "size": 22,
+   "width": 905,
+   "lh": 30,
+   "lines": [
+    {
+     "text": "THE ABWEHR",
+     "y": 822,
+     "size": 27,
+     "underline": 26
+    },
+    {
+     "para": "German military intelligence. Since 1935 it has been run by Admiral Wilhelm Canaris, a secretive man whose true allegiance would long be debated. Its agents recruit in business circles, ports, universities and high society all over Europe.",
+     "y": 869
+    },
+    {
+     "text": "JOHNNY JEBSEN",
+     "y": 1049,
+     "size": 27,
+     "underline": 26
+    },
+    {
+     "para": "Heir to a shipping family, a brilliant student, ironic and fragile. Popov’s friend since Freiburg. He joins the Abwehr at the start of the war, partly, it is said, to avoid the front.",
+     "y": 1093
+    },
+    {
+     "para": "In February 1945, the Gestapo takes him from the camp where he was held. He is never seen again, almost certainly murdered.",
+     "y": 1201
+    },
+    {
+     "para": "In 2012, historian Ben Macintyre called him a hero. His silence protected Popov and thousands of Allied soldiers.",
+     "y": 1280
+    }
+   ]
+  }
+ ]
+}

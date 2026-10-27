@@ -2,68 +2,37 @@
  "blocks": [
   {
    "type": "typed",
-   "rect": [
-    50,
-    1070,
-    1000,
-    1500
+   "rects": [
+    [
+     50,
+     1070,
+     1000,
+     1500
+    ]
    ],
    "left": 70,
    "size": 20,
+   "width": 870,
+   "lh": 29,
    "lines": [
     {
      "text": "WHO WAS DUSKO POPOV, REALLY?",
      "y": 1105,
-     "font": "typewriter",
      "size": 27,
      "underline": 26
     },
     {
-     "text": "Born in 1912 on the banks of the Danube, son of a wealthy Serbian family",
+     "para": "Born in 1912 on the banks of the Danube, son of a wealthy Serbian family settled in Dubrovnik. Lawyer, doctor of law, polyglot, gambler, seducer. During the Second World War, he worked for two secret services at once. Which one was he really deceiving?",
      "y": 1167
     },
     {
-     "text": "settled in Dubrovnik. Lawyer, doctor of law, polyglot, gambler, seducer.",
-     "y": 1196
-    },
-    {
-     "text": "During the Second World War, he worked for two secret services at once.",
-     "y": 1225
-    },
-    {
-     "text": "Which one was he really deceiving?",
-     "y": 1254
-    },
-    {
-     "text": "They say he inspired Ian Fleming’s James Bond.",
+     "para": "They say he inspired Ian Fleming’s James Bond. That he staked a fortune at baccarat, with someone else’s money. That his code name, “Tricycle”, owed more to his private life than to his talent as a spy. That he could have changed the course of the war, had anyone listened.",
      "y": 1308
     },
     {
-     "text": "That he staked a fortune at baccarat, with someone else’s money.",
-     "y": 1337
-    },
-    {
-     "text": "That his code name, “Tricycle”, owed more to his private life",
-     "y": 1366
-    },
-    {
-     "text": "than to his talent as a spy.",
-     "y": 1395
-    },
-    {
-     "text": "That he could have changed the course of the war, had anyone listened.",
-     "y": 1424
-    },
-    {
-     "text": "What is true, what is exaggerated: Monsieur X has his version.",
+     "para": "What is true, what is exaggerated: Monsieur X has his version.",
      "y": 1481
     }
-   ],
-   "weight": 0,
-   "color": [
-    22,
-    20,
-    18
    ]
   }
  ]

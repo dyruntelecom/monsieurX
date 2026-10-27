@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    45
+   ],
+   "text": "THE STUDENT'S NOTEBOOK ENDED UP|ON THE RIGHT DESK."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    790,
+    370
+   ],
+   "text": "YOU FIND|THIS FUNNY?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    797,
+    565
+   ],
+   "text": "NO.|I FIND IT|RIDICULOUS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    825,
+    820
+   ],
+   "text": "HIS FATHER KNEW PEOPLE.|ALL THE WAY UP TO THE PRIME MINISTER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    220,
+    1080
+   ],
+   "text": "RELEASED, THEN EXPELLED. HE BORE|THE REICH A STUBBORN GRUDGE."
+  }
+ ]
+}

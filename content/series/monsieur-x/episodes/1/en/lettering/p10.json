@@ -1,0 +1,28 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    405,
+    75
+   ],
+   "text": "AN ANTI-NAZI WHO ENDS UP|WITH THE GERMAN SPIES...|YOU COULDN'T INVENT IT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    150,
+    422
+   ],
+   "text": "NO. YOU RECRUIT IT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    865,
+    450
+   ],
+   "text": "THREE YEARS LATER,|SOMEONE CAME|LOOKING FOR HIM."
+  }
+ ]
+}

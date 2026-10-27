@@ -1,0 +1,20 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    215,
+    435
+   ],
+   "text": "YOU'RE EARLY.|PEOPLE WHO ARRIVE EARLY|ALWAYS HAVE ONE QUESTION TOO MANY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    765,
+    855
+   ],
+   "text": "DUSKO POPOV.|DID YOU KNOW HIM?"
+  }
+ ]
+}

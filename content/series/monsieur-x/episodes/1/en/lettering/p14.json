@@ -1,0 +1,46 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    485,
+    110
+   ],
+   "text": "WHY|LISBON?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    230,
+    390
+   ],
+   "text": "IN 1940, EUROPE WAS A PRISON.|PORTUGAL WAS NEUTRAL, AND LISBON|THE LAST OPEN DOOR: TO LONDON,|TO NEW YORK, TO ANYWHERE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    745,
+    383
+   ],
+   "text": "REFUGEES, SMUGGLERS, DIPLOMATS,|SPIES FROM EVERY SIDE. EVERYONE|CROSSED PATHS IN THE SAME CAFÉS."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    850,
+    825
+   ],
+   "text": "WERE YOU THERE?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    160,
+    1097
+   ],
+   "text": "EVERYONE WAS THERE.",
+   "margin": 5,
+   "margin_y": 2
+  }
+ ]
+}

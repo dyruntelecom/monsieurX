@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    465,
+    77
+   ],
+   "text": "DUSKO! STILL THE FASTEST CAR IN TOWN?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    220,
+    485
+   ],
+   "text": "JOHNNY HAD BECOME SOMEONE.|THE ABWEHR, GERMAN MILITARY|INTELLIGENCE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    630,
+    510
+   ],
+   "text": "YOU KNOW EVERYONE WHO MATTERS IN ENGLAND. BERLIN WOULD LIKE TO KNOW WHAT THEY THINK."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    895,
+    485
+   ],
+   "text": "WHY NOT?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    935
+   ],
+   "text": "EACH THOUGHT HE HAD WON THE GAME.|I STILL DON'T KNOW WHICH ONE WAS RIGHT."
+  }
+ ]
+}

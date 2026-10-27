@@ -1,0 +1,86 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     55,
+     1095,
+     1010,
+     1495
+    ]
+   ],
+   "left": 65,
+   "size": 20,
+   "width": 900,
+   "lh": 26,
+   "lines": [
+    {
+     "text": "THE MICRODOT",
+     "y": 1127,
+     "size": 34,
+     "underline": 20
+    },
+    {
+     "para": "A whole page, photographed and then shrunk about two hundred times, down to the size of a punctuation mark. Stuck on an ordinary letter or invoice, it passes under the censors’ eyes without raising the slightest suspicion. To read it, you need a microscope.",
+     "y": 1181
+    },
+    {
+     "para": "In August 1941, four microdots cross the Atlantic in Dusko Popov’s luggage. They hold a two-page German questionnaire about America: its factories, its aircraft, its bases. And one Pacific island, Hawaii.",
+     "y": 1308
+    },
+    {
+     "para": "It is through Popov that the FBI discovers the technique. In 1946, its director will describe this discovery in the American press. Without mentioning Popov’s name.",
+     "y": 1436
+    }
+   ]
+  },
+  {
+   "type": "typed",
+   "flow": false,
+   "rects": [
+    [
+     70,
+     74,
+     310,
+     106
+    ],
+    [
+     405,
+     78,
+     632,
+     112
+    ],
+    [
+     718,
+     92,
+     980,
+     128
+    ]
+   ],
+   "lines": [
+    {
+     "text": "A WHOLE PAGE",
+     "cx": 189,
+     "y": 102,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "SHRUNK 200 TIMES",
+     "cx": 519,
+     "y": 109,
+     "size": 27,
+     "font": "comic"
+    },
+    {
+     "text": "STUCK ON A LETTER",
+     "cx": 848,
+     "y": 124,
+     "size": 27,
+     "font": "comic"
+    }
+   ]
+  }
+ ]
+}

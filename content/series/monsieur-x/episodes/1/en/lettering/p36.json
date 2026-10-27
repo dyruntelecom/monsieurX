@@ -1,0 +1,68 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    150,
+    40
+   ],
+   "text": "LONDON, 6 JUNE 1944"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    815,
+    58
+   ],
+   "text": "THE ALLIES LANDED IN NORMANDY.|HITLER WAS STILL WAITING AT CALAIS.|JOHNNY HAD SAID NOTHING."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    120,
+    418
+   ],
+   "text": "GERMANY, 1945"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    215,
+    765
+   ],
+   "text": "HE SEARCHED FOR JOHNNY IN EVERY|RUIN. HE NEVER FOUND HIM."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    768,
+    425
+   ],
+   "text": "THE BRITISH DECORATED HIM. THE CEREMONY|WAS HELD, AS IT SHOULD BE, AT THE RITZ BAR."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    120,
+    855
+   ],
+   "text": "FRENCH RIVIERA, 1974"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    830,
+    865
+   ],
+   "text": "THIRTY YEARS LATER, HE TOLD|IT ALL IN HIS MEMOIRS. ALMOST ALL."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    265,
+    1185
+   ],
+   "text": "HE DIED IN 1981 IN OPIO, IN THE HILLS ABOVE NICE.|THE PAPERS CALLED HIM “THE REAL JAMES BOND”."
+  }
+ ]
+}

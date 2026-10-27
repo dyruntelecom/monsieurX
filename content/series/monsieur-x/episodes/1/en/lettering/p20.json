@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    178,
+    37
+   ],
+   "text": "ESTORIL CASINO, AUGUST 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    858,
+    58
+   ],
+   "text": "BEFORE LEAVING FOR AMERICA,|HE TREATED HIMSELF TO ONE LAST|NIGHT AT THE CASINO."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    240,
+    680
+   ],
+   "text": "THE BANK IS OPEN.|NO LIMIT!"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    510,
+    685
+   ],
+   "text": "THE MONEY HE WAS PLAYING WAS|BRITISH MONEY, MEANT FOR|HIS MISSION."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    593,
+    772
+   ],
+   "text": "BANCO.|THE WHOLE LOT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    205,
+    1078
+   ],
+   "text": "AT THE BAR, A BRITISH NAVAL OFFICER|DIDN'T MISS A THING."
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    150,
+    40
+   ],
+   "text": "DUBROVNIK, SUMMER 1936"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    160,
+    113
+   ],
+   "text": "HE CAME FROM A FAMILY|THAT NEVER COUNTED MONEY."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    390
+   ],
+   "text": "FAMILY MONEY, LAW STUDIES,|NOT A CARE IN THE WORLD."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    200,
+    1165
+   ],
+   "text": "HE THOUGHT THE WORLD WAS|A CASINO WHERE YOU ALWAYS WIN."
+  }
+ ]
+}

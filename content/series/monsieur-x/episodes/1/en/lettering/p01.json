@@ -1,0 +1,28 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    155,
+    33
+   ],
+   "text": "LISBON, AUGUST 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    150,
+    910
+   ],
+   "text": "PARIS, 26 MAY 2012"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    715,
+    973
+   ],
+   "text": "FRANCE INTER,|IT'S 7 A.M."
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    240,
+    45
+   ],
+   "text": "EVERY WEEK, A COMMITTEE OF GENTLEMEN|DRAFTED THE LIES MEANT FOR BERLIN."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    393
+   ],
+   "text": "A LITTLE TRUTH, A LOT OF LIES.|AND ALWAYS IMPOSSIBLE TO CHECK."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    170,
+    793
+   ],
+   "text": "BERLIN PAID GENEROUSLY.|AND LONDON CASHED IN."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    205,
+    1033
+   ],
+   "text": "HE EVEN RECRUITED HIS OWN SUB-AGENTS.|ALL OF THEM WORKED FOR THE BRITISH."
+  }
+ ]
+}

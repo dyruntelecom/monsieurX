@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    165,
+    45
+   ],
+   "text": "THAT SAME EVENING, HE WAS|KNOCKING ON ANOTHER DOOR."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    330,
+    530
+   ],
+   "text": "THE GERMANS|WANT ME TO|WORK FOR THEM."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    630,
+    525
+   ],
+   "text": "I'D RATHER|WORK|FOR YOU."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    888,
+    510
+   ],
+   "text": "NEXT STOP:|LISBON."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    870,
+    885
+   ],
+   "text": "HE BECAME A DOUBLE|AGENT BEFORE HE WAS|EVEN AN AGENT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    140,
+    990
+   ],
+   "text": "BOUND FOR LISBON."
+  }
+ ]
+}

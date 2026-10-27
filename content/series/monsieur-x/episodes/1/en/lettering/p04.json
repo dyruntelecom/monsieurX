@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    675,
+    110
+   ],
+   "text": "EGYPT: MOHAMED MORSI AND AHMED SHAFIK ARE SET TO FACE OFF IN THE PRESIDENTIAL RUN-OFF."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    175,
+    425
+   ],
+   "text": "TONIGHT IN BAKU, THE EUROVISION FINAL. ANGGUN FLIES THE FLAG FOR FRANCE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    880,
+    490
+   ],
+   "text": "A LOST|CAUSE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    160,
+    895
+   ],
+   "text": "...TOMORROW, ROLAND-GARROS OPENS AND THE CANNES FESTIVAL HANDS OUT ITS AWARDS..."
+  }
+ ]
+}

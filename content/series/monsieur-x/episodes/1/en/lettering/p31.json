@@ -1,0 +1,47 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    820,
+    75
+   ],
+   "text": "JAPANESE FLEET –|6 AIRCRAFT CARRIERS –|SAILED 26 NOVEMBER"
+  },
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     1090,
+     1010,
+     1445
+    ]
+   ],
+   "left": 69,
+   "size": 20,
+   "width": 890,
+   "lh": 27,
+   "lines": [
+    {
+     "text": "PEARL HARBOR, ON THE EVE OF 7 DECEMBER 1941",
+     "y": 1112,
+     "size": 21,
+     "underline": null
+    },
+    {
+     "para": "Home of the US Pacific Fleet. Eight battleships are in port, most of them moored in a row along Ford Island. The harbour is shallow, about twelve metres: a torpedo attack there is judged impossible. No net protects the battleships.",
+     "y": 1166
+    },
+    {
+     "para": "On 26 November, six Japanese aircraft carriers left the Kuril Islands in secret, under radio silence. On board, more than 350 aircraft. And torpedoes modified for shallow water: the lesson of Taranto.",
+     "y": 1302
+    },
+    {
+     "para": "Hickam, Wheeler, Kaneohe: the island’s airfields were all in Popov’s questionnaire.",
+     "y": 1411
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    155,
+    38
+   ],
+   "text": "NEW YORK, AUGUST 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    825,
+    45
+   ],
+   "text": "NEW YORK. NEON LIGHTS, YELLOW CABS,|AND NOT ONE AIR-RAID SIREN."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    580,
+    423
+   ],
+   "text": "HOTEL LINCOLN, 19 AUGUST 1941",
+   "margin": 5
+  },
+  {
+   "type": "caption",
+   "seed": [
+    875,
+    440
+   ],
+   "text": "THE FBI WAS WAITING FOR HIM.|TWO MEN IN FEDORAS, NOT MUCH|GIVEN TO HUMOUR."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    255,
+    853
+   ],
+   "text": "THE GERMANS WANT TO|KNOW EVERYTHING ABOUT|PEARL HARBOR. THAT|SHOULD INTEREST YOU."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    483,
+    893
+   ],
+   "text": "WE'LL PASS|IT ON."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    1202
+   ],
+   "text": "THE QUESTIONNAIRE HAD JUST REACHED AMERICA.|NOW SOMEONE HAD TO READ IT."
+  }
+ ]
+}

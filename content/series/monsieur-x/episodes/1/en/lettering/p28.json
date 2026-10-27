@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    37
+   ],
+   "text": "PARK AVENUE, AUTUMN 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    830,
+    43
+   ],
+   "text": "BERLIN HAD GIVEN HIM ENOUGH TO BUILD|A NETWORK. FIRST HE BOUGHT A PENTHOUSE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    720,
+    393
+   ],
+   "text": "HE EVEN SEDUCED A FRENCH HOLLYWOOD|ACTRESS. THE PHOTOGRAPHERS LOVED IT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    365,
+    806
+   ],
+   "text": "WHAT ARE YOU|WRITING DOWN?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    680,
+    830
+   ],
+   "text": "CHAMPAGNE.|ACTRESS.|CHAMPAGNE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    1093
+   ],
+   "text": "AT THE FBI, THE FILE GOT THICKER.|NOT ONE LINE ON PEARL HARBOR."
+  }
+ ]
+}

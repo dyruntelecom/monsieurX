@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    52
+   ],
+   "text": "LISBON, DECEMBER 1940"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    875,
+    432
+   ],
+   "text": "HE ARRIVED IN LISBON|THE WAY ONE ARRIVES|ON HOLIDAY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    310,
+    567
+   ],
+   "text": "WELCOME, IVAN.|THAT IS WHAT BERLIN|WILL CALL YOU."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    623,
+    573
+   ],
+   "text": "INVISIBLE INK, COVER ADDRESSES,|AND A LIST OF QUESTIONS|ABOUT ENGLAND."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    285,
+    1083
+   ],
+   "text": "BERLIN HAD JUST SENT ITS BEST AGENT|TO LONDON. LONDON WAS ALREADY WAITING."
+  }
+ ]
+}

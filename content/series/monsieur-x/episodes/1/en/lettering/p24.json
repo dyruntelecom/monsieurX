@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    200,
+    40
+   ],
+   "text": "LISBON, THE NIGHT BEFORE HE LEFT"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    190,
+    95
+   ],
+   "text": "BEFORE LEAVING, HE SPENT|ONE LAST NIGHT WITH JOHNNY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    330,
+    470
+   ],
+   "text": "YOU KNOW WHAT|FASCINATES OUR|JAPANESE FRIENDS?|TARANTO."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    570,
+    432
+   ],
+   "text": "TARANTO, NOVEMBER 1940"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    860,
+    453
+   ],
+   "text": "A HANDFUL OF BRITISH TORPEDO|BOMBERS PUT THREE ITALIAN|BATTLESHIPS AT ANCHOR|OUT OF ACTION."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    342,
+    835
+   ],
+   "text": "THEY WANT TO KNOW|HOW THE BRITISH|DID IT. DOWN TO THE|SMALLEST DETAIL."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    835,
+    795
+   ],
+   "text": "A FLEET IN PORT. SHALLOW WATER.|TORPEDO BOMBERS. AND IN|HIS POCKET, PEARL HARBOR."
+  }
+ ]
+}

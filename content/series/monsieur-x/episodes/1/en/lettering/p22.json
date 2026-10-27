@@ -1,0 +1,43 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     962,
+     1000,
+     1435
+    ]
+   ],
+   "left": 77,
+   "size": 21,
+   "width": 895,
+   "lh": 26,
+   "lines": [
+    {
+     "text": "FLEMING, POPOV AND THE JAMES BOND LEGEND",
+     "y": 983,
+     "size": 24,
+     "underline": 26
+    },
+    {
+     "para": "In May 1941, a young British naval intelligence officer stops in Lisbon with his admiral, on the way to America. His name is Ian Fleming. One evening, at the Estoril casino, he plays... and loses.",
+     "y": 1052
+    },
+    {
+     "para": "Twelve years later, in 1953, he publishes his first novel, Casino Royale. Its hero, James Bond, ruins an opponent at baccarat.",
+     "y": 1181
+    },
+    {
+     "para": "In his memoirs, in 1974, Dusko Popov claims that Fleming was watching him that night and that the scene comes from him. Fleming’s biographers doubt it: the dates don’t quite fit, and Fleming always said Bond was a blend of several men.",
+     "y": 1288
+    },
+    {
+     "para": "The truth lies somewhere between the gaming table and the champagne.",
+     "y": 1426
+    }
+   ]
+  }
+ ]
+}

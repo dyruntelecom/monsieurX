@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    195,
+    130
+   ],
+   "text": "FOR HIS DOCTORATE, HE CHOSE|GERMANY. THE WORST PLACE|FOR A MAN WHO CAN'T KEEP|HIS MOUTH SHUT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    150,
+    525
+   ],
+   "text": "JOHNNY JEBSEN. I HEAR YOUR CAR IS FASTER THAN MINE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    385,
+    545
+   ],
+   "text": "SHALL WE|FIND OUT|TONIGHT?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    615,
+    565
+   ],
+   "text": "YOUR FÜHRER? A CORPORAL WHO THINKS HE'S NAPOLEON!"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    893,
+    495
+   ],
+   "text": "IN THE GERMANY OF 1937, THE WALLS HAD EARS. AND THE STUDENTS, NOTEBOOKS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    260,
+    985
+   ],
+   "text": "TWO RICH MEN'S SONS WHO THOUGHT THEY WERE|UNTOUCHABLE. BOTH OF THEM WERE WRONG."
+  }
+ ]
+}

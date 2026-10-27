@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    185,
+    40
+   ],
+   "text": "WASHINGTON, SEPTEMBER 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    825,
+    45
+   ],
+   "text": "AT THE FBI LABORATORY, THEY MARVELLED|AT THE TECHNIQUE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    210,
+    423
+   ],
+   "text": "THE WHITE HOUSE WAS SENT A MEMO|ON THE TECHNIQUE. AND TWO MICRODOTS|ON AMERICAN AVIATION."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    630,
+    425
+   ],
+   "text": "THE PAGES ON|HAWAII STAYED|IN A DRAWER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    220,
+    1025
+   ],
+   "text": "PEARL HARBOR, SATURDAY 6 DECEMBER 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    800,
+    1035
+   ],
+   "text": "IN HAWAII, THE FLEET SLEPT IN PORT.|IN TIGHT ROWS. IN SHALLOW WATER."
+  }
+ ]
+}

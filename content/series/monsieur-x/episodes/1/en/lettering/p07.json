@@ -1,0 +1,35 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     815,
+     1010,
+     1135
+    ]
+   ],
+   "left": 80,
+   "size": 22,
+   "width": 880,
+   "lh": 29,
+   "lines": [
+    {
+     "text": "YUGOSLAVIA IN THE 1930s",
+     "y": 843,
+     "size": 27,
+     "underline": 26
+    },
+    {
+     "para": "Born in 1918 from the ruins of Austria-Hungary, the kingdom unites Serbs, Croats and Slovenes under a single crown. In 1934, King Alexander I is assassinated in Marseille. His cousin, Prince Paul, rules as regent over a divided country, wedged between Mussolini’s Italy and Hitler’s Germany.",
+     "y": 901
+    },
+    {
+     "para": "On the coast, Dubrovnik still lives to the rhythm of yachts and balls. The great families spend their summers there as if Europe would never tip over.",
+     "y": 1067
+    }
+   ]
+  }
+ ]
+}

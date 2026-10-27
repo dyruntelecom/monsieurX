@@ -1,0 +1,51 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     515,
+     700,
+     1000,
+     1275
+    ],
+    [
+     40,
+     1450,
+     1000,
+     1490
+    ]
+   ],
+   "left": 525,
+   "size": 25,
+   "width": 440,
+   "lh": 33,
+   "lines": [
+    {
+     "text": "RENDEZ-VOUS AVEC X",
+     "y": 736,
+     "size": 31,
+     "underline": 22
+    },
+    {
+     "para": "This episode is freely adapted from Patrick Pesnot’s programme on France Inter, broadcast on 26 May 2012.",
+     "y": 802
+    },
+    {
+     "para": "To Patrick Pesnot, who for twenty years took us to meet the men in the shadows.",
+     "y": 997
+    },
+    {
+     "para": "And to Monsieur X, who never existed, and whom we all believed.",
+     "y": 1164
+    },
+    {
+     "text": "Photo of Patrick Pesnot: Radio France / Christophe Abramowitz. Photos of Dusko Popov: all rights reserved.",
+     "y": 1471,
+     "x": 55,
+     "size": 15
+    }
+   ]
+  }
+ ]
+}

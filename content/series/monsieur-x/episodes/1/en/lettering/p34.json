@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    240,
+    40
+   ],
+   "text": "NEW YORK, SUNDAY 7 DECEMBER 1941"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    838,
+    895
+   ],
+   "text": "HE NEVER SAID:|“I WARNED YOU.”|NOT ONCE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    115,
+    1040
+   ],
+   "text": "OCTOBER 1942"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    830,
+    1063
+   ],
+   "text": "A YEAR LATER, THE FBI, RELIEVED,|HANDED HIM BACK TO THE BRITISH."
+  }
+ ]
+}
