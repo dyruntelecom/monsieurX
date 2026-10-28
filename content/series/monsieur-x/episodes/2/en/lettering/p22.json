@@ -1,0 +1,45 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     975,
+     1010,
+     1440
+    ]
+   ],
+   "left": 77,
+   "size": 21,
+   "width": 910,
+   "lh": 27,
+   "lines": [
+    {
+     "text": "THE TRADE OF AN ILLEGAL",
+     "y": 1005,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "1. Shortwave radio. At set times, Moscow broadcasts strings of numbers, in Morse or read out by a monotonous voice. Only whoever holds the right grid can understand them.",
+     "y": 1057
+    },
+    {
+     "para": "2. The one-time pad. Each page is used once, then burned. Used properly, this code is impossible to break.",
+     "y": 1161
+    },
+    {
+     "para": "3. The dead drop. A hollow stone, a hole in a tree, the underside of a bench: one agent leaves a message for another to collect. The two agents never meet.",
+     "y": 1242
+    },
+    {
+     "para": "4. The hollow coin. In 1953, in New York, a young newspaper boy drops a five-cent coin that splits in two: inside, a microfilm. It will take the FBI four years to trace its owner.",
+     "y": 1349
+    }
+   ]
+  }
+ ]
+}

@@ -27,6 +27,7 @@ FONTS = {
     "typewriter": FONT_DIR / "CourierPrime-Regular.ttf",
     "typewriter-bold": FONT_DIR / "CourierPrime-Bold.ttf",
     "condensed": FONT_DIR / "Oswald-Variable.ttf",
+    "script": FONT_DIR / "Caveat-Variable.ttf",
 }
 
 
@@ -84,7 +85,7 @@ def caption_rect(gray, seed, half=15):
     return filled, comp
 
 
-def wrap_in_mask(text, font, mask, line_gap=1.12, align="center"):
+def wrap_in_mask(text, font, mask, line_gap=1.12, align="center", max_lines=None):
     """Coupe le texte en lignes qui tiennent dans la forme ; renvoie [(ligne, x, y)] ou None."""
     ys, xs = np.nonzero(mask)
     if len(ys) == 0:
@@ -99,7 +100,7 @@ def wrap_in_mask(text, font, mask, line_gap=1.12, align="center"):
 
     forced = [l.split() for l in text.split("|")] if "|" in text else None
     words = text.replace("|", " ").split()
-    rng = [len(forced)] if forced else range(1, len(words) + 1)
+    rng = [len(forced)] if forced else range(1, min(len(words), max_lines or 99) + 1)
     for n in rng:
         top = int(cy - ((n - 1) * lh + cap) / 2)
         spans = []
@@ -183,7 +184,7 @@ def do_balloon(img, gray, block, draw):
     size = block.get("max", 21)
     while size >= 12:
         font = ImageFont.truetype(str(FONTS[block.get("font", "comic")]), size)
-        placed = wrap_in_mask(block["text"], font, fit, align=block.get("align", "left" if block["type"] == "caption" else "center"))
+        placed = wrap_in_mask(block["text"], font, fit, align=block.get("align", "left" if block["type"] == "caption" else "center"), max_lines=block.get("max_lines"))
         if placed:
             break
         size -= 1
@@ -237,9 +238,10 @@ def do_typed(img, block, draw):
         width = item.get("width", block.get("width", 850))
         lh = item.get("lh", block.get("lh", int(size * 1.35)))
         cur, y = "", item["y"]
+        plain = lambda t: t.replace("**", "")
         for word in item["para"].split():
             trial = (cur + " " + word).strip()
-            if f.getlength(trial) > width and cur:
+            if f.getlength(plain(trial)) > width and cur:
                 lines.append({**{k: v for k, v in item.items() if k not in ("para", "y")}, "text": cur, "y": y})
                 cur, y = word, y + lh
             else:
@@ -251,16 +253,49 @@ def do_typed(img, block, draw):
         print(f"  ATTENTION texte au-delà de la zone : ligne de base {lines[-1]['y']} > {bottom}")
     for item in lines:
         size = item.get("size", block.get("size", 20))
-        font = ImageFont.truetype(str(FONTS[item.get("font", block.get("font", "typewriter"))]), size * 2)
+        fname = item.get("font", block.get("font", "typewriter"))
+        font = ImageFont.truetype(str(FONTS[fname]), size * 2)
+        bold = ImageFont.truetype(str(FONTS[fname + "-bold" if fname + "-bold" in FONTS else fname]), size * 2)
+        # segments en gras entre ** **
+        segs, b = [], False
+        for k, part in enumerate(item["text"].split("**")):
+            if part:
+                segs.append((part, b))
+            b = not b
+        text = item["text"].replace("**", "")
+        tw = sum((bold if bb else font).getlength(t) for t, bb in segs)
         if "cx" in item:
-            x = item["cx"] - font.getlength(item["text"]) / 4
+            x = item["cx"] - tw / 4
         else:
             x = item.get("x", block.get("left", 0))
-        ld.text((x * 2, item["y"] * 2), item["text"], font=font, anchor="ls", fill=255,
-                stroke_width=item.get("weight", block.get("weight", 0)), stroke_fill=255)
+        cx = x * 2
+        if item.get("angle"):  # ligne inclinée (texte sur une feuille de biais), angle en degrés, sens horaire
+            asc, desc = font.getmetrics()
+            tmp = Image.new("L", (int(tw) + 20, asc + desc + 20), 0)
+            td = ImageDraw.Draw(tmp)
+            tx = 10
+            for t, bb in segs:
+                td.text((tx, asc + 10), t, font=bold if bb else font, anchor="ls", fill=255,
+                        stroke_width=item.get("weight", block.get("weight", 0)), stroke_fill=255)
+                tx += (bold if bb else font).getlength(t)
+            rot = tmp.rotate(-item["angle"], resample=Image.BICUBIC, expand=True)
+            # le point (10, asc+10) devient, après rotation avec expand, décalé : on recalcule sa position
+            import math
+            a = math.radians(item["angle"])
+            w0, h0 = tmp.size
+            cxr, cyr = w0 / 2, h0 / 2
+            px, py = 10 - cxr, asc + 10 - cyr
+            rx = px * math.cos(a) - py * math.sin(a) + rot.width / 2
+            ry = px * math.sin(a) + py * math.cos(a) + rot.height / 2
+            layer.paste(255, (int(cx - rx), int(item["y"] * 2 - ry)), rot)
+            continue
+        for t, bb in segs:
+            ld.text((cx, item["y"] * 2), t, font=bold if bb else font, anchor="ls", fill=255,
+                    stroke_width=item.get("weight", block.get("weight", 0)), stroke_fill=255)
+            cx += (bold if bb else font).getlength(t)
         if item.get("underline") is not None:
             uy = (item["y"] + item.get("underline_offset", 15)) * 2
-            w = font.getlength(item["text"]) + item["underline"] * 2
+            w = tw + item["underline"] * 2
             ld.line([(x * 2, uy), (x * 2 + w, uy)], fill=255, width=item.get("underline_width", 3) * 2)
     alpha = layer.resize(img.size, Image.LANCZOS)
     img.paste(Image.new("RGB", img.size, color), (0, 0), alpha)
@@ -301,7 +336,8 @@ def do_plain(img, block):
         tmp = Image.new("L", (int(w) + 4, asc + desc), 0)
         ImageDraw.Draw(tmp).text((0, asc), it["text"], font=f, anchor="ls", fill=255)
         tmp = tmp.resize((max(1, int(tmp.width * sq)), tmp.height), Image.LANCZOS)
-        layer.paste(255, (it["x"] * 2, it["y"] * 2 - asc), tmp)
+        x = it["x"] if "x" in it else round(it["cx"] - tmp.width / 4)
+        layer.paste(255, (x * 2, it["y"] * 2 - asc), tmp)
     alpha = layer.resize(img.size, Image.LANCZOS)
     img.paste(Image.new("RGB", img.size, tuple(block.get("color", (240, 236, 228)))), (0, 0), alpha)
 

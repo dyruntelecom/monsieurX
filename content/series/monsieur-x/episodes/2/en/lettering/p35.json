@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    778,
+    49
+   ],
+   "text": "VIRGINIA"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    302,
+    423
+   ],
+   "text": "THAT SUNDAY, 27 JUNE, THE FBI KNOCKS ON TEN DOORS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    161,
+    491
+   ],
+   "text": "CAMBRIDGE, MASSACHUSETTS."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    473,
+    939
+   ],
+   "text": "FBI!|OPEN UP!"
+  }
+ ]
+}

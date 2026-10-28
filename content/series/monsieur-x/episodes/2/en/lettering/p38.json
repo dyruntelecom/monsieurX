@@ -1,0 +1,185 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "flow": false,
+   "size": 19,
+   "lh": 27,
+   "rects": [
+    [
+     55,
+     655,
+     700,
+     714
+    ],
+    [
+     62,
+     731,
+     466,
+     775
+    ],
+    [
+     474,
+     731,
+     1005,
+     775
+    ],
+    [
+     62,
+     783,
+     466,
+     909
+    ],
+    [
+     474,
+     783,
+     1005,
+     909
+    ],
+    [
+     62,
+     917,
+     466,
+     1021
+    ],
+    [
+     474,
+     917,
+     1005,
+     1021
+    ],
+    [
+     62,
+     1029,
+     466,
+     1132
+    ],
+    [
+     474,
+     1029,
+     1005,
+     1132
+    ],
+    [
+     62,
+     1140,
+     466,
+     1246
+    ],
+    [
+     474,
+     1140,
+     1005,
+     1246
+    ],
+    [
+     62,
+     1254,
+     466,
+     1386
+    ],
+    [
+     474,
+     1254,
+     1005,
+     1386
+    ],
+    [
+     60,
+     1395,
+     1005,
+     1452
+    ]
+   ],
+   "lines": [
+    {
+     "text": "FICTION AND REALITY",
+     "y": 697,
+     "size": 29,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13,
+     "x": 68
+    },
+    {
+     "text": "WHAT WE SAW",
+     "y": 761,
+     "x": 68,
+     "size": 23
+    },
+    {
+     "text": "WHAT HAPPENED",
+     "y": 761,
+     "x": 489,
+     "size": 23
+    },
+    {
+     "para": "James Bond, Ian Fleming’s seductive spy.",
+     "y": 815,
+     "x": 68,
+     "width": 385
+    },
+    {
+     "para": "Fleming, a naval intelligence officer, crossed paths with real double agents. Dusko Popov may have been one of his models; historians debate it.",
+     "y": 815,
+     "x": 492,
+     "width": 500
+    },
+    {
+     "para": "The moles in John le Carré’s novels.",
+     "y": 949,
+     "x": 68,
+     "width": 385
+    },
+    {
+     "para": "Le Carré worked for MI5 and MI6. He saw up close the damage done by Kim Philby and the “Cambridge Five”.",
+     "y": 949,
+     "x": 492,
+     "width": 500
+    },
+    {
+     "para": "“The Americans”: a KGB couple in suburban Washington.",
+     "y": 1059,
+     "x": 68,
+     "width": 385
+    },
+    {
+     "para": "The series was born of the 2010 arrests. One of the ten said it showed exactly what an illegal lives through.",
+     "y": 1060,
+     "x": 492,
+     "width": 500
+    },
+    {
+     "para": "“The Bureau” and its agents under false identities.",
+     "y": 1172,
+     "x": 68,
+     "width": 385
+    },
+    {
+     "para": "In the jargon, a “legend” really is an agent’s invented life. Tuomi had to learn his by heart.",
+     "y": 1172,
+     "x": 492,
+     "width": 500
+    },
+    {
+     "para": "“Bridge of Spies”: a swap on a Berlin bridge.",
+     "y": 1284,
+     "x": 68,
+     "width": 385
+    },
+    {
+     "para": "In 1962, the Soviet spy Rudolf Abel, owner of the Brooklyn hollow coin, was swapped for the American pilot Gary Powers.",
+     "y": 1284,
+     "x": 492,
+     "width": 500
+    },
+    {
+     "text": "**Kaarlo Tuomi never got his own series.**",
+     "y": 1437,
+     "cx": 512,
+     "size": 25
+    }
+   ]
+  }
+ ]
+}

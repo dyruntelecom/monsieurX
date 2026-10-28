@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    184,
+    47
+   ],
+   "text": "PARIS. TUESDAY 27 MARCH 2018."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    707,
+    101
+   ],
+   "text": "SKRIPAL: MORE THAN A HUNDRED RUSSIAN DIPLOMATS EXPELLED BY SOME TWENTY COUNTRIES. FRANCE SENDS FOUR HOME."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    224,
+    131
+   ],
+   "text": "FRANCE INTER,|IT'S 7 A.M."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    798,
+    472
+   ],
+   "text": "MOSCOW CALLS IT A PROVOCATION. THE FORMER SPY AND HIS DAUGHTER ARE STILL IN A CRITICAL CONDITION."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    425,
+    767
+   ],
+   "text": "YOU THINK HE'LL AGREE TO CHANGE THE SUBJECT JUST LIKE THAT?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    905,
+    777
+   ],
+   "text": "HE AGREED IN TEN SECONDS. THAT'S WHAT WORRIES ME."
+  }
+ ]
+}

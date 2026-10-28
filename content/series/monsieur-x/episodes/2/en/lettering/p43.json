@@ -1,0 +1,28 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    855,
+    70
+   ],
+   "text": "ONE LAST QUESTION, MONSIEUR X. THIS KIND OF LIFE, DID YOU KNOW IT? WERE YOU AN ILLEGAL?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    262,
+    497
+   ],
+   "text": "AN ILLEGAL NEVER ANSWERS THAT QUESTION.|THAT'S EXACTLY HOW YOU RECOGNISE ONE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    398,
+    942
+   ],
+   "text": "MONSIEUR X?"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    149,
+    89
+   ],
+   "text": "HE ENTERS THE UNITED STATES|THROUGH CANADA."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    394,
+    455
+   ],
+   "text": "BORN IN MICHIGAN?|AND YOU'RE ONLY|COMING BACK NOW?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    921,
+    460
+   ],
+   "text": "I'VE TRAVELLED|A LOT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    584,
+    799
+   ],
+   "text": "WELCOME HOME."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    255,
+    1078
+   ],
+   "text": "TWENTY-FIVE YEARS LATER, THE KID FROM MICHIGAN COMES HOME. WORKING FOR MOSCOW."
+  }
+ ]
+}

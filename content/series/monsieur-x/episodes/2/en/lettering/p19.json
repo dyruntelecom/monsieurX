@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    125,
+    39
+   ],
+   "text": "UNITED STATES, 1958."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    166,
+    391
+   ],
+   "text": "A MODEST JOB, A ROOM,|A LIFE WITHOUT A STORY."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    703,
+    403
+   ],
+   "text": "AND, NOW AND THEN, A STONE UNDER WHICH TO LEAVE A MESSAGE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    219,
+    1079
+   ],
+   "text": "A FEW MONTHS AFTER HE ARRIVED, ONE EVENING, SOMEONE WAS WAITING FOR HIM IN HIS ROOM."
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    306,
+    67
+   ],
+   "text": "IN “THE AMERICANS”, AT LEAST, THE SPIES KEEP THEIR CHILDREN WITH THEM."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    838,
+    474
+   ],
+   "text": "EITHER WAY, THE FAMILY|SERVES THE SAME PURPOSE.|ON TELEVISION, IT'S SCENERY.|IN REAL LIFE, IT'S A HOSTAGE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    380,
+    470
+   ],
+   "text": "WITH TUOMI, IT'S THE OPPOSITE: HE LEFT HIS FAMILY IN RUSSIA."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    416,
+    775
+   ],
+   "text": "AND THE FBI NEIGHBOUR|WHO LIVES RIGHT|ACROSS THE STREET?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    852,
+    809
+   ],
+   "text": "THAT'S TELEVISION. THE FBI DOESN'T NEED TO LIVE ACROSS THE STREET. A LETTER TO AN UNCLE IS ENOUGH."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    149,
+    1073
+   ],
+   "text": "AND THEN CAME 1963."
+  }
+ ]
+}

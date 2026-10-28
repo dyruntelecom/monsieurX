@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    350,
+    449
+   ],
+   "text": "BASEBALL SCORES, THE PRICE OF MILK, FACTORY SLANG. AN AMERICAN KNOWS ALL THAT WITHOUT THINKING ABOUT IT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    656,
+    432
+   ],
+   "text": "THE RADIO, THE CODES, THE DEAD DROPS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    188,
+    787
+   ],
+   "text": "AND ABOVE ALL THE LEGEND: WHERE HE HAD BEEN FOR TWENTY-FIVE YEARS. A MADE-UP STORY, LEARNED BY HEART."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    238,
+    1101
+   ],
+   "text": "HIS FAMILY STAYS BEHIND, AS A GUARANTEE."
+  }
+ ]
+}

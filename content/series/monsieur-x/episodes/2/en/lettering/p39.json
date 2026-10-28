@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    199,
+    51
+   ],
+   "text": "VIENNA, SCHWECHAT AIRPORT.|FRIDAY 9 JULY 2010."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    321,
+    337
+   ],
+   "text": "THE BIGGEST SPY SWAP SINCE THE COLD WAR."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    159,
+    432
+   ],
+   "text": "TEN OF YOURS FOR FOUR OF OURS. THAT'S NOT A VERY FAIR COUNT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    428,
+    436
+   ],
+   "text": "YOURS MOWED|LAWNS. OURS|DID PRISON TIME."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    372,
+    801
+   ],
+   "text": "ZAPOROZHSKY,|SUTYAGIN,|VASILENKO..."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    635,
+    795
+   ],
+   "text": "...AND|SKRIPAL."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    257,
+    1169
+   ],
+   "text": "TWO OF THEM STAY IN ENGLAND. ONE IS A FORMER COLONEL OF RUSSIAN MILITARY INTELLIGENCE. HIS NAME IS SERGEI SKRIPAL."
+  }
+ ]
+}

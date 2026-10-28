@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    372,
+    411
+   ],
+   "text": "NO PHOTOS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    710,
+    408
+   ],
+   "text": "HE ENDED UP TELLING|HIS STORY. A LITTLE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    349,
+    727
+   ],
+   "text": "HE DIED IN FLORIDA IN THE MID-1990s. HIS VERDICT: A SPY'S LIFE IS WORTH|NOTHING, EVERYONE USES HIM AS A SPITTOON."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    753,
+    1362
+   ],
+   "text": "TUOMI WAS CAUGHT WITHIN A FEW MONTHS.|HOW MANY OTHERS NEVER WERE?"
+  }
+ ]
+}

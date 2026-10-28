@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    243,
+    79
+   ],
+   "text": "HOW DOES HE KNOW YOU WERE IN SALISBURY?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    514,
+    115
+   ],
+   "text": "LATER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    137,
+    448
+   ],
+   "text": "BORN ON 30 NOVEMBER 1916, IN MICHIGAN. FINNISH PARENTS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    623,
+    433
+   ],
+   "text": "MICHIGAN, 1920s."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    251,
+    807
+   ],
+   "text": "A LITTLE FINLAND BY THE GREAT LAKES.|FINNISH AT HOME, ENGLISH AT SCHOOL."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    166,
+    1183
+   ],
+   "text": "A CHILD LIKE ANY OTHER. WITH AN AMERICAN BIRTH CERTIFICATE. REMEMBER THAT DETAIL."
+  }
+ ]
+}

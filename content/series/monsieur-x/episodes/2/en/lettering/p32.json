@@ -1,0 +1,76 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    208,
+    51
+   ],
+   "text": "NEW YORK, SPRING 2010."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    754,
+    107
+   ],
+   "text": "IS THAT HER?|THE REDHEAD|WITH THE|LAPTOP?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    922,
+    112
+   ],
+   "text": "RUSSIAN, 28.|OFFICIALLY,|SHE SELLS|APARTMENTS|ONLINE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    475
+   ],
+   "text": "HER NAME IS ANNA CHAPMAN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    504,
+    594
+   ],
+   "text": "AND THERE'S OUR RUSSIAN DIPLOMAT. EVERY WEDNESDAY, SAME TIME."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    742,
+    590
+   ],
+   "text": "HE DOESN'T|EVEN STOP..."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    917,
+    611
+   ],
+   "text": "NO NEED. THEIR TWO COMPUTERS TALK DIRECTLY, WITHOUT THE INTERNET. TEN SECONDS, AND IT'S SENT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    595,
+    1069
+   ],
+   "text": "DO WE|ARREST HER?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    846,
+    1073
+   ],
+   "text": "WITH WHAT? WE DON'T EVEN KNOW WHAT SHE'S SENDING. WE NEED PROOF."
+  }
+ ]
+}

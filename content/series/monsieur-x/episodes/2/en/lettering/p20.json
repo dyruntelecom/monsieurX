@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    556,
+    50
+   ],
+   "text": "MR TUOMI.|SIT DOWN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    906,
+    483
+   ],
+   "text": "WE KNOW WHO TRAINED YOU, AND HOW YOU GOT IN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    569,
+    818
+   ],
+   "text": "YOU HAVE TWO CHOICES. FEDERAL PRISON, FOR A VERY LONG TIME. OR YOU KEEP SENDING YOUR MESSAGES... BUT WE WRITE THEM."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    217,
+    1185
+   ],
+   "text": "HOW DID THE FBI FIND HIM SO FAST? NO ONE HAS EVER SAID. HE SUSPECTED A SIMPLE LETTER: THE ONE HE HAD WRITTEN TO AN UNCLE IN AMERICA TO ASK FOR HIS BIRTH CERTIFICATE."
+  }
+ ]
+}

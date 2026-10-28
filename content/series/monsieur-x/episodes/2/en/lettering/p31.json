@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    192,
+    396
+   ],
+   "text": "RICHARD AND CYNTHIA. AN UNREMARKABLE COUPLE, TWO LITTLE GIRLS, A SPOTLESS GARDEN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    899,
+    414
+   ],
+   "text": "SPIES, THEM?|HAVE YOU SEEN|THEIR HYDRANGEAS?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    227,
+    813
+   ],
+   "text": "THE MESSAGES ARE HIDDEN IN ORDINARY PICTURES|POSTED ON THE INTERNET."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    233,
+    1161
+   ],
+   "text": "THEIR REAL NAMES ARE VLADIMIR AND LYDIA GURYEV.|THEIR DAUGHTERS DON'T KNOW."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     668,
+     1012,
+     1460
+    ]
+   ],
+   "left": 82,
+   "size": 22,
+   "width": 915,
+   "lh": 30,
+   "lines": [
+    {
+     "text": "SALISBURY, MARCH 2018",
+     "y": 704,
+     "size": 32,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 18
+    },
+    {
+     "para": "**Sunday 4 March, 1.40 p.m.:** Sergei Skripal and his daughter Yulia, who arrived from Moscow the day before, park their car in the town centre. They go to the pub, then have lunch at a restaurant until 3.35 p.m.",
+     "y": 769
+    },
+    {
+     "para": "**4.15 p.m.:** a passer-by calls for help. Father and daughter have been found unconscious on a bench. An army nurse who happened to be passing gives them first aid.",
+     "y": 887
+    },
+    {
+     "para": "**5.10 p.m.:** Yulia is flown out by helicopter, her father taken by road. A police officer who came to the scene falls ill in turn.",
+     "y": 1008
+    },
+    {
+     "para": "**12 March:** Prime Minister Theresa May announces that a military-grade nerve agent of the “Novichok” type, developed in Russia, was used. She judges Moscow’s responsibility “highly likely”.",
+     "y": 1098
+    },
+    {
+     "para": "**14 March:** London expels twenty-three Russian diplomats. Moscow denies any involvement.",
+     "y": 1220
+    },
+    {
+     "para": "**26 March:** more than a hundred Russian diplomats are expelled by some twenty allied countries. France sends four home. Father and daughter are still in a critical condition.",
+     "y": 1313
+    },
+    {
+     "text": "September 2018: two suspects identified. Sergei and Yulia Skripal survived.",
+     "y": 1440,
+     "x": 84,
+     "size": 34,
+     "font": "script"
+    }
+   ]
+  }
+ ]
+}

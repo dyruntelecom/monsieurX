@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    168,
+    43
+   ],
+   "text": "MOSCOW, OCTOBER 1962."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    780,
+    331
+   ],
+   "text": "PENKOVSKY KNEW A LOT OF FILES.|PERHAPS HIS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    272,
+    620
+   ],
+   "text": "COLONEL PENKOVSKY IS ARRESTED, A GRU OFFICER|WHO WAS SPYING FOR LONDON AND WASHINGTON."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    268,
+    720
+   ],
+   "text": "HE IS AFRAID: IF PENKOVSKY HAS TALKED, THE FBI MAY KNOW|THAT HE HAS BEEN PLAYING FOR MOSCOW ALL ALONG."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    913,
+    900
+   ],
+   "text": "WE'VE READ|YOUR MESSAGE.|WE NEED TO TALK."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    820,
+    1395
+   ],
+   "text": "GOING HOME MEANS HIS FAMILY.|AND MAYBE THE FIRING SQUAD."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    158,
+    1407
+   ],
+   "text": "AND MOSCOW RECALLS HIM."
+  }
+ ]
+}

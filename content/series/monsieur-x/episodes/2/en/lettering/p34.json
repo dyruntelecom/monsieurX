@@ -1,0 +1,63 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "flow": false,
+   "ink_contrast": 14,
+   "rects": [
+    [
+     60,
+     960,
+     1010,
+     1465
+    ]
+   ],
+   "left": 87,
+   "size": 22,
+   "width": 900,
+   "lh": 31,
+   "lines": [
+    {
+     "text": "OPERATION “GHOST STORIES”",
+     "y": 994,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "For nearly ten years, the FBI watched a network of illegals planted in the United States by Russian foreign intelligence. On 27 June 2010, it arrested ten people. The names they lived under:",
+     "y": 1052
+    },
+    {
+     "text": "1. Richard and Cynthia Murphy, in Montclair (New Jersey).",
+     "y": 1201
+    },
+    {
+     "text": "2. Donald Heathfield and Tracey Foley, in Cambridge (Massachusetts).",
+     "y": 1233
+    },
+    {
+     "text": "3. Juan Lazaro and Vicky Peláez, in Yonkers (New York).",
+     "y": 1265
+    },
+    {
+     "text": "4. Michael Zottoli and Patricia Mills, in Virginia.",
+     "y": 1297
+    },
+    {
+     "text": "5. Mikhail Semenko, in Virginia.",
+     "y": 1329
+    },
+    {
+     "text": "6. Anna Chapman, in New York.",
+     "y": 1361
+    },
+    {
+     "para": "An eleventh man, who handled the network’s money, was arrested two days later in Cyprus. Released on bail, he vanished.",
+     "y": 1424
+    }
+   ]
+  }
+ ]
+}

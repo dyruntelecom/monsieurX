@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    208,
+    43
+   ],
+   "text": "1933. THE GREAT DEPRESSION."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    728,
+    72
+   ],
+   "text": "IN SOVIET KARELIA, THEY'RE BUILDING SOCIALISM. THERE'S WORK FOR ALL THE FINNS OF AMERICA."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    403,
+    447
+   ],
+   "text": "WHAT ABOUT SCHOOL?|AND MY FRIENDS?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    693,
+    449
+   ],
+   "text": "OVER THERE, YOU'LL BE|A FREE MAN."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    215,
+    717
+   ],
+   "text": "THOUSANDS OF THEM LEFT THIS WAY. IT WOULD BE CALLED KARELIAN FEVER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    281,
+    1133
+   ],
+   "text": "HE WOULD NOT SEE AMERICA AGAIN FOR TWENTY-FIVE YEARS."
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "blocks": [
+  {
+   "type": "plain",
+   "rects": [
+    [
+     25,
+     645,
+     362,
+     745
+    ]
+   ],
+   "fill": [
+    2,
+    2,
+    2
+   ],
+   "color": [
+    240,
+    236,
+    228
+   ],
+   "lines": [
+    {
+     "text": "THE ILLEGALS",
+     "x": 36,
+     "y": 734,
+     "cap": 67,
+     "weight": 470,
+     "squeeze": 0.86,
+     "fit": 303
+    }
+   ]
+  },
+  {
+   "type": "plain",
+   "rects": [
+    [
+     38,
+     1411,
+     351,
+     1467
+    ]
+   ],
+   "color": [
+    24,
+    22,
+    20
+   ],
+   "lines": [
+    {
+     "text": "EPISODE 2 • RECORDED 27.03.2018 •",
+     "cx": 193,
+     "y": 1434,
+     "cap": 12,
+     "font": "typewriter-bold",
+     "fit": 300
+    },
+    {
+     "text": "NEVER AIRED",
+     "cx": 193,
+     "y": 1457,
+     "cap": 12,
+     "font": "typewriter-bold",
+     "fit": 160
+    }
+   ]
+  }
+ ]
+}

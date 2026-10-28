@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    196,
+    66
+   ],
+   "text": "SALISBURY, ENGLAND.|SUNDAY 4 MARCH 2018, 2 P.M."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    596,
+    94
+   ],
+   "text": "THANK YOU FOR SEEING ME, COLONEL. FOR OUR PROGRAMME ON THE FALKLANDS WAR, YOUR ACCOUNT IS INVALUABLE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    400,
+    484
+   ],
+   "text": "ON 2 APRIL 1982, ARGENTINA INVADED THE FALKLANDS. WE HEARD IT ON THE RADIO, LIKE EVERYONE ELSE. THREE DAYS LATER, WE WERE AT SEA."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    887,
+    472
+   ],
+   "text": "AND FRANCE? THEY SAY LONDON DIDN'T TRUST PARIS, BECAUSE OF THE EXOCET MISSILES SOLD TO ARGENTINA."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    530,
+    807
+   ],
+   "text": "IT'S ALL AT KEW, OLD CHAP. READ MRS THATCHER'S FILES: WE DIDN'T EVEN TRUST OUR FRIENDS."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    753,
+    1107
+   ],
+   "text": "STATE SECRETS ARE LIKE WINE: THEY NEED THIRTY YEARS."
+  }
+ ]
+}

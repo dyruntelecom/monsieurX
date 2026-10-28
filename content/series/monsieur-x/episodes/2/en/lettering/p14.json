@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    355,
+    459
+   ],
+   "text": "YOU WERE BORN IN THE UNITED STATES, COMRADE. DO YOU STILL HAVE YOUR BIRTH CERTIFICATE?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    914,
+    448
+   ],
+   "text": "IT STAYED|IN AMERICA.|WHY?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    542,
+    826
+   ],
+   "text": "WRITE TO YOUR FAMILY OVER THERE. HAVE THEM SEND IT TO YOU. AN AMERICAN BY BIRTH WHO SPEAKS ENGLISH WITHOUT AN ACCENT IS VERY VALUABLE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    798,
+    1223
+   ],
+   "text": "WE ARE GOING TO GIVE|YOU BACK YOUR COUNTRY."
+  }
+ ]
+}

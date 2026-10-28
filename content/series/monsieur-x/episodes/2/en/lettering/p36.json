@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    491,
+    78
+   ],
+   "text": "DONALD HEATHFIELD? TRACEY FOLEY? YOU ARE UNDER ARREST."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    154,
+    899
+   ],
+   "text": "LATER THAT NIGHT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    191,
+    971
+   ],
+   "text": "CANADIAN BIRTH CERTIFICATES. DONALD HEATHFIELD, TRACEY FOLEY..."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    518,
+    936
+   ],
+   "text": "THE REAL ONES DIED AS BABIES, IN CANADA, YEARS AGO. THEY TOOK THEIR NAMES."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    741,
+    916
+   ],
+   "text": "AND THE|SONS?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    919,
+    934
+   ],
+   "text": "BORN IN TORONTO. THEY THINK THEY'RE CANADIAN. THEY DON'T EVEN SPEAK RUSSIAN."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    839,
+    1382
+   ],
+   "text": "TUOMI, AT LEAST, KEPT HIS OWN NAME."
+  }
+ ]
+}

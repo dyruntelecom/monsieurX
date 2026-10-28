@@ -1,0 +1,45 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     70,
+     1005,
+     1010,
+     1478
+    ]
+   ],
+   "left": 87,
+   "size": 22,
+   "width": 900,
+   "lh": 27,
+   "lines": [
+    {
+     "text": "KEW, THE NATION’S MEMORY",
+     "y": 1038,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "South-west of London, the National Archives hold nearly a thousand years of official documents, from the Domesday Book to the files of Downing Street.",
+     "y": 1091
+    },
+    {
+     "para": "For a long time the rule was simple: a government file became public thirty years after the events. Since 2013, that delay has been gradually cut to twenty years.",
+     "y": 1199
+    },
+    {
+     "para": "Margaret Thatcher’s files on the Falklands War were opened at the end of December 2012. They reveal London’s distrust of Paris, suspected of being ready to let Argentina acquire new Exocet missiles.",
+     "y": 1307
+    },
+    {
+     "para": "Other files stay closed far longer. Intelligence files above all.",
+     "y": 1443
+    }
+   ]
+  }
+ ]
+}

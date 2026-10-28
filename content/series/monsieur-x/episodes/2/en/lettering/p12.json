@@ -1,0 +1,41 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     993,
+     1010,
+     1440
+    ]
+   ],
+   "left": 74,
+   "size": 22,
+   "width": 905,
+   "lh": 28,
+   "lines": [
+    {
+     "text": "KARELIAN FEVER",
+     "y": 1026,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "Between 1931 and 1934, six to seven thousand Finns from the United States and Canada left for Soviet Karelia, on the Finnish border. The unemployment of the Great Depression, the dream of a socialist republic where Finnish would be spoken: they were welcomed as pioneers, with their tools, their machines and their savings.",
+     "y": 1080
+    },
+    {
+     "para": "The dream soon turned sour. In 1937 and 1938, during the Great Terror, the American Finns were accused of espionage and nationalism. By one estimate, around seven hundred and forty of them were shot, most of them young men.",
+     "y": 1250
+    },
+    {
+     "para": "In 1939, war broke out between the USSR and Finland. The survivors were trapped.",
+     "y": 1400
+    }
+   ]
+  }
+ ]
+}

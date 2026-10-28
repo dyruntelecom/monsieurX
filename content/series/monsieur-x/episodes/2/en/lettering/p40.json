@@ -1,0 +1,85 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    574,
+    88
+   ],
+   "text": "FOR THREE WEEKS, THE BRITISH PRESS HAS TOLD THE WHOLE STORY. SKRIPAL WAS A GRU COLONEL. IN THE 1990s, HE STARTED SPYING FOR THE BRITISH."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    258,
+    454
+   ],
+   "text": "THE SAME HOUSE AS TUOMI. AND PENKOVSKY.",
+   "max_lines": 1
+  },
+  {
+   "type": "caption",
+   "seed": [
+    147,
+    537
+   ],
+   "text": "MOSCOW, DECEMBER 2004. HE IS ARRESTED FOR SPYING FOR LONDON."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    453,
+    525
+   ],
+   "text": "AUGUST 2006. SENTENCED TO THIRTEEN YEARS IN A CAMP."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    728,
+    548
+   ],
+   "text": "WHAT HAD HE|GIVEN THEM?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    920,
+    568
+   ],
+   "text": "NAMES OF RUSSIAN AGENTS IN EUROPE, ACCORDING TO MOSCOW. A RUSSIAN PAPER EVEN WROTE THE DAMAGE MATCHED PENKOVSKY'S."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    179,
+    926
+   ],
+   "text": "SALISBURY, 2011. RELEASED IN VIENNA, HE SETTLES HERE. A QUIET LIFE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    162,
+    1169
+   ],
+   "text": "2012: HIS WIFE. 2017: HIS SON."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    753,
+    1186
+   ],
+   "text": "ALL HE HAD LEFT|WAS HIS DAUGHTER."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    933,
+    1203
+   ],
+   "text": "SHE HAD COME|FROM MOSCOW|FOR THE|WEEKEND...|THE SUNDAY OF|THE BENCH."
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    191,
+    92
+   ],
+   "text": "ALL RIGHT, OTHERS SLIPPED THROUGH THE NET. BUT THAT WAS THE COLD WAR. DON'T TELL ME IT CARRIED ON."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    919,
+    445
+   ],
+   "text": "WAIT...|THAT'S THE STORY|OF MY SERIES!"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    135,
+    424
+   ],
+   "text": "MONTCLAIR, NEW JERSEY.|JUNE 2010."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    685,
+    872
+   ],
+   "text": "YOUR SERIES DIDN'T INSPIRE THE STORY, MADEMOISELLE. THE STORY INSPIRED YOUR SERIES."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    838,
+    1233
+   ],
+   "text": "TEN ILLEGALS. A PERFECT SUBURB."
+  }
+ ]
+}

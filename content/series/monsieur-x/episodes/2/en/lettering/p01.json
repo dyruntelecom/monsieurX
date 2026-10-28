@@ -1,0 +1,37 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     1058,
+     1010,
+     1470
+    ]
+   ],
+   "left": 84,
+   "size": 22,
+   "width": 900,
+   "lh": 28,
+   "lines": [
+    {
+     "text": "WHO WAS KAARLO TUOMI, REALLY?",
+     "y": 1095,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "Born in 1916 in Michigan to Finnish parents. Taken to the Soviet Union at sixteen by a communist stepfather. Lumberjack in Karelia, Red Army soldier, English teacher. In 1958, sent back to the United States as an “illegal” spy. American-born, Soviet-trained: which of the two countries was he betraying?",
+     "y": 1152
+    },
+    {
+     "para": "It is said that he warned Moscow in the very first message the FBI dictated to him. That he switched sides a third time. Only he ever told it.",
+     "y": 1305
+    }
+   ]
+  }
+ ]
+}

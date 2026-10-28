@@ -1,0 +1,41 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     1043,
+     1012,
+     1482
+    ]
+   ],
+   "left": 79,
+   "size": 23,
+   "width": 905,
+   "lh": 31,
+   "lines": [
+    {
+     "text": "THE COLONELS WHO TALKED",
+     "y": 1074,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "Oleg Penkovsky, a GRU colonel, passed intelligence to London and Washington in 1961 and 1962. It helped the Americans during the Cuban missile crisis. Arrested in Moscow in October 1962, he was shot in May 1963.",
+     "y": 1137
+    },
+    {
+     "para": "Dmitri Poliakov, a GRU officer who rose to general, worked for the FBI and then the CIA for nearly twenty years. Betrayed by moles inside the American services themselves, he was arrested in 1986 and shot in 1988.",
+     "y": 1289
+    },
+    {
+     "para": "Both came from the same house as Kaarlo Tuomi. Both knew a great deal.",
+     "y": 1444
+    }
+   ]
+  }
+ ]
+}

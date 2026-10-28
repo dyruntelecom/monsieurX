@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    114,
+    49
+   ],
+   "text": "4 P.M."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    406,
+    534
+   ],
+   "text": "HELLO? IT'S ME. TWO HOURS WITH THE FORMER OFFICER. HE WAS IN THE FALKLANDS FROM THE FIRST DAY TO THE LAST."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    900,
+    526
+   ],
+   "text": "ON TUESDAY I'M SPENDING THE DAY AT KEW. THATCHER'S FILES ON THE WAR HAVE BEEN OPEN SINCE 2012."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    547,
+    986
+   ],
+   "text": "WE'VE GOT OUR|PROGRAMME."
+  }
+ ]
+}

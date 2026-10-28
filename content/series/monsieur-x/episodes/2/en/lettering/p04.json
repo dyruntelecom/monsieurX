@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    90,
+    45
+   ],
+   "text": "4.15 P.M."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    799,
+    74
+   ],
+   "text": "CALL AN|AMBULANCE!"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    705,
+    446
+   ],
+   "text": "SOMETHING'S HAPPENING... SOMEONE'S BEEN TAKEN ILL, I THINK. I'LL CALL YOU BACK."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    117,
+    458
+   ],
+   "text": "HELLO?|ARE YOU|STILL THERE?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    92,
+    1168
+   ],
+   "text": "5.10 P.M."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    518,
+    1197
+   ],
+   "text": "POOR PEOPLE."
+  }
+ ]
+}

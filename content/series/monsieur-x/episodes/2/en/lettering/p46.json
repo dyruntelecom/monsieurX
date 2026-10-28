@@ -1,0 +1,98 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "flow": false,
+   "size": 23,
+   "lh": 33,
+   "rects": [
+    [
+     60,
+     845,
+     1000,
+     1300
+    ],
+    [
+     60,
+     1340,
+     1012,
+     1515
+    ]
+   ],
+   "lines": [
+    {
+     "text": "ACKNOWLEDGEMENTS",
+     "y": 882,
+     "cx": 512,
+     "size": 40,
+     "underline": 4,
+     "underline_offset": 16
+    },
+    {
+     "text": "**To Patrick Pesnot,** who taught us that History",
+     "y": 956,
+     "cx": 512
+    },
+    {
+     "text": "can also be told in a low voice.",
+     "y": 990,
+     "cx": 512
+    },
+    {
+     "text": "**To Kaarlo Tuomi,** who ended up telling his story.",
+     "y": 1056,
+     "cx": 512
+    },
+    {
+     "text": "A little.",
+     "y": 1090,
+     "cx": 512
+    },
+    {
+     "text": "This story is fiction built on real facts.",
+     "y": 1156,
+     "cx": 512,
+     "size": 22
+    },
+    {
+     "text": "The dialogue is imagined; the facts have been checked,",
+     "y": 1189,
+     "cx": 512,
+     "size": 22
+    },
+    {
+     "text": "and anything resting on a single source is flagged as such.",
+     "y": 1222,
+     "cx": 512,
+     "size": 22
+    },
+    {
+     "text": "Real people still living are never shown",
+     "y": 1255,
+     "cx": 512,
+     "size": 22
+    },
+    {
+     "text": "in a recognisable way.",
+     "y": 1287,
+     "cx": 512,
+     "size": 22
+    },
+    {
+     "para": "Main sources: Patrick Pesnot’s France Inter programme on Kaarlo Tuomi, broadcast on 1 January and 16 July 2005; Kaarlo Tuomi, “Spy Lost” (Enigma Books, 2014); FBI files on Operation “Ghost Stories”; the British counter-terrorism police timeline of Salisbury; press of the time.",
+     "y": 1368,
+     "x": 90,
+     "size": 18,
+     "width": 880,
+     "lh": 26
+    },
+    {
+     "text": "Photo of Patrick Pesnot: Radio France / Christophe Abramowitz.",
+     "y": 1503,
+     "x": 90,
+     "size": 15
+    }
+   ]
+  }
+ ]
+}

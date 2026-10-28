@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    202,
+    103
+   ],
+   "text": "HE FIGHTS AGAINST THE FINNS. AGAINST HIS PARENTS' COUSINS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    662,
+    423
+   ],
+   "text": "HE IS TAKEN PRISONER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    211,
+    808
+   ],
+   "text": "ONCE FREED, HE BECOMES AN ENGLISH TEACHER. NO ONE SPEAKS IT BETTER THAN HE DOES."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    251,
+    1115
+   ],
+   "text": "SOMEONE IN MOSCOW EVENTUALLY NOTICES HIM."
+  }
+ ]
+}

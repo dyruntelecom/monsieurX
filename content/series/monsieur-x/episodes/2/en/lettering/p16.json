@@ -1,0 +1,109 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     985,
+     1010,
+     1440
+    ]
+   ],
+   "left": 81,
+   "size": 21,
+   "width": 905,
+   "lh": 28,
+   "lines": [
+    {
+     "text": "TWO RIVAL HOUSES",
+     "y": 1009,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "In Moscow, two services share espionage abroad. The KGB, created in March 1954, the very year Tuomi was recruited, is the heir to Stalin’s political police. It watches the home front, hunts down dissidents and émigrés, and spies on Western politics and diplomacy.",
+     "y": 1063
+    },
+    {
+     "para": "The GRU is the military intelligence service of the General Staff. It targets armies, bases, weapons and technology.",
+     "y": 1205
+    },
+    {
+     "para": "Each has its “legal” agents, under diplomatic cover, and its own “illegals”. The two houses distrust each other and envy each other’s successes.",
+     "y": 1316
+    },
+    {
+     "para": "After 1991, the KGB was broken up. The GRU is still there.",
+     "y": 1430
+    }
+   ]
+  },
+  {
+   "type": "typed",
+   "flow": false,
+   "rects": [
+    [
+     300,
+     257,
+     383,
+     298
+    ],
+    [
+     412,
+     258,
+     496,
+     301
+    ],
+    [
+     540,
+     266,
+     622,
+     308
+    ],
+    [
+     651,
+     272,
+     734,
+     315
+    ]
+   ],
+   "lines": [
+    {
+     "text": "LEGALS",
+     "cx": 341,
+     "y": 284,
+     "size": 20,
+     "font": "comic",
+     "weight": 1
+    },
+    {
+     "text": "ILLEGALS",
+     "cx": 454,
+     "y": 286,
+     "size": 20,
+     "font": "comic",
+     "weight": 1
+    },
+    {
+     "text": "LEGALS",
+     "cx": 581,
+     "y": 294,
+     "size": 20,
+     "font": "comic",
+     "weight": 1
+    },
+    {
+     "text": "ILLEGALS",
+     "cx": 692,
+     "y": 300,
+     "size": 20,
+     "font": "comic",
+     "weight": 1
+    }
+   ]
+  }
+ ]
+}

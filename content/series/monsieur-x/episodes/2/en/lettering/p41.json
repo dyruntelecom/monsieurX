@@ -1,0 +1,60 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    130,
+    64
+   ],
+   "text": "THE MAN ON|THE BENCH...|IT WAS HIM."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    679,
+    58
+   ],
+   "text": "THAT SUNDAY, YOU WERE TWENTY METRES FROM THE END OF THE 2010 STORY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    181,
+    533
+   ],
+   "text": "HOW DO YOU KNOW|I WAS THERE?|I ONLY TOLD HER."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    140,
+    1055
+   ],
+   "text": "BUT WHY HIM, EIGHT YEARS LATER? HE HAD BEEN SWAPPED. FREED."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    382,
+    1047
+   ],
+   "text": "SWAPPED, YES. FORGIVEN IS ANOTHER MATTER."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    862,
+    1046
+   ],
+   "text": "IN THIS TRADE, YOU NEVER QUITE LEAVE THE GAME."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    581,
+    1146
+   ],
+   "text": "LONDON ACCUSES MOSCOW. MOSCOW DENIES IT. FOR NOW, NOBODY KNOWS WHO DID IT."
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    570,
+    120
+   ],
+   "text": "BUT...|THERE'S NOTHING|LEFT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    605,
+    722
+   ],
+   "text": "HE KEPT|THE TAPE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    927,
+    770
+   ],
+   "text": "THEN THERE|WON'T BE A|PROGRAMME."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    522,
+    1388
+   ],
+   "text": "THIS PROGRAMME WAS NEVER BROADCAST."
+  },
+  {
+   "type": "typed",
+   "flow": false,
+   "ink_contrast": 18,
+   "rects": [
+    [
+     150,
+     790,
+     462,
+     1035
+    ]
+   ],
+   "lines": [
+    {
+     "text": "Some stories",
+     "x": 192,
+     "y": 836,
+     "size": 30,
+     "font": "script",
+     "angle": 9
+    },
+    {
+     "text": "are still too recent",
+     "x": 176,
+     "y": 866,
+     "size": 30,
+     "font": "script",
+     "angle": 9
+    },
+    {
+     "text": "to be broadcast.",
+     "x": 168,
+     "y": 896,
+     "size": 30,
+     "font": "script",
+     "angle": 9
+    },
+    {
+     "text": "Come back in thirty years.",
+     "x": 155,
+     "y": 944,
+     "size": 30,
+     "font": "script",
+     "angle": 9
+    },
+    {
+     "text": "— X",
+     "x": 300,
+     "y": 1018,
+     "size": 34,
+     "font": "script",
+     "angle": 9
+    }
+   ]
+  }
+ ]
+}

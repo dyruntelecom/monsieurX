@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    412,
+    64
+   ],
+   "text": "MOSCOW IS RECALLING YOU. WHAT DO YOU INTEND TO DO?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    389,
+    493
+   ],
+   "text": "I'M NOT GOING BACK.|KEEP ME HERE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    884,
+    501
+   ],
+   "text": "DO YOU KNOW WHAT THAT MEANS FOR YOUR FAMILY OVER THERE?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    873,
+    833
+   ],
+   "text": "HE CHOSE AMERICA.|HE LOST EVERYTHING ELSE."
+  }
+ ]
+}

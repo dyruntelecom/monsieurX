@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    435,
+    57
+   ],
+   "text": "WE KNOW ABOUT THAT SECRET SIGNAL FROM ONLY ONE SOURCE: HIS OWN MEMOIRS."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    764,
+    443
+   ],
+   "text": "SO HE MAY HAVE MADE IT ALL UP TO LOOK GOOD."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    107,
+    428
+   ],
+   "text": "OF COURSE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    878,
+    570
+   ],
+   "text": "OR TO BE FORGIVEN. A SPY WHO WRITES HIS MEMOIRS IS STILL WRITING A COVER STORY."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    615,
+    735
+   ],
+   "text": "SO WE'LL NEVER KNOW WHO HE WAS WORKING FOR?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    222,
+    1005
+   ],
+   "text": "HE MAY NEVER HAVE KNOWN HIMSELF."
+  }
+ ]
+}

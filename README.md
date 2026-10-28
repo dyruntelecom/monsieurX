@@ -145,8 +145,9 @@ Chaque événement (`view`, `start`, `page`, `mode`) porte la série, l'épisode
 
 Les dessins ne changent pas : seul le texte est remplacé, avec `tools/reletter.py`.
 
-- Traductions et positions des bulles : `tools/lettering-src/ep1_comic.py` (bulles et cartouches : un point dans le texte français + le texte traduit, `|` pour forcer un retour à la ligne) et `ep1_docs.py` (pages bis : texte dactylographié, légendes).
-- `python3 tools/lettering-src/build.py` écrit les fichiers `episodes/<n>/<langue>/lettering/pNN.json`.
+- Traductions et positions des bulles : `tools/lettering-src/epN_comic.py` (bulles et cartouches : un point dans le texte français + le texte traduit, `|` pour forcer un retour à la ligne) et `epN_docs.py` (pages bis : texte dactylographié, légendes).
+- `python3 tools/lettering-src/build.py <N>` écrit les fichiers `episodes/<n>/<langue>/lettering/pNN.json`.
 - `python3 tools/reletter.py <lettering/pNN.json> <page française> <page traduite>` produit la planche traduite.
 - Polices libres (licence OFL, dans `assets/fonts/`) : Kalam pour les bulles, Courier Prime pour les pages bis, Oswald pour la couverture.
 - Le texte dessiné dans le décor (enseignes, documents, calendrier, onomatopées) reste dans la langue d'origine.
+- `python3 tools/find_balloons.py <page.png>` repère les bulles d'une planche et lit leur texte, pour préparer les points de départ.

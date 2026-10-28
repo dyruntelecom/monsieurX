@@ -1,0 +1,84 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    149,
+    50
+   ],
+   "text": "SATURDAY 26 JUNE 2010."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    410,
+    115
+   ],
+   "text": "(IN RUSSIAN)|ANNA? I'M HERE|FOR OUR FRIENDS|IN MOSCOW. MEET|ME THIS AFTERNOON,|AT THE CAFÉ."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    661,
+    99
+   ],
+   "text": "SHE'S COMING.|YOUR TURN."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    898,
+    96
+   ],
+   "text": "AN ENVOY FROM THE RUSSIAN CONSULATE, AT YOUR SERVICE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    402,
+    522
+   ],
+   "text": "ARE YOU READY|FOR THE NEXT STEP?"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    329,
+    605
+   ],
+   "text": "OF|COURSE."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    905,
+    555
+   ],
+   "text": "TOMORROW, YOU WILL GIVE THIS PASSPORT TO A WOMAN. SHE WILL ASK YOU: “WEREN'T WE IN CALIFORNIA TOGETHER LAST SUMMER?” YOU WILL ANSWER: “NO, I THINK IT WAS IN THE HAMPTONS.”"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    665,
+    947
+   ],
+   "text": "SUNDAY 27 JUNE."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    152,
+    957
+   ],
+   "text": "BY TAKING THAT PASSPORT,|SHE HAS JUST CONFESSED."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    885,
+    980
+   ],
+   "text": "ANNA CHAPMAN?|FBI. PLEASE COME WITH US."
+  }
+ ]
+}

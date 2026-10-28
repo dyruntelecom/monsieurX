@@ -1,0 +1,41 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     60,
+     1005,
+     1010,
+     1475
+    ]
+   ],
+   "left": 75,
+   "size": 23,
+   "width": 900,
+   "lh": 33,
+   "lines": [
+    {
+     "text": "“THE AMERICANS”",
+     "y": 1035,
+     "size": 27,
+     "font": "typewriter-bold",
+     "underline": 4,
+     "underline_offset": 13
+    },
+    {
+     "para": "An American series broadcast on FX from 30 January 2013 to 30 May 2018, over six seasons. Its creator, Joe Weisberg, spent a few years at the CIA before becoming a novelist.",
+     "y": 1102
+    },
+    {
+     "para": "The story: in the early 1980s, under Reagan, two KGB officers live as an ordinary American couple in a Washington suburb. They run a travel agency, raise two children who know nothing, and live next door to an FBI agent tasked with hunting Soviet illegals.",
+     "y": 1232
+    },
+    {
+     "para": "The final season starts in the United States on 28 March 2018. The day after this recording.",
+     "y": 1431
+    }
+   ]
+  }
+ ]
+}

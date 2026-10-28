@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    735,
+    84
+   ],
+   "text": "LET'S GET TO THE STUDIO. I WANT TO EDIT THE PROGRAMME TONIGHT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    905,
+    456
+   ],
+   "text": "TUOMI'S BIRTH CERTIFICATE... I NEVER TOUCHED IT."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    460,
+    806
+   ],
+   "text": "THE TAPE! I LEFT IT|ON X'S DESK."
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    895,
+    796
+   ],
+   "text": "GO.|QUICK."
+  }
+ ]
+}

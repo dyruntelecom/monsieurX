@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    163,
+    48
+   ],
+   "text": "FROM NOW ON, THE FBI WRITES.|HE ENCODES AND SENDS."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    222,
+    435
+   ],
+   "text": "BUT IN THE VERY FIRST MESSAGE, HE SAYS, HE SLIPS IN A SIGNAL AGREED WITH MOSCOW: “I'VE BEEN CAUGHT.”"
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    925,
+    426
+   ],
+   "text": "PERFECT.|SEND IT."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    196,
+    764
+   ],
+   "text": "TO THE FBI, HE IS FOOLING MOSCOW.|TO MOSCOW, HE IS FOOLING THE FBI."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    158,
+    1072
+   ],
+   "text": "AND WHO IS HE FOOLING?"
+  }
+ ]
+}

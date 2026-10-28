@@ -1,0 +1,36 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    378,
+    489
+   ],
+   "text": "THE ILLEGALS! EVERYONE WATCHES “THE AMERICANS”: TWO SOVIET SPIES IN THE SUBURBS OF WASHINGTON, WITH KIDS AND A HOUSE. THE FINAL SEASON STARTS TOMORROW IN THE STATES."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    876,
+    445
+   ],
+   "text": "YOU WANT TO TALK TO ME ABOUT A TV SERIES?"
+  },
+  {
+   "type": "caption",
+   "seed": [
+    825,
+    796
+   ],
+   "text": "THERE'S NOTHING EXTRAORDINARY ABOUT IT, MY FRIEND. IT'S QUITE ORDINARY, IN FACT. REMEMBER KAARLO TUOMI."
+  },
+  {
+   "type": "caption",
+   "seed": [
+    828,
+    1091
+   ],
+   "text": "AND BESIDES, YOU WERE IN SALISBURY THAT SUNDAY, WEREN'T YOU?"
+  }
+ ]
+}
