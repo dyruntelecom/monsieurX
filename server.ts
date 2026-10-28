@@ -13,9 +13,9 @@ import { adminHome, adminEdition, adminPost } from "./src/news/admin";
 import { startScheduler, setOnChange, loadConfig as loadNewsConfig } from "./src/news/pipeline";
 import { startSocial } from "./src/news/social";
 import { renderCard } from "./src/news/cards";
+import { authorized, askAuth, handleLogin } from "./src/auth";
 
 const PORT = Number(Bun.env.PORT || 8080);
-const STATS_PASSWORD = Bun.env.STATS_PASSWORD || "";
 const SALT = Bun.env.STATS_SALT || "monsieur-x";
 // Set once storink.com answers in HTTPS: every other host (www, the old *.up.railway.app address) then redirects to it.
 const CANONICAL_HOST = (Bun.env.CANONICAL_HOST || "").toLowerCase();
@@ -59,14 +59,6 @@ function serveFile(root: string, rel: string, cache: string, allowed?: Set<strin
   const cors: Record<string, string> = rel.replace(/^\//, "").startsWith("brand/") ? { "access-control-allow-origin": "*" } : {};
   return new Response(file, { headers: { "content-type": MIME[ext] || file.type, "cache-control": cache, "x-content-type-options": "nosniff", ...cors } });
 }
-
-function authorized(req: Request): boolean {
-  if (!STATS_PASSWORD) return false;
-  const h = req.headers.get("authorization") || "";
-  if (!h.startsWith("Basic ")) return false;
-  try { const [, pass] = atob(h.slice(6)).split(/:(.*)/s); return pass === STATS_PASSWORD; } catch { return false; }
-}
-const askAuth = () => new Response("Accès réservé", { status: 401, headers: { "WWW-Authenticate": 'Basic realm="Stats Storink", charset="UTF-8"' } });
 
 // ——— host redirects (www → apex, old Railway address → storink.com) ———
 function hostRedirect(req: Request, url: URL): Response | null {
@@ -115,8 +107,9 @@ Bun.serve({
     const hr = hostRedirect(req, url); if (hr) return hr;
     if (path === "/e" && req.method === "POST") return track(req, stats, getCatalog(), SALT);
     if (path === "/health") return new Response("ok");
+    const lg = await handleLogin(req, url); if (lg) return lg;
     if (path === "/admin" || path.startsWith("/admin/")) {
-      if (!authorized(req)) return askAuth();
+      if (!authorized(req)) return askAuth(req, url);
       const noStore = { "cache-control": "no-store" };
       if (req.method === "POST") {
         const origin = req.headers.get("origin");
@@ -133,11 +126,11 @@ Bun.serve({
     if (req.method !== "GET" && req.method !== "HEAD") return new Response(null, { status: 405 });
 
     if (path === "/stats" || path === "/stats/") {
-      if (!authorized(req)) return askAuth();
+      if (!authorized(req)) return askAuth(req, url);
       return html(statsPage(stats, getCatalog(), url.searchParams), 200, { "cache-control": "no-store" });
     }
     if (path === "/stats/export") {
-      if (!authorized(req)) return askAuth();
+      if (!authorized(req)) return askAuth(req, url);
       const dir = mkdtempSync(join(tmpdir(), "storink-"));
       const file = join(dir, "stats.db");
       stats.exportTo(file);
@@ -163,7 +156,7 @@ Bun.serve({
     if (path.startsWith("/media/")) {
       return serveFile(SERIES_DIR, path.slice(7), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
     }
-    if (path === "/robots.txt") return new Response(`User-agent: *\nDisallow: /stats\nDisallow: /admin\nSitemap: ${config.siteUrl}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
+    if (path === "/robots.txt") return new Response(`User-agent: *\nDisallow: /stats\nDisallow: /admin\nDisallow: /login\nSitemap: ${config.siteUrl}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
     if (path === "/sitemap.xml") return new Response(sitemap(getCatalog()), { headers: { "content-type": "application/xml" } });
 
     if (path === "/") return redirect("/" + negotiate(req.headers.get("accept-language")), 302);

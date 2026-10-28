@@ -87,7 +87,7 @@ Chaque matin (`publishHour`, 7 h heure de Paris par défaut, réglable avec `tim
 6. publie au fur et à mesure dans `/data/generated/daily/episodes/<date>/` et envoie une notification avec le lien de relecture.
 
 - Lecture : `/en/daily/<date>` ou `/fr/daily/<date>` (toucher à droite ou glisser pour avancer, glisser vers le haut pour le sujet suivant).
-- Relecture : `/admin` (mot de passe des stats) : corriger un texte, modifier la description d'un dessin puis le redessiner, changer de style, retraduire depuis l'anglais, masquer ou supprimer un sujet, relancer l'édition du jour. Tout changement est en ligne immédiatement.
+- Relecture : `/admin` (même connexion que les stats) : corriger un texte, modifier la description d'un dessin puis le redessiner, changer de style, retraduire depuis l'anglais, masquer ou supprimer un sujet, relancer l'édition du jour. Tout changement est en ligne immédiatement.
 - Plafond : `maxImagesPerDay` (60 par défaut), relectures comprises jusqu'à 1,5 fois ce plafond.
 - Variables Railway : `OPENAI_API_KEY` (sans elle, rien n'est généré), `NOTIFY_URL` (ex. `https://ntfy.sh/<canal>`), facultatives `OPENAI_TEXT_MODEL`, `OPENAI_IMAGE_MODEL` (sinon choisis automatiquement dans la liste des modèles du compte, voir les logs au démarrage).
 - Test sans clé : `NEWS_MOCK=1 bun server.ts`, puis `/admin` → « Générer l'édition du jour » (images factices).
@@ -116,6 +116,7 @@ Chaque événement (`view`, `start`, `page`, `mode`) porte la série, l'épisode
 
 - `/stats` : indicateurs, filtres série / épisode / langue, lecture planche par planche.
 - `/stats/export` : téléchargement de la base complète.
+- Connexion à `/stats` et `/admin` : code à 6 chiffres d'une application d'authentification (`/login`), puis cookie de session de 30 jours réservé au propriétaire (les lecteurs n'en reçoivent jamais). `/logout` pour se déconnecter. 5 essais ratés bloquent 15 minutes. Changer `TOTP_SECRET` déconnecte toutes les sessions.
 - Sauvegardes automatiques dans `/data/backups/` : une avant la migration Storink (`stats-…-avant-storink.db`), puis une par jour (les 14 dernières).
 - Ajouter `?utm_source=nom` à un lien pour suivre une diffusion.
 
@@ -123,7 +124,8 @@ Chaque événement (`view`, `start`, `page`, `mode`) porte la série, l'épisode
 
 | Variable | Rôle |
 |---|---|
-| `STATS_PASSWORD` | mot de passe de `/stats` |
+| `TOTP_SECRET` | clé de l'application d'authentification (base32) ; sans elle, retour au mot de passe |
+| `STATS_PASSWORD` | ancien mot de passe de `/stats` (secours, accès HTTP Basic) |
 | `STATS_SALT` | sel de l'empreinte visiteur (ne pas changer) |
 | `DATA_DIR` | dossier de la base (`/data`) |
 | `CANONICAL_HOST` | `storink.com` : redirige www et l'ancienne adresse `liseuse-production.up.railway.app` vers storink.com (vide = aucune redirection) |
