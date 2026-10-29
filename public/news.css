@@ -1,6 +1,6 @@
 /* Storink Daily reader: a portrait frame, one drawing and one bubble per screen. */
 :root{
-  --night:#12161f; --paper:#f0e8d8; --rain:#98a1b0; --ink:#5b7cff; --line:#2a3142;
+  --night:#0c0e12; --paper:#f4efe6; --rain:#9aa2ae; --ink:#ffc800; --line:#272c37;
   --bubble:#fbf6ea; --bubble-ink:#16181d;
   --display:"Bricolage Grotesque","Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;
   --letter:"Patrick Hand SC","Comic Neue","Comic Sans MS",system-ui,sans-serif;
@@ -74,11 +74,11 @@ a{color:inherit}
 .end-langs a{color:var(--paper)}
 #end .end-ai{font-size:.8rem;color:var(--rain);margin-top:12px}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:1px solid #ffffff55;border-radius:999px;color:var(--paper);text-decoration:none;font-weight:600}
-.btn.primary{background:var(--paper);color:var(--night);border-color:var(--paper)}
+.btn.primary{background:var(--ink);color:var(--night);border-color:var(--ink);font-weight:700}
 #empty{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--rain)}
 
 /* stories index */
-#index{position:fixed;inset:0;z-index:10;background:#0b0e14;overflow:auto;padding:max(18px,env(safe-area-inset-top)) 16px 24px}
+#index{position:fixed;inset:0;z-index:10;background:#0c0e12;overflow:auto;padding:max(18px,env(safe-area-inset-top)) 16px 24px}
 .ix-head{display:flex;justify-content:space-between;align-items:center;max-width:720px;margin:0 auto 16px}
 .ix-head h2{font-family:var(--display);font-weight:800;margin:0;font-size:1.5rem}
 #ixList{list-style:none;padding:0;margin:0 auto;max-width:720px;display:grid;gap:10px;counter-reset:s}

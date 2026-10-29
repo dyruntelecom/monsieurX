@@ -5,7 +5,7 @@ import { loadConfig, loadStyles, status, listEditions, withEdition, runEdition, 
 import { aiReady, MOCK } from "./ai";
 import { plan, readState, publish, socialOn, xReady, loadSocial } from "./social";
 
-const CSS = `:root{--bg:#0c0e12;--ink:#16191f;--line:#2a2f38;--fg:#efe4cf;--mut:#8d96a3;--acc:#5b7cff;--red:#d0453a;color-scheme:dark}
+const CSS = `:root{--bg:#0c0e12;--ink:#16191f;--line:#2a2f38;--fg:#efe4cf;--mut:#8d96a3;--acc:#ffc800;--red:#d0453a;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif;padding:20px max(16px,env(safe-area-inset-left)) 60px}
 main{max-width:1100px;margin:0 auto;display:grid;gap:22px}a{color:var(--fg)}h1{font-size:1.5rem;margin:0}h2{font-size:1.1rem;margin:0}
 .note{color:var(--mut);font-size:.88rem}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}

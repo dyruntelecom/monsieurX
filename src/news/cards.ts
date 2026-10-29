@@ -143,7 +143,7 @@ function bakedCard(o: CardOpts, st: NewsStory, b64: string, ext: string, iw: num
 }
 
 function toJpeg(parts: string[]): Uint8Array {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="#12161f"/>${parts.join("")}</svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="#0c0e12"/>${parts.join("")}</svg>`;
   const r = new Resvg(svg, { font: { fontFiles: Object.values(FILES), loadSystemFonts: false, defaultFontFamily: "IBM Plex Sans Condensed" }, fitTo: { mode: "original" } });
   const img = r.render();
   // RGBA → JPEG (Instagram accepts JPEG only)
