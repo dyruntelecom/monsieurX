@@ -35,7 +35,7 @@ ${h.shareDescription || h.description ? `<meta property="og:description" content
 <meta property="og:type" content="${esc(h.type || "website")}"><meta property="og:url" content="${esc(abs(h.path))}">
 ${h.image ? `<meta property="og:image" content="${esc(abs(h.image))}"><meta name="twitter:card" content="summary_large_image">` : ""}
 ${h.noindex ? `<meta name="robots" content="noindex">` : ""}
-<meta name="theme-color" content="#0c0e12"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0c0e12"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 ${h.fonts ?? FONTS}${extra}`;
 }
 
@@ -53,7 +53,7 @@ export function page(h: Head, body: string, switchPaths: Record<string, string>)
   const L = h.lang;
   return `${head(h, `<link rel="stylesheet" href="/site.css?v=${config.version}">`)}</head><body>
 <a class="skip" href="#main">${esc(t(L, "site.skip"))}</a>
-<header class="top"><a class="brand" href="/${esc(uiLang(L))}">Storink</a>
+<header class="top"><a class="brand" href="/${esc(uiLang(L))}"><img src="/brand/storink-logo-horizontal.png" alt="Storink" width="149" height="50"></a>
 <nav class="menu"><a href="/${esc(uiLang(L))}">${esc(t(L, "site.series"))}</a><a href="/${esc(uiLang(L))}/${esc(routeOf(L, "about"))}">${esc(t(L, "site.about"))}</a></nav>
 ${langSwitch(L, switchPaths)}</header>
 <main id="main">${body}</main>

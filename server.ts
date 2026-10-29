@@ -42,7 +42,7 @@ const redirect = (to: string, status = 301) => new Response(null, { status, head
 const MIME: Record<string, string> = {
   ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8",
   ".webp": "image/webp", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".svg": "image/svg+xml",
-  ".avif": "image/avif", ".json": "application/json", ".ico": "image/x-icon", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml",
+  ".avif": "image/avif", ".json": "application/json", ".ico": "image/x-icon", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml", ".webmanifest": "application/manifest+json",
 };
 const IMAGE = new Set([".webp", ".jpg", ".jpeg", ".png", ".svg", ".avif"]);
 
