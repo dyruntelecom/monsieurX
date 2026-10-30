@@ -14,6 +14,7 @@ import { startScheduler, setOnChange, loadConfig as loadNewsConfig } from "./src
 import { startSocial } from "./src/news/social";
 import { renderCard } from "./src/news/cards";
 import { authorized, askAuth, handleLogin } from "./src/auth";
+import { reelPage } from "./src/reels";
 
 const PORT = Number(Bun.env.PORT || 8080);
 const SALT = Bun.env.STATS_SALT || "monsieur-x";
@@ -42,11 +43,12 @@ const redirect = (to: string, status = 301) => new Response(null, { status, head
 const MIME: Record<string, string> = {
   ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8",
   ".webp": "image/webp", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".svg": "image/svg+xml",
-  ".avif": "image/avif", ".json": "application/json", ".ico": "image/x-icon", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml", ".webmanifest": "application/manifest+json",
+  ".avif": "image/avif", ".mp4": "video/mp4", ".json": "application/json", ".ico": "image/x-icon", ".txt": "text/plain; charset=utf-8", ".xml": "application/xml", ".webmanifest": "application/manifest+json",
 };
 const IMAGE = new Set([".webp", ".jpg", ".jpeg", ".png", ".svg", ".avif"]);
+const MEDIA = new Set([...IMAGE, ".mp4"]);
 
-function serveFile(root: string, rel: string, cache: string, allowed?: Set<string>): Response | null {
+function serveFile(root: string, rel: string, cache: string, allowed?: Set<string>, range?: string | null): Response | null {
   let path: string;
   try { path = normalize(decodeURIComponent(rel)); } catch { return null; }
   const abs = join(root, path);
@@ -57,7 +59,17 @@ function serveFile(root: string, rel: string, cache: string, allowed?: Set<strin
   if (!existsSync(abs) || !statSync(abs).isFile() || !file.size) return null;
   // Brand images are fetched cross-origin (setting up social pages from the browser).
   const cors: Record<string, string> = rel.replace(/^\//, "").startsWith("brand/") ? { "access-control-allow-origin": "*" } : {};
-  return new Response(file, { headers: { "content-type": MIME[ext] || file.type, "cache-control": cache, "x-content-type-options": "nosniff", ...cors } });
+  const headers: Record<string, string> = { "content-type": MIME[ext] || file.type, "cache-control": cache, "x-content-type-options": "nosniff", "accept-ranges": "bytes", ...cors };
+  // Videos: browsers (Safari/iOS especially) need byte ranges to play and seek.
+  const m = range && /^bytes=(\d*)-(\d*)$/.exec(range);
+  if (m && (m[1] || m[2])) {
+    const size = file.size;
+    let start = m[1] ? Number(m[1]) : Math.max(0, size - Number(m[2]));
+    let end = m[1] && m[2] ? Math.min(Number(m[2]), size - 1) : size - 1;
+    if (start >= size || start > end) return new Response(null, { status: 416, headers: { "content-range": `bytes */${size}` } });
+    return new Response(file.slice(start, end + 1), { status: 206, headers: { ...headers, "content-range": `bytes ${start}-${end}/${size}`, "content-length": String(end - start + 1) } });
+  }
+  return new Response(file, { headers });
 }
 
 // ——— host redirects (www → apex, old Railway address → storink.com) ———
@@ -154,7 +166,7 @@ Bun.serve({
       return serveFile(GEN_DIR, path.slice(5), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
     }
     if (path.startsWith("/media/")) {
-      return serveFile(SERIES_DIR, path.slice(7), "public, max-age=86400", IMAGE) ?? new Response("Introuvable", { status: 404 });
+      return serveFile(SERIES_DIR, path.slice(7), "public, max-age=86400", MEDIA, req.headers.get("range")) ?? new Response("Introuvable", { status: 404 });
     }
     if (path === "/robots.txt") return new Response(`User-agent: *\nDisallow: /stats\nDisallow: /admin\nDisallow: /login\nSitemap: ${config.siteUrl}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
     if (path === "/sitemap.xml") return new Response(sitemap(getCatalog()), { headers: { "content-type": "application/xml" } });
@@ -173,6 +185,11 @@ Bun.serve({
         if (pg) { const out = staticPage(pg, lang); if (out) return html(out); }
         const s = c.series.get(a);
         if (s && (s.status === "published" || preview)) return html(seriesPage(c, s, lang, preview));
+      }
+      // Reels: /:lang/:series/reels lists them on the series page; /:lang/:series/reels/:id plays one.
+      if (b === "reels" && c.series.get(a)?.status === "published") {
+        if (parts.length === 3) return redirect(`/${uiLang(lang)}/${a}#reels`, 302);
+        if (parts.length === 4) { const out = reelPage(c.series.get(a)!, parts[3], lang); if (out) return html(out); }
       }
       // News series: /:lang/:series/:day lists the day on the series page; /:lang/:series/:day/:story reads one story.
       if (parts.length === 3 && c.series.get(a)?.type === "news") return redirect(`/${uiLang(lang)}/${a}#d${b}`, 302);

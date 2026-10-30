@@ -1,0 +1,19 @@
+{
+  "status": "published",
+  "published": "2026-10-30",
+  "order": 1,
+  "versions": {
+    "fr": {
+      "title": "Le Chasseur et le Chacal",
+      "blurb": "Khartoum, août 1994. Comment Carlos, l'homme le plus recherché du monde, s'est endormi dans une clinique soudanaise et réveillé dans un avion français. Monsieur X raconte, en une minute.",
+      "video": "fr.mp4",
+      "poster": "fr.jpg"
+    },
+    "en": {
+      "title": "The Hunter and the Jackal",
+      "blurb": "Khartoum, August 1994. How Carlos, the world's most wanted man, fell asleep in a Sudanese clinic and woke up on a French plane. Monsieur X tells it in one minute.",
+      "video": "en.mp4",
+      "poster": "en.jpg"
+    }
+  }
+}

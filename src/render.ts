@@ -4,6 +4,7 @@ import { join } from "node:path";
 import { CONTENT, type Catalog, type Series, type Episode, pick, episodeList, seriesLangs, bestVersion, seriesCover, mediaUrl, slideImage } from "./content";
 import { t, tr, uiLang, langName, fmtDate, fmtDay, routeOf, UI_LANGS } from "./i18n";
 import { esc, markdown } from "./md";
+import { reelsSection } from "./reels";
 
 export const config = {
   siteUrl: (Bun.env.SITE_URL || "https://storink.com").replace(/\/$/, ""),
@@ -166,6 +167,7 @@ ${s.notice ? `<p class="notice">${esc(pick(s.notice, L))}</p>` : ""}
 ${s.aiAssisted ? `<p class="ai-badge">${esc(t(L, "site.aiShort"))}</p>` : ""}</div></section>
 ${s.type === "news" ? newsDays(s, eps, L) : `<section aria-labelledby="eps-h"><h2 id="eps-h" class="eyebrow">${esc(t(L, "series.episodes"))}</h2>
 ${eps.length ? `<ul class="eps">${items}</ul>` : `<p class="muted">${esc(t(L, "series.comingSoon"))}</p>`}</section>`}
+${s.type === "news" ? "" : reelsSection(s, L)}
 ${adSlot("series")}`;
   return page({ lang: L, title: `${pick(s.title, L)} · Storink`, description: desc, path: `/${L}/${s.slug}`, image: cover,
     alternates: UI_LANGS.map((l) => ({ lang: l, path: `/${l}/${s.slug}` })) }, body, allLangPaths((l) => `/${l}/${s.slug}`));
