@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    439,
+    35
+   ],
+   "text": "YPRES, BELGIUM, 1917",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    811,
+    72
+   ],
+   "text": "1916. COHEN JOINS THE CANADIAN ARMY. AT THE FRONT, HE SPEAKS BROKEN CANTONESE, SO HE IS PUT IN CHARGE OF THE CHINESE LABOURERS LAYING THE RAILWAY TRACKS.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    660,
+    532
+   ],
+   "text": "FASTER, LADS!|THE SHELLS DON'T|TAKE A BREAK!",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    191,
+    914
+   ],
+   "text": "AFTER THE WAR, NO MORE WORK IN CANADA. IN 1922, HE SAILS FOR CHINA TO SELL A RAILWAY CONTRACT.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    517,
+    910
+   ],
+   "text": "THE RAILWAY WILL NEVER BE BUILT. COHEN WILL STAY TWENTY YEARS.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    886,
+    916
+   ],
+   "text": "RIGHT. WHO NEEDS|A BODYGUARD?",
+   "max": 24
+  }
+ ]
+}

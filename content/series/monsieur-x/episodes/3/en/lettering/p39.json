@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    214,
+    60
+   ],
+   "text": "STANLEY CAMP, 1942",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    293,
+    613
+   ],
+   "text": "WHO DO|YOU WORK|FOR?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    929,
+    689
+   ],
+   "text": "FOR|SUN|YAT-SEN.|GO ASK|HIM.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    168,
+    1095
+   ],
+   "text": "HUNGER SETS IN. RICE IS COOKED ON MAKESHIFT FIRES, LIGHT IS WHATEVER CAN BE FOUND.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    871,
+    1097
+   ],
+   "text": "HE LOST DOZENS OF KILOS. HE NEVER LOST HIS AUDIENCE.",
+   "max": 22
+  }
+ ]
+}

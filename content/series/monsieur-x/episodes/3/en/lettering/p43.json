@@ -1,0 +1,67 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    203,
+    107
+   ],
+   "text": "AFTER 1949, THERE ARE TWO CHINAS THAT LOATHE EACH OTHER. COHEN IS ONE OF THE FEW WHO MOVE BETWEEN THEM.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    87,
+    554
+   ],
+   "text": "TAIPEI",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    586,
+    554
+   ],
+   "text": "PEKING",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    243,
+    1040
+   ],
+   "text": "BRITISH|AIRCRAFT,|GENTLEMEN.|FIRST-RATE|ENGINES.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    516,
+    1024
+   ],
+   "text": "AND YOUR|COMMISSION,|GENERAL?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    623,
+    1381
+   ],
+   "text": "I'LL LET|YOU|GUESS.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    885,
+    1042
+   ],
+   "text": "BOTH CAMPS FORGIVE HIM EVERYTHING. HE WAS THE BODYGUARD OF THE DOCTOR, WHOM BOTH CHINAS REVERE.",
+   "max": 22
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     945,
+     1008,
+     1457
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE LOST CHILDREN OF WHITECHAPEL",
+     "y": 981,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "From 1881, pogroms drive hundreds of thousands of Jews out of the Russian Empire. Between 120,000 and 150,000 settle in Britain, most of them in London’s East End. Whitechapel becomes a shtetl of blackened brick: sweatshops, overcrowded lodging houses, Yiddish in every street.",
+     "y": 1025
+    },
+    {
+     "para": "Children grow up outdoors. Some sell newspapers, others pick pockets. The leaders of the long-established Jewish community worry: every young Jewish delinquent feeds the anti-immigrant press. They fund schools, charities and a reform school where boys learn a trade and discipline.",
+     "y": 1026
+    },
+    {
+     "para": "For the hard cases, there is emigration. Between 1869 and the 1930s, more than 100,000 poor children from Britain are sent to Canada to work on farms.",
+     "y": 1026
+    },
+    {
+     "para": "They are promised air and room to breathe.",
+     "y": 1026
+    }
+   ]
+  }
+ ]
+}

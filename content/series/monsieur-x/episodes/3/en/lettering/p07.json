@@ -1,0 +1,56 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    540,
+    64
+   ],
+   "text": "ARE YOU SURE IT'S|NOT A TRAP?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    399,
+    136
+   ],
+   "text": "NO.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    164,
+    486
+   ],
+   "text": "SHEUNG WAN, FRIDAY, 10 A.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    946,
+    600
+   ],
+   "text": "FRANCO-CHINESE...",
+   "ellipse": [
+    874,
+    574,
+    1012,
+    632
+   ],
+   "margin": 2,
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    823,
+    980
+   ],
+   "text": "YOUR FRIEND FROM NEW YORK WON'T BE COMING. SIT DOWN.",
+   "max": 22
+  }
+ ]
+}

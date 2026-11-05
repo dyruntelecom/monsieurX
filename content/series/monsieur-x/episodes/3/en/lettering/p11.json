@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    246,
+    102
+   ],
+   "text": "OVER THERE, THERE'S AIR|AND ROOM TO BREATHE.|YOU'LL BE SOMEBODY.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    527,
+    871
+   ],
+   "text": "A FEW YEARS LATER",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    254,
+    904
+   ],
+   "text": "YOU SHOOT BETTER|THAN YOU PLOUGH.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    560,
+    930
+   ],
+   "text": "ROLL UP!|THE STRONGEST MAN|IN MANITOBA!",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    833,
+    906
+   ],
+   "text": "GAMBLER, CARDSHARP, PICKPOCKET, THEN REAL-ESTATE AGENT. IN CANADA, YOU COULD BE ALL OF THAT IN THE SAME WEEK.",
+   "max": 22
+  }
+ ]
+}

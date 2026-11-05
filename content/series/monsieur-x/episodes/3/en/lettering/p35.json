@@ -1,0 +1,48 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     918,
+     1008,
+     1410
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "EIGHTEEN DAYS",
+     "y": 954,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "On 8 December 1941, as the bombs fall on Kai Tak, Japanese troops cross the border of the New Territories. The attack is launched almost at the same time as those on Pearl Harbor, Malaya and the Philippines.",
+     "y": 991
+    },
+    {
+     "para": "Some 14,000 men defend the colony: British, Indians, Hong Kong volunteers and nearly 2,000 Canadians who arrived in November, barely trained. Almost no aircraft, no fleet.",
+     "y": 992
+    },
+    {
+     "para": "In the hills, a line of bunkers nicknamed the Gin Drinkers’ Line was meant to hold for weeks. It gives way in a few days. On 13 December, Kowloon is evacuated; the defenders fall back to the island.",
+     "y": 992
+    },
+    {
+     "para": "On the night of 18 December, the Japanese cross the harbour.",
+     "y": 992
+    },
+    {
+     "para": "In London, they had known since the start of the year: Hong Kong could not be saved. It only had to hold out as long as possible.",
+     "y": 992
+    }
+   ]
+  }
+ ]
+}

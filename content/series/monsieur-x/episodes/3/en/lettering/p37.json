@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    172,
+    55
+   ],
+   "text": "18 DECEMBER 1941",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    236,
+    379
+   ],
+   "text": "THE JAPANESE CROSS THE HARBOUR AND LAND ON THE ISLAND.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    687,
+    529
+   ],
+   "text": "AND WHO|ARE YOU?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    831,
+    847
+   ],
+   "text": "AN OLD HAND|FROM YPRES.|KEEP YOUR|HEAD DOWN, SON.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    687,
+    1043
+   ],
+   "text": "WHAT HE DID IN THOSE DAYS, EXACTLY, NOBODY KNOWS. HE REMEMBERED IT VERY WELL HIMSELF.",
+   "max": 22
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     919,
+     1008,
+     1410
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE SCHOOL OF THE ELITE... AND OF OTHERS",
+     "y": 955,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "Founded in 1945 to train France’s senior civil servants, the ENA opens international programmes very early on. Soft-power diplomacy: foreign officials trained in Paris will remain, it is thought, friends of France.",
+     "y": 990
+    },
+    {
+     "para": "1991. Perestroika. The school takes in its first Soviet student on the long programme, a young television journalist. His name is Sergei Jirnov, and he is a KGB officer. A year later he resigns... then takes his former service to court to obtain his spy diploma. (His own account, hard to verify.)",
+     "y": 991
+    },
+    {
+     "para": "The 2010s. Chinese students are more numerous in the grandes écoles. During a presentation by the DGSE to future ENA graduates, a Chinese student is in the room. The head of the service draws a lesson out loud: what is said here will be repeated over there.",
+     "y": 991
+    },
+    {
+     "para": "At the end of 2021, the ENA disappears, replaced by the Institut national du service public. The former students remain.",
+     "y": 991
+    }
+   ]
+  }
+ ]
+}

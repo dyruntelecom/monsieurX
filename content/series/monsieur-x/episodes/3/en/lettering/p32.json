@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    866,
+    128
+   ],
+   "text": "THEY ALSO SAY|HE RAN THE|CHINESE SECRET|SERVICE.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    636
+   ],
+   "text": "SO THEY SAY. HE SAID IT MOST.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    882,
+    726
+   ],
+   "text": "NO ARCHIVE|CONFIRMS IT.|THE PRESS|REPEATED|WHAT HE|TOLD THEM.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    196,
+    1123
+   ],
+   "text": "THAT'S THE SECRET OF A GOOD AGENT: PEOPLE TALK ABOUT HIM, BUT NEVER FOR THE RIGHT REASONS.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    648,
+    1101
+   ],
+   "text": "IS HE TALKING|ABOUT COHEN...|OR HIMSELF?",
+   "max": 24
+  }
+ ]
+}

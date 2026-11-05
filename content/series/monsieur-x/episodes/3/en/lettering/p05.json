@@ -1,0 +1,77 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    404,
+    66
+   ],
+   "text": "FREE UNTIL|SUNDAY?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    627,
+    107
+   ],
+   "text": "DEPENDS WHERE.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    345,
+    379
+   ],
+   "text": "HONG KONG.|BRING THE NAGRA.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    837,
+    400
+   ],
+   "text": "YOU KNOW PEOPLE RECORD ON PHONES NOW?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    714,
+    709
+   ],
+   "text": "PHONES CAN BE TAPPED. THE NAGRA CAN'T.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    198,
+    945
+   ],
+   "text": "HONG KONG, THURSDAY 5 NOVEMBER 2026",
+   "margin": 6,
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    740,
+    990
+   ],
+   "text": "AND YOUR EX-EXECUTIVE, WHAT DOES HE LOOK LIKE?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    925,
+    1017
+   ],
+   "text": "NO IDEA. HE'S THE ONE WHO HAS TO FIND US.",
+   "max": 24
+  }
+ ]
+}

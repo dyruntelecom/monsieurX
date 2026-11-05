@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     1086,
+     1008,
+     1522
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "HONG KONG, THE DOOR LEFT AJAR",
+     "y": 1122,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "1841. At the end of the First Opium War, the British take a nearly deserted rock at the mouth of the Pearl River. Kowloon follows in 1860; the New Territories are leased for ninety-nine years in 1898.",
+     "y": 1158
+    },
+    {
+     "para": "The colony becomes a free port where everything is traded: tea, opium, weapons, currency. It is also a refuge. Revolutionaries, losers of the civil war, exiles of every cause find shelter there, sometimes for a few months, sometimes for good.",
+     "y": 1159
+    },
+    {
+     "para": "For the secret services, it is a window onto China. People listen, recruit and trade there. British, Americans, Soviets, Chinese Nationalists and Communists drink in the same bars.",
+     "y": 1159
+    },
+    {
+     "para": "On 1 July 1997, Hong Kong returns to China under the formula “one country, two systems”. The door stays ajar. The question is which way it opens.",
+     "y": 1159
+    }
+   ]
+  }
+ ]
+}

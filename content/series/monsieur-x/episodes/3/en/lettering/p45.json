@@ -1,0 +1,48 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     919,
+     1008,
+     1380
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE DOCTOR, FATHER OF BOTH CHINAS",
+     "y": 955,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "Sun Yat-sen died in 1925, before the civil war. So he never had to choose between the Communists and the Nationalists. Both camps claim him.",
+     "y": 992
+    },
+    {
+     "para": "In Taipei, he is the “Father of the Nation”. His portrait dominates official halls, his face is on the hundred-dollar note, and a great memorial is dedicated to him.",
+     "y": 993
+    },
+    {
+     "para": "In Beijing, he is the “forerunner of the revolution”. Every 1 October, his portrait is set up in Tiananmen Square, facing Mao’s.",
+     "y": 993
+    },
+    {
+     "para": "His own family is split in two: his widow, Soong Ching-ling, becomes vice-president of the People’s Republic; his sister-in-law, Soong Mei-ling, is the wife of Chiang Kai-shek in Taiwan.",
+     "y": 993
+    },
+    {
+     "para": "For a foreigner, having been the Doctor’s trusted man was worth a passport on both sides of the strait.",
+     "y": 993
+    }
+   ]
+  }
+ ]
+}

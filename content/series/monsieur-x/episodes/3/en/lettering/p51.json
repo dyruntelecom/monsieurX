@@ -1,0 +1,153 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "flow": false,
+   "size": 23,
+   "rects": [
+    [
+     55,
+     430,
+     1000,
+     720
+    ],
+    [
+     55,
+     752,
+     1000,
+     1045
+    ],
+    [
+     55,
+     1078,
+     1000,
+     1410
+    ]
+   ],
+   "lines": [
+    {
+     "text": "THANK YOU",
+     "cx": 512,
+     "y": 470,
+     "size": 40,
+     "font": "typewriter-bold"
+    },
+    {
+     "text": "To Patrick Pesnot and the team of “Rendez-vous avec X”,",
+     "cx": 512,
+     "y": 524
+    },
+    {
+     "text": "on France Inter, whose spirit and format",
+     "cx": 512,
+     "y": 555
+    },
+    {
+     "text": "this series borrows.",
+     "cx": 512,
+     "y": 586
+    },
+    {
+     "text": "This episode does not adapt a broadcast. It starts from",
+     "cx": 512,
+     "y": 644
+    },
+    {
+     "text": "a news story, the New York Times investigation of",
+     "cx": 512,
+     "y": 675
+    },
+    {
+     "text": "29 October 2026, and an old Hong Kong tale.",
+     "cx": 512,
+     "y": 706
+    },
+    {
+     "text": "SOURCES",
+     "cx": 512,
+     "y": 795,
+     "size": 40,
+     "font": "typewriter-bold"
+    },
+    {
+     "text": "Daniel S. Levy, “Two-Gun Cohen: A Biography”, St. Martin’s",
+     "x": 70,
+     "y": 847,
+     "size": 22
+    },
+    {
+     "text": "  Press, 1997.",
+     "x": 70,
+     "y": 878,
+     "size": 22
+    },
+    {
+     "text": "Charles Drage, “The Life and Times of General Two-Gun Cohen”,",
+     "x": 70,
+     "y": 917,
+     "size": 22
+    },
+    {
+     "text": "  1954.",
+     "x": 70,
+     "y": 948,
+     "size": 22
+    },
+    {
+     "text": "“The Canadian Encyclopedia”, “Morris ‘Two-Gun’ Cohen”.",
+     "x": 70,
+     "y": 987,
+     "size": 22
+    },
+    {
+     "text": "Diaries of Stanley camp internees and timelines, Gwulo.com.",
+     "x": 70,
+     "y": 1026,
+     "size": 22
+    },
+    {
+     "text": "DISCLAIMER",
+     "cx": 512,
+     "y": 1120,
+     "size": 40,
+     "font": "typewriter-bold"
+    },
+    {
+     "text": "Monsieur X, the Journalist, the sound engineer and the ENA",
+     "x": 70,
+     "y": 1177
+    },
+    {
+     "text": "man are fictional characters. The present-day scenes are",
+     "x": 70,
+     "y": 1208
+    },
+    {
+     "text": "invented. What Cohen said about his life is not always",
+     "x": 70,
+     "y": 1240
+    },
+    {
+     "text": "true: the pages flag it when historians doubt it.",
+     "x": 70,
+     "y": 1271
+    },
+    {
+     "text": "Jensen Huang and Alice Huang are not accused of anything.",
+     "x": 70,
+     "y": 1330
+    },
+    {
+     "text": "The suspicions reported in the press remain suspicions,",
+     "x": 70,
+     "y": 1361
+    },
+    {
+     "text": "and Nvidia denies them.",
+     "x": 70,
+     "y": 1393
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    327,
+    519
+   ],
+   "text": "GENERAL|COHEN. HAS A|NICE RING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    631,
+    502
+   ],
+   "text": "AND MY|TROOPS?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    820,
+    768
+   ],
+   "text": "YOU DON'T|HAVE ANY,|GENERAL.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    384,
+    1079
+   ],
+   "text": "ALL THE|BETTER.|NOBODY WILL|DESERT.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    694,
+    1055
+   ],
+   "text": "A GENERAL'S TITLE, WITH NO SOLDIERS TO COMMAND. HE TOLD IT DIFFERENTLY ALL HIS LIFE.",
+   "max": 22
+  }
+ ]
+}

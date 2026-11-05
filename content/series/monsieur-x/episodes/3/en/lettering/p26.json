@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     917,
+     1008,
+     1440
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "FIVE PER CENT",
+     "y": 953,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "In 1916, the death of President Yuan Shikai leaves the young Republic without a master. For twelve years, China breaks up among warlords: each raises his own army, his own taxes, sometimes his own currency. By the late 1920s, nearly two million men are in uniform.",
+     "y": 995
+    },
+    {
+     "para": "They need rifles. In 1919, the great powers declare an arms embargo on China. It will last ten years and never be respected. Weapons arrive dismantled, under false declarations, landed at night in Hong Kong, Macao or Haiphong.",
+     "y": 996
+    },
+    {
+     "para": "Between the European manufacturers and the Chinese generals, middlemen are needed: former officers, adventurers, dealers in anything. They speak poor Chinese but know the right customs officers. They are paid a percentage.",
+     "y": 996
+    },
+    {
+     "para": "After 1928, China is reunified on paper. In the South, Canton keeps its own government and still buys its weapons.",
+     "y": 996
+    }
+   ]
+  }
+ ]
+}

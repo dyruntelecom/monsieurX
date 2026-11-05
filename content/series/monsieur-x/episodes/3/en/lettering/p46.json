@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    243,
+    54
+   ],
+   "text": "MANCHESTER, SEPTEMBER 1970",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    165,
+    583
+   ],
+   "text": "AT THE FUNERAL, REPRESENTATIVES OF PEKING AND TAIPEI. TOGETHER. UNHEARD OF.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    655,
+    585
+   ],
+   "text": "THEY DON'T|TALK TO|EACH OTHER?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    904,
+    944
+   ],
+   "text": "THEY CAME|FOR HIM.|THAT'S ALREADY|A LOT.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    683,
+    1109
+   ],
+   "text": "THE CHINESE INSCRIPTION COMES FROM SOONG CHING-LING, THE DOCTOR'S WIDOW, NOW ONE OF PEKING'S HIGHEST DIGNITARIES. HER LAST FAVOUR.",
+   "max": 22
+  }
+ ]
+}

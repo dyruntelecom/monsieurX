@@ -1,0 +1,52 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     919,
+     1008,
+     1409
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "STANLEY",
+     "y": 955,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "In January 1942, the Japanese round up Hong Kong’s “enemy” civilians on the Stanley peninsula, in the south of the island: about 2,800 people, mostly British, but also Americans, Dutch and Canadians. Families included.",
+     "y": 991
+    },
+    {
+     "para": "The camp occupies the buildings of a college and the staff quarters of the neighbouring prison. Several families are crammed into a single room.",
+     "y": 992
+    },
+    {
+     "para": "The ration, mostly rice, is not enough. Beriberi and malnutrition set in. People garden, barter, buy on the black market from the guards.",
+     "y": 992
+    },
+    {
+     "para": "Even so, the internees organise classes, concerts and plays.",
+     "y": 992
+    },
+    {
+     "para": "In January 1945, an American plane mistakenly bombs a building in the camp and kills fourteen internees.",
+     "y": 992
+    },
+    {
+     "para": "The camp is not liberated until August 1945, after Japan’s surrender.",
+     "y": 992
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    286,
+    47
+   ],
+   "text": "NEW YORK, 30 OCTOBER 2026, 2 A.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    687,
+    190
+   ],
+   "text": "FRANCE INTER,|IT'S 7 A.M.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    242,
+    596
+   ],
+   "text": "ACCORDING TO THE NEW YORK TIMES, US INTELLIGENCE SUSPECTS A CHINESE BUSINESSWOMAN, CLOSE TO THE HEAD OF NVIDIA, OF SPYING FOR BEIJING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    871,
+    710
+   ],
+   "text": "NVIDIA DENIES ANY WRONGDOING. THERE IS NO EVIDENCE ITS CEO KNEW ANYTHING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    394,
+    1074
+   ],
+   "text": "THREE DAYS OF INTERVIEWS, AND IT'S THE NEW YORK TIMES THAT BREAKS THE STORY.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    895,
+    1049
+   ],
+   "text": "A SPY, A CEO, A PRESIDENT WHO DOESN'T LIFT A FINGER... ALL IT NEEDS IS SOMEONE TO TELL IT.",
+   "max": 24
+  }
+ ]
+}

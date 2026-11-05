@@ -1,0 +1,40 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    912,
+    507
+   ],
+   "text": "NOTHING.|JUST A SCRATCH.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    140,
+    982
+   ],
+   "text": "AND WHAT IF|IT'S THE RIGHT ARM|NEXT TIME?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    537,
+    971
+   ],
+   "text": "EVEN WITH MY LEFT,|I DON'T MISS.|SO: TWO REVOLVERS.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    839,
+    956
+   ],
+   "text": "THE FOREIGN PRESS FINDS HIM A NAME. HE WILL NEVER LET IT GO.",
+   "max": 22
+  }
+ ]
+}

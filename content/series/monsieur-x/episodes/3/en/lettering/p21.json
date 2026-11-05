@@ -1,0 +1,31 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    232,
+    64
+   ],
+   "text": "BUT COHEN TOLD A VERY DIFFERENT STORY... AN AMBUSH, ONE NIGHT, ALONG A RAILWAY LINE.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    912,
+    519
+   ],
+   "text": "DOCTOR,|GET DOWN!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    861,
+    929
+   ],
+   "text": "NOBODY|TOUCHES|THE DOCTOR.",
+   "max": 24
+  }
+ ]
+}

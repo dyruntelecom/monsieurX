@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    215,
+    53
+   ],
+   "text": "SAI YING PUN, SATURDAY, 9 P.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    316,
+    541
+   ],
+   "text": "THERE'S|NOBODY|HERE.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    655,
+    537
+   ],
+   "text": "THERE'S ALWAYS SOMEONE IN A PARK AT NIGHT.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    149,
+    1102
+   ],
+   "text": "COHEN FOLLOWED THIS MAN'S COFFIN. VERY CLOSELY, IF YOU BELIEVE HIM.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    665,
+    1082
+   ],
+   "text": "MARCH 1925. THE DOCTOR DIES OF CANCER. COHEN LOSES HIS SUBSTITUTE FATHER.",
+   "max": 22
+  }
+ ]
+}

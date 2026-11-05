@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    259,
+    60
+   ],
+   "text": "HONG KONG, 1930s",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    237,
+    484
+   ],
+   "text": "AFTER THE DOCTOR, HE SERVES HIS HEIRS: HIS SON, HIS BANKER BROTHER-IN-LAW, THE WARLORDS OF THE SOUTH. HE FINDS THEM WEAPONS.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    727,
+    491
+   ],
+   "text": "LATEST|MODEL.|READY|TO USE.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    109,
+    1090
+   ],
+   "text": "AND YOU,|GENERAL?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    300,
+    1116
+   ],
+   "text": "FIVE|PER CENT.|AS|USUAL.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    709,
+    1113
+   ],
+   "text": "IS THAT HIM,|THE GENERAL|WHO SELLS|RIFLES TO|CANTON?",
+   "max": 24
+  }
+ ]
+}

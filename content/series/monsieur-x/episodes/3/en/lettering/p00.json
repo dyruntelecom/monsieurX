@@ -1,0 +1,62 @@
+{
+ "blocks": [
+  {
+   "type": "plain",
+   "rects": [
+    [
+     25,
+     884,
+     368,
+     920
+    ]
+   ],
+   "fill": [
+    2,
+    2,
+    2
+   ],
+   "color": [
+    240,
+    236,
+    228
+   ],
+   "lines": [
+    {
+     "text": "THE GENERAL OF TWO CHINAS",
+     "x": 32,
+     "y": 911,
+     "cap": 19,
+     "weight": 430,
+     "squeeze": 0.9,
+     "fit": 318
+    }
+   ]
+  },
+  {
+   "type": "plain",
+   "rects": [
+    [
+     42,
+     1414,
+     352,
+     1444
+    ]
+   ],
+   "color": [
+    24,
+    22,
+    20
+   ],
+   "lines": [
+    {
+     "text": "EPISODE 3 • HONG KONG, NOVEMBER 2026",
+     "cx": 197,
+     "y": 1435,
+     "cap": 12,
+     "font": "typewriter-bold",
+     "fit": 300
+    }
+   ]
+  }
+ ]
+}

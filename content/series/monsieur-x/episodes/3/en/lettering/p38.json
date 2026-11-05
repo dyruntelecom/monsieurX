@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    242,
+    53
+   ],
+   "text": "KOWLOON, 25 DECEMBER 1941",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    213,
+    140
+   ],
+   "text": "ON CHRISTMAS DAY, THE GOVERNOR SIGNS THE SURRENDER BY CANDLELIGHT.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    142,
+    545
+   ],
+   "text": "HONG KONG WILL CALL IT BLACK CHRISTMAS.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    555,
+    534
+   ],
+   "text": "HANDS|UP!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    332,
+    984
+   ],
+   "text": "EASY.|THEY'RE OLD|FRIENDS.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    795,
+    1021
+   ],
+   "text": "GENERAL|COHEN, WE HAVE|A GREAT MANY|QUESTIONS.",
+   "max": 24
+  }
+ ]
+}

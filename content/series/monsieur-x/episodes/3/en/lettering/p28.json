@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    230,
+    54
+   ],
+   "text": "THE JEWISH CLUB, HONG KONG",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    250,
+    553
+   ],
+   "text": "THEY SAY|YOU CHEATED,|IN CANADA.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    714,
+    553
+   ],
+   "text": "IN|CANADA,|YES.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    505,
+    1050
+   ],
+   "text": "YOU SEE?|THINGS|DISAPPEAR|IN HONG KONG.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    841,
+    1022
+   ],
+   "text": "POKER, CARD TRICKS, STORIES. HE NEVER KNEW WHEN TO STOP.",
+   "max": 22
+  }
+ ]
+}

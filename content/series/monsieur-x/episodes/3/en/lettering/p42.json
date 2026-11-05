@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    513,
+    113
+   ],
+   "text": "DID HE|COME BACK?",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    173,
+    605
+   ],
+   "text": "OFTEN. BUT IN 1947, HE IS IN NEW YORK, AT THE UN. AND IF YOU BELIEVE HIM, HE SWINGS A VOTE THERE.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    900,
+    654
+   ],
+   "text": "THE PARTITION|OF PALESTINE.|CHINA|ABSTAINS|INSTEAD OF|VOTING|AGAINST.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    171,
+    1077
+   ],
+   "text": "COHEN PRODUCES AN OLD LETTER IN WHICH SUN YAT-SEN SUPPORTED ZIONISM. HE PUTS IT UNDER THE NOSE OF THE HEAD OF THE CHINESE DELEGATION.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    662,
+    1075
+   ],
+   "text": "THAT'S HIS|BIOGRAPHER'S VERSION.|HISTORIANS ARE|STILL ARGUING|ABOUT IT.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    868,
+    1413
+   ],
+   "text": "LET'S SAY HE WAS IN THE ROOM.",
+   "max": 22
+  }
+ ]
+}

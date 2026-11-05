@@ -1,0 +1,48 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     917,
+     1008,
+     1452
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE DOCTOR OF HONG KONG",
+     "y": 953,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "In 1887, a 21-year-old from Canton enters the brand-new College of Medicine for Chinese in Hong Kong. His name is Sun Yat-sen. He graduates in 1892, one of the first two in his class.",
+     "y": 998
+    },
+    {
+     "para": "In the British colony, he discovers clean streets, an administration that works, written laws. He wonders why China cannot manage the same. With three friends, he reinvents the world in the tea houses; they are nicknamed “the four bandits”.",
+     "y": 999
+    },
+    {
+     "para": "In 1895, from Hong Kong, he plans an uprising in Canton. The plot is uncovered and comrades are executed. He escapes and spends sixteen years in exile, raising money from every Chinese diaspora.",
+     "y": 999
+    },
+    {
+     "para": "In October 1911, the Empire collapses. Sun returns and becomes the first president of the Republic of China.",
+     "y": 999
+    },
+    {
+     "para": "Peking and Taipei, which agree on almost nothing, both revere him.",
+     "y": 999
+    }
+   ]
+  }
+ ]
+}

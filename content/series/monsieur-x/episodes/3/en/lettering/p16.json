@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    223,
+    69
+   ],
+   "text": "NICE STORY. EXCEPT THAT IN 1911, COHEN WAS IN PRISON.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    877,
+    51
+   ],
+   "text": "YOU READ TOO MUCH.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    356,
+    552
+   ],
+   "text": "HIS BIOGRAPHER SAYS IT: ALMOST EVERYTHING COHEN SAID ABOUT HIMSELF IS FALSE, OR INFLATED.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    774,
+    549
+   ],
+   "text": "ALMOST EVERYTHING. WHAT'S LEFT IS ENOUGH TO MAKE A LIFE.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    304,
+    961
+   ],
+   "text": "AND THE MAN WAS NO SAINT, I SUPPOSE.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    770,
+    1375
+   ],
+   "text": "NOT AT ALL. BUT HE HAD LIVED ENOUGH REAL ADVENTURES FOR PEOPLE TO BELIEVE THE FAKE ONES TOO.",
+   "max": 22
+  }
+ ]
+}

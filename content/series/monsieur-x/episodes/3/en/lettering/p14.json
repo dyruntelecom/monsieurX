@@ -1,0 +1,31 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    213,
+    60
+   ],
+   "text": "IT WAS THERE, HE USED TO SAY, THAT HE MET SUN YAT-SEN IN PERSON AND BECAME HIS BODYGUARD.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    208,
+    601
+   ],
+   "text": "MR COHEN,|CHINA WILL REMEMBER|YOU.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    907,
+    601
+   ],
+   "text": "ONE DAY, DOCTOR,|I'LL BE AT YOUR SIDE.",
+   "max": 24
+  }
+ ]
+}

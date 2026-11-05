@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    115,
+    42
+   ],
+   "text": "CANTON, 1922",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    408,
+    546
+   ],
+   "text": "NOT BAD!|NOW THE|LEFT!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    115,
+    977
+   ],
+   "text": "HE DOESN'T|SPEAK|CHINESE.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    388,
+    1004
+   ],
+   "text": "NO, BUT HE FIGHTS FOR YOU LIKE A CHINESE.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    704,
+    963
+   ],
+   "text": "THE CHINESE CALL HIM MA KUN.|HE BECOMES THE DOCTOR'S SHADOW.",
+   "max": 22
+  }
+ ]
+}

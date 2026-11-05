@@ -1,0 +1,44 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     945,
+     1008,
+     1475
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE CHIPS OF DISCORD",
+     "y": 981,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "Graphics chips have become the oil of the 21st century: without them, there is no artificial intelligence. Since 2022, Washington has restricted their export to China. American manufacturers design scaled-down versions; Beijing looks for other routes, and middlemen in Asia are suspected of diverting shipments.",
+     "y": 1022
+    },
+    {
+     "para": "On 29 October 2026, the New York Times reports that US intelligence suspects a Chinese businesswoman, head of a data-centre company based in Singapore, of spying for Beijing. She had close ties with the head of Nvidia. The White House is said to have been told a year earlier, and done nothing.",
+     "y": 1023
+    },
+    {
+     "para": "Nvidia denies any wrongdoing. Nothing shows that its CEO knew anything at all.",
+     "y": 1023
+    },
+    {
+     "para": "A story that is only just beginning.",
+     "y": 1023
+    }
+   ]
+  }
+ ]
+}

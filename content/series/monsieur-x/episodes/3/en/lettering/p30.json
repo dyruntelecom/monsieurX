@@ -1,0 +1,48 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     919,
+     1008,
+     1420
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE JEWS OF HONG KONG",
+     "y": 955,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "They arrive with the British, from the 1840s. Most are Jewish merchants from Baghdad who came by way of Bombay: the Sassoons, then the Kadoories. They trade in cotton and opium, then invest in property and electricity.",
+     "y": 993
+    },
+    {
+     "para": "In 1902, the Sassoon brothers give the small community a synagogue on the heights of Mid-Levels. They name it Ohel Leah, “Leah’s tent”, after their mother.",
+     "y": 994
+    },
+    {
+     "para": "The Kadoories build a club where people meet in the evening to dine, read the London papers and play cards. In 1928, their company opens the Peninsula in Kowloon, a hotel soon famous throughout Asia.",
+     "y": 994
+    },
+    {
+     "para": "In the 1930s, other Jews arrive, driven out of Europe or Russia, often penniless.",
+     "y": 994
+    },
+    {
+     "para": "The community stays tiny, a few hundred people. But its great families are among the richest in the colony.",
+     "y": 994
+    }
+   ]
+  }
+ ]
+}

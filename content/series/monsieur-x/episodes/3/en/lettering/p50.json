@@ -1,0 +1,67 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    119,
+    45
+   ],
+   "text": "WEST KOWLOON,|MONDAY, 10 P.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    634,
+    90
+   ],
+   "text": "MEGASPEED. DATA CENTRES IN SINGAPORE. WASHINGTON SUSPECTS ITS CEO OF SPYING FOR BEIJING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    553,
+    532
+   ],
+   "text": "THE UNITED STATES IS WORRIED, IT'S TRUE. BUT HERE, EVERYONE KNOWS THE LINES BETWEEN TECHNOLOGY, FINANCE AND POWER ARE GETTING BLURRIER AND BLURRIER.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    375,
+    871
+   ],
+   "text": "SO MEGASPEED|WOULD BE MORE|THAN A BUSINESS|DEAL?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    911,
+    870
+   ],
+   "text": "SERVERS, DATA, IDENTITIES... AND PERHAPS LEVERS OF INFLUENCE TOO. THE SAME PATTERNS AS BACK THEN.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    910,
+    1042
+   ],
+   "text": "AND HONG KONG IS STILL THE BEST PLACE TO WATCH WHERE HISTORY IS GOING.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    243,
+    1148
+   ],
+   "text": "NETWORKS CHANGE, AND SO DO THE TOOLS. BUT FROM ONE WAR TO THE NEXT, THE SAME GAME ALWAYS RETURNS: CONTROL INFORMATION TO STEER THE WORLD.",
+   "max": 22
+  }
+ ]
+}

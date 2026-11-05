@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    142,
+    35
+   ],
+   "text": "TEMPLE STREET, 9 P.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    353,
+    571
+   ],
+   "text": "9.40 P.M.|HE'S NOT COMING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    840,
+    571
+   ],
+   "text": "SIR. THE PARROT HAS A CARD FOR YOU.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    544,
+    1013
+   ],
+   "text": "IS THAT YOUR|EX-EXECUTIVE?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    892,
+    1033
+   ],
+   "text": "NO. AN OLD FRIEND OF THE PARROT'S.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    558,
+    1295
+   ],
+   "text": "SHEUNG WAN.|TOMORROW,|10 A.M.|2ND FLOOR.",
+   "max": 24
+  }
+ ]
+}

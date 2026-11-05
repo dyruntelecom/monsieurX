@@ -1,0 +1,31 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    158,
+    446
+   ],
+   "text": "THE TILL,|CHINAMAN!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    273,
+    923
+   ],
+   "text": "AND DON'T COME|BACK FOR DINNER.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    677,
+    954
+   ],
+   "text": "NOBODY DOES THAT|FOR US. NOBODY.",
+   "max": 24
+  }
+ ]
+}

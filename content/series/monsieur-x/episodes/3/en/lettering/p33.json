@@ -1,0 +1,31 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    262,
+    54
+   ],
+   "text": "HONG KONG, 7 DECEMBER 1941",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    208,
+    623
+   ],
+   "text": "THE LAST NIGHT OF PEACE.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    759,
+    1076
+   ],
+   "text": "HE ISN'T SLEEPING. HE'S RIGHT NOT TO.",
+   "max": 22
+  }
+ ]
+}

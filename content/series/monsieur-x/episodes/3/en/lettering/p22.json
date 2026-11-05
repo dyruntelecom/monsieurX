@@ -1,0 +1,67 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    236,
+    90
+   ],
+   "text": "KILLERS UNDER A TRAIN, TWO REVOLVERS... THAT'S THE MOVIES.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    649,
+    77
+   ],
+   "text": "HOLLYWOOD DID IT. GARY COOPER, IN 1936. THEY SAY THE CHARACTER WAS BASED ON HIM.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    132,
+    604
+   ],
+   "text": "AND THE|AMBUSH?",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    811,
+    595
+   ],
+   "text": "THE REST CAN'T BE TOLD HERE. TOMORROW NIGHT, 9 P.M., SUN YAT-SEN PARK, SAI YING PUN.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    410,
+    856
+   ],
+   "text": "NO ONE BUT|COHEN EVER|TOLD IT.|MAKE A NOTE|OF THAT.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    300,
+    1046
+   ],
+   "text": "AND|NVIDIA?",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    841,
+    1410
+   ],
+   "text": "PATIENCE. ALL SPIES PASS THROUGH THE SAME PORT.",
+   "max": 22
+  }
+ ]
+}

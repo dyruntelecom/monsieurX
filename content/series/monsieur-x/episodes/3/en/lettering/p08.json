@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    150,
+    107
+   ],
+   "text": "YOU KNOW|WHY I'M|HERE.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    838,
+    79
+   ],
+   "text": "FOR NVIDIA. A BUSINESSWOMAN SUSPECTED OF SPYING FOR BEIJING, VERY CLOSE TO ITS CEO. AND AN AMERICAN PRESIDENT WHO WAS WARNED AND LOOKED THE OTHER WAY.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    133,
+    570
+   ],
+   "text": "AND YOU'RE GOING|TO TELL ME?",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    765,
+    564
+   ],
+   "text": "YOU'RE GOING TOO FAST, MY DEAR FELLOW. FIRST, HOW A FOREIGNER BECOMES A CHINESE LEADER'S MOST TRUSTED MAN. IT HAS HAPPENED HERE BEFORE. A HUNDRED YEARS AGO.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    1005
+   ],
+   "text": "AN ENGLISHMAN WHO SHIPPED RIFLES TO CHINA IN SEWING-MACHINE CRATES.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    834,
+    1022
+   ],
+   "text": "HIS NAME WAS MORRIS COHEN. THEY CALLED HIM TWO-GUN. AND IT ALL BEGAN IN A POCKET.",
+   "max": 22
+  }
+ ]
+}

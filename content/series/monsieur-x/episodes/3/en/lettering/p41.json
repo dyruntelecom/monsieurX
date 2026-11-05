@@ -1,0 +1,31 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    230,
+    54
+   ],
+   "text": "STANLEY, SEPTEMBER 1943",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    697,
+    592
+   ],
+   "text": "A RARE EXCHANGE OF CIVILIAN PRISONERS. SIXTY-TWO CANADIANS. COHEN HAS A CANADIAN PASSPORT.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    280,
+    1103
+   ],
+   "text": "I'LL BE BACK.|EVERYONE COMES|BACK TO|HONG KONG.",
+   "max": 24
+  }
+ ]
+}

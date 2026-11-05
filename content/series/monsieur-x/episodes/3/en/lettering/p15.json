@@ -1,0 +1,48 @@
+{
+ "blocks": [
+  {
+   "type": "typed",
+   "rects": [
+    [
+     48,
+     917,
+     1008,
+     1497
+    ]
+   ],
+   "left": 60,
+   "size": 21,
+   "width": 930,
+   "lh": 26,
+   "para_gap": 0.7,
+   "lines": [
+    {
+     "text": "THE CHINESE OF CANADA",
+     "y": 953,
+     "size": 34,
+     "font": "typewriter-bold"
+    },
+    {
+     "para": "Between 1881 and 1885, some 15,000 Chinese workers lay the tracks of the Canadian Pacific across the Rockies. They are given the tunnels, the dynamite, the cliffs. Hundreds die there.",
+     "y": 994
+    },
+    {
+     "para": "Once the line is finished, Ottawa no longer wants them. From 1885, every Chinese immigrant must pay a head tax: 50 dollars, then 100 in 1900, 500 in 1903, about two years’ wages. No other nationality has to pay it.",
+     "y": 995
+    },
+    {
+     "para": "The men live alone, without wives or children. They open laundries and restaurants and band together in mutual-aid societies. Some are secret societies, born in China to overthrow the Manchu dynasty.",
+     "y": 995
+    },
+    {
+     "para": "Sun Yat-sen tours North America several times to raise funds. In 1911, in Canada, Chinese communities mortgage their own buildings to finance the revolution.",
+     "y": 995
+    },
+    {
+     "para": "These Chinese needed friends. They did not forget the ones they had.",
+     "y": 995
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    179,
+    36
+   ],
+   "text": "LONDON, WHITECHAPEL, 1900",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    202,
+    96
+   ],
+   "text": "SON OF POLISH JEWS, THE ELDEST CHILD.|SCHOOL BORED HIM. THE STREET DIDN'T.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    870,
+    529
+   ],
+   "text": "YOU, MY LAD, ARE GOING|BEFORE A MAGISTRATE.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    249,
+    1005
+   ],
+   "text": "REFORM SCHOOL.|PERHAPS THEY'LL MAKE|AN HONEST MAN OF YOU.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    810,
+    1028
+   ],
+   "text": "PERHAPS.",
+   "max": 24
+  }
+ ]
+}

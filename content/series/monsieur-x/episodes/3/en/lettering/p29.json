@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    281,
+    49
+   ],
+   "text": "1937: JAPAN INVADES CHINA",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    270,
+    549
+   ],
+   "text": "WE NEED|EYES IN|SOUTHERN CHINA,|GENERAL.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    659,
+    581
+   ],
+   "text": "I CAN'T|READ|CHINESE.|BUT I|KNOW HOW|TO LISTEN.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    204,
+    1018
+   ],
+   "text": "HE FINDS WEAPONS FOR CHINA. AND, IT IS SAID, HE ALSO FEEDS BRITISH INTELLIGENCE.",
+   "max": 22
+  },
+  {
+   "type": "caption",
+   "seed": [
+    794,
+    1017
+   ],
+   "text": "ONE HAND FOR CHINA, THE OTHER FOR THE BRITISH. WHAT ELSE IS THE POINT OF BEING AMBIDEXTROUS?",
+   "max": 22
+  }
+ ]
+}

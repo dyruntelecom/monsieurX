@@ -1,0 +1,67 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    171,
+    119
+   ],
+   "text": "YOUR FRIEND|TALKS WELL.|HE ALWAYS|LIKED OLD|STORIES|TOO MUCH.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    620,
+    66
+   ],
+   "text": "WHO ARE|YOU?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    864,
+    142
+   ],
+   "text": "A FORMER STUDENT|OF THE ENA. CLASS OF...|NEVER MIND. I SERVED|MY COUNTRY|IN ANOTHER WAY,|AFTERWARDS.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    145,
+    710
+   ],
+   "text": "YOUR|CHIPMAKER,|I KNOW HIM|A LITTLE. NOT HERE.|THE DAY AFTER|TOMORROW.|WE'LL FIND|YOU.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    165,
+    1022
+   ],
+   "text": "THE NEXT MORNING",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    893,
+    1067
+   ],
+   "text": "ANOTHER|FRIEND OF|THE PARROT'S.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    874,
+    1272
+   ],
+   "text": "ICC,|118TH FLOOR.|MONDAY, 10 P.M.",
+   "max": 24
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "balloon",
+   "seed": [
+    141,
+    558
+   ],
+   "text": "GENERAL, WHAT|IF THE JAPANESE|SHOOT?",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    355,
+    858
+   ],
+   "text": "THEY AIM|BADLY AT NIGHT.|SO DO I,|COME TO|THAT.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    188,
+    1041
+   ],
+   "text": "MAKE WAY! MAKE|WAY FOR MADAME|SUN YAT-SEN!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    448,
+    1034
+   ],
+   "text": "COME|WITH US,|MA KUN.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    820,
+    1041
+   ],
+   "text": "IT WAS ONE OF THE LAST PLANES TO LEAVE HONG KONG.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    579,
+    1350
+   ],
+   "text": "SOMEONE|HAS TO STAY|BEHIND TO|LOCK THE|DOOR.",
+   "max": 24
+  }
+ ]
+}

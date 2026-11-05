@@ -1,0 +1,58 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    202,
+    54
+   ],
+   "text": "MID-LEVELS, FRIDAY EVENING",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    831,
+    100
+   ],
+   "text": "YOUR X MADE YOU CROSS HALF THE WORLD TO TELL YOU A PICKPOCKET'S LIFE STORY.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    713,
+    520
+   ],
+   "text": "MY EX-EXECUTIVE HAS JUST VANISHED.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    873,
+    582
+   ],
+   "text": "THIS ACCOUNT|NO LONGER|EXISTS",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    766,
+    816
+   ],
+   "text": "OR HE NEVER|EXISTED.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    160,
+    1165
+   ],
+   "text": "THEN TOMORROW,|WE GO TO|THE PARK.",
+   "max": 24
+  }
+ ]
+}

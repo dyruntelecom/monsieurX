@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    235,
+    46
+   ],
+   "text": "HONG KONG, AUTUMN 1941",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    218,
+    570
+   ],
+   "text": "MADAME,|THE JAPANESE|ARE IN CANTON.|THEY'LL BE|HERE BEFORE|CHRISTMAS.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    702,
+    578
+   ],
+   "text": "HONG KONG|IS|BRITISH,|GENERAL.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    384,
+    1092
+   ],
+   "text": "SINGAPORE|IS BRITISH|TOO. I WOULDN'T|BET MY CAP|ON IT|LASTING.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    665,
+    1062
+   ],
+   "text": "YOU ARE|THE ONLY ONE|WHO TALKS|TO ME|LIKE THAT.",
+   "max": 24
+  }
+ ]
+}

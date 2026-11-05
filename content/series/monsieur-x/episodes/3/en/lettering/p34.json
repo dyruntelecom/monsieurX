@@ -1,0 +1,40 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    281,
+    57
+   ],
+   "text": "KAI TAK, 8 DECEMBER 1941, 8 A.M.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    921,
+    562
+   ],
+   "text": "MADAME,|PACK YOUR|BAGS.|TONIGHT.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    237,
+    1075
+   ],
+   "text": "A FEW HOURS EARLIER, ON THE OTHER SIDE OF THE PACIFIC, JAPAN STRUCK PEARL HARBOR. HONG KONG IS NEXT.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    887,
+    1056
+   ],
+   "text": "THERE ARE|STILL PLANES.|WE NEED|ONE.",
+   "max": 24
+  }
+ ]
+}

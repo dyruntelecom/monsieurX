@@ -1,0 +1,40 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    211,
+    61
+   ],
+   "text": "THE CHINESE OF CANADA TAKE HIM IN. THEY OPEN THE DOOR OF THE SECRET SOCIETY THAT WANTS TO OVERTHROW THE EMPEROR.",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    179,
+    527
+   ],
+   "text": "YOU ARE OUR|BROTHER NOW.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    295,
+    971
+   ],
+   "text": "STRAIGHTER!|THE DOCTOR WILL NEED|SOLDIERS!",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    770,
+    973
+   ],
+   "text": "FOR THE SEAMSTRESSES|OF CANTON.",
+   "max": 24
+  }
+ ]
+}

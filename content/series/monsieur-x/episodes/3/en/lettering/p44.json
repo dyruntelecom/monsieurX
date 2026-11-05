@@ -1,0 +1,49 @@
+{
+ "blocks": [
+  {
+   "type": "caption",
+   "seed": [
+    179,
+    39
+   ],
+   "text": "PEKING, NOVEMBER 1966",
+   "max": 22
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    772,
+    505
+   ],
+   "text": "GENERAL COHEN.|THE DOCTOR'S|OLD FRIEND.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    172,
+    985
+   ],
+   "text": "THE DOCTOR WOULD|HAVE BEEN SURPRISED|TO SEE ALL THIS.",
+   "max": 24
+  },
+  {
+   "type": "balloon",
+   "seed": [
+    490,
+    999
+   ],
+   "text": "THE DOCTOR|ALWAYS|LIKED|SURPRISES.",
+   "max": 24
+  },
+  {
+   "type": "caption",
+   "seed": [
+    795,
+    999
+   ],
+   "text": "THE CULTURAL REVOLUTION IS BEGINNING. THE DOCTOR'S OLD FRIEND NO LONGER RECOGNISES HIS CHINA.",
+   "max": 22
+  }
+ ]
+}
